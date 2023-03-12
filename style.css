@@ -1,0 +1,160 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c582.569C115.759%2c591.791%2c247.492%2c598.031%2c336.072%2c522.939C423.683%2c448.668%2c406.196%2c311.471%2c446.612%2c203.961C483.464%2c105.933%2c564.417%2c23.757%2c563.097%2c-80.961C561.707%2c-191.264%2c519.76%2c-305.202%2c439.245%2c-380.608C361.188%2c-453.712%2c237.077%2c-432.047%2c140.096%2c-477.122C18.669%2c-533.559%2c-65.69%2c-691.378%2c-198.837%2c-677.178C-328.455%2c-663.354%2c-412.573%2c-526%2c-474.928%2c-411.528C-530.224%2c-310.015%2c-523.774%2c-191.26%2c-526.477%2c-75.696C-528.876%2c26.892%2c-528.503%2c128.646%2c-489.786%2c223.678C-449.925%2c321.519%2c-388.558%2c409.558%2c-303.338%2c472.003C-214.734%2c536.928%2c-109.498%2c573.846%2c0%2c582.569' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 921.095C1510.982 909.592 1579.057 904.056 1648.018 883.682 1743.107 855.588 1860.088 858.184 1920.096 779.2529999999999 1980.646 699.609 1990.742 577.996 1949.827 486.698 1909.897 397.598 1785.342 389.43100000000004 1715.035 321.68100000000004 1654.049 262.913 1643.282 161.005 1569.217 119.928 1489.582 75.76100000000002 1392.102 74.75299999999999 1302.908 93.10899999999998 1209.018 112.43099999999998 1100.037 141.579 1054.4 225.87599999999998 1008.54 310.586 1093.721 412.911 1078.297 507.995 1062.4 605.995 942.433 680.241 965.012 776.92 987.023 871.1659999999999 1091.005 930.8340000000001 1183.615 958.944 1267.988 984.554 1352.962 935.2 1440 921.095' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+  /* Estilos globales */
+
+  /* Aqui empiezan los estilos de el header */
+  header {
+    background-color: #0074D9; /* Cambiar el color de fondo a azul */
+    position: fixed;  /* Hacer que el encabezado sea fijo */
+    top: 0;  /* Establecer la posición superior en 0 */
+    left: 0; /* Establecer la posición izquierda en 0 */
+    width: 100%; /* Establecer la anchura al 100% */
+    z-index: 999; /* Asegurar que el encabezado aparezca por encima de cualquier otro contenido */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    max-height: 60px;
+  }
+  
+  .titulo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .login svg {
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .logo-ingresa {
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+  }
+  .logo-ingresa :hover {
+    color: #fff;
+  }
+  /* Hasta aqui llegan los estilos de el header */
+
+  /* Aqui empiezan los estilos de la segunda Navbar */
+  .nav2 {
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  
+  .nav2 ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav2 li {
+    margin: 0 10px;
+    /*  
+    font-family: 'Nerko One', cursive;
+    font-size: larger; */
+  }
+  
+  .nav2 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav2 a:hover {
+    color: #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  /* Aqui terminan los estilos de la segunda Navbar */
+
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Estilos de section1 */
+  .wallpaper {
+    display: flex;
+    justify-content: center;
+  }
+  .wallpaper img {
+    width: 780px;
+    height: 470px;
+    border-radius: 8px;
+    
+  }
+   /* Estilos de section1 */
+
+  /* Aqui empiezan los estilos del footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .copy-container {
+    position: relative;
+    z-index: 1;
+    margin-top: -50px; /* ajusta la distancia vertical al contenido del SVG */
+  }
+  
+  svg {
+    width: 100%;
+    height: auto;
+    fill: #0074D9;
+  }
+  
+
+  .copy-R {
+    text-align: center;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .location-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+   /* Aqui terminan los estilos del footer */
+
+
+   

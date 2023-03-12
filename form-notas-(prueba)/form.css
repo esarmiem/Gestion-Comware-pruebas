@@ -1,0 +1,36 @@
+/* Aqui empiezan los estilos del formulario */
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .section-3 label {
+    display: block;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .section-3 input[type="text"] {
+    max-width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  input {
+    margin-bottom: 10px;
+  }
+   /* Aqui terminan los estilos del formulario */

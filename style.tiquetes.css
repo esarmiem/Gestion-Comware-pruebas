@@ -1,0 +1,97 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1325.19 222.69a15.8 15.8 0 1 0-6.29-30.96z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M605.94 553.04L618.85 553.04L618.85 608.65L605.94 608.65z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1073.95 130.09L1087.33 130.09L1087.33 136.95L1073.95 136.95z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M558.96 540.95L568.65 540.95L568.65 559.8L558.96 559.8z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1311.51 393.16a16.44 16.44 0 1 0-0.94-32.87z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1167.31 179.41L1200.59 179.41L1200.59 212.69L1167.31 212.69z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M434.77 328.72L445.11 328.72L445.11 376.34L434.77 376.34z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M171.35 255.69L227.13 255.69L227.13 311.47L171.35 311.47z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M590.45 162.28L627.98 162.28L627.98 199.81L590.45 199.81z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M419.68 257.42L429.7 257.42L429.7 267.44L419.68 267.44z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M105.97 227.08L107.52 227.08L107.52 228.63L105.97 228.63z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M122.68 259.81 a42.79 42.79 0 1 0 85.58 0 a42.79 42.79 0 1 0 -85.58 0z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M988.4 507.42L1014.82 507.42L1014.82 537.73L988.4 537.73z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M585.84 433.95L629.72 433.95L629.72 477.83L585.84 477.83z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M222.92 265.29L223.29 265.29L223.29 265.66L222.92 265.66z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1331.53 410.64L1341.15 410.64L1341.15 420.26L1331.53 420.26z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M752.38 502.54L799.73 502.54L799.73 549.89L752.38 549.89z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1312.42 257.9L1323.64 257.9L1323.64 304.92L1312.42 304.92z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M510.42 147.17L512.13 147.17L512.13 148.88L510.42 148.88z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M569.95 496.47L571.58 496.47L571.58 498.1L569.95 498.1z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M100.51 50.01L101.18 50.01L101.18 54.96L100.51 54.96z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M38.05 369.26L73.12 369.26L73.12 419.53L38.05 419.53z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M1172.32 128.37L1226.78 128.37L1226.78 163.83L1172.32 163.83z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M879.29 379.24L888.12 379.24L888.12 388.07L879.29 388.07z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M962.91 460.26L1007.82 460.26L1007.82 462.35L962.91 462.35z' stroke='%23037b0b'%3e%3c/path%3e%3cpath d='M1031.6 355.29 a22.91 22.91 0 1 0 45.82 0 a22.91 22.91 0 1 0 -45.82 0z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M556.41 3.2L573.47 3.2L573.47 34.92L556.41 34.92z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M817.86 428.04a13.66 13.66 0 1 0-27.1-3.5z' stroke='%23e73635'%3e%3c/path%3e%3cpath d='M629.74 235.72a9.85 9.85 0 1 0 19.52 2.66z' stroke='%23d3b714'%3e%3c/path%3e%3cpath d='M1254.54 219.53L1255.7 219.53L1255.7 252.04L1254.54 252.04z' fill='%23d3b714'%3e%3c/path%3e%3cpath d='M163.67 518.24 a54.31 54.31 0 1 0 108.62 0 a54.31 54.31 0 1 0 -108.62 0z' fill='%23e73635'%3e%3c/path%3e%3cpath d='M1037.79 443.31L1057.77 443.31L1057.77 463.29L1037.79 463.29z' fill='%23037b0b'%3e%3c/path%3e%3cpath d='M192.35 61.14 a4.25 4.25 0 1 0 8.5 0 a4.25 4.25 0 1 0 -8.5 0z' fill='%23037b0b'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+  /* Estilos globales */
+
+  /* Aqui empiezan los estilos de el header */
+  header {
+    background-color: #0074D9; /* Cambiar el color de fondo a azul */
+    position: fixed;  /* Hacer que el encabezado sea fijo */
+    top: 0;  /* Establecer la posición superior en 0 */
+    left: 0; /* Establecer la posición izquierda en 0 */
+    width: 100%; /* Establecer la anchura al 100% */
+    z-index: 999; /* Asegurar que el encabezado aparezca por encima de cualquier otro contenido */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    max-height: 60px;
+  }
+  
+  .titulo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .login svg {
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .logo-ingresa {
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+  }
+  .logo-ingresa :hover {
+    color: #fff;
+  }
+  /* Hasta aqui llegan los estilos de el header */
+
+  /* Aqui empiezan los estilos de la segunda Navbar */
+  .nav2 {
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  
+  .nav2 ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav2 li {
+    margin: 0 10px;
+    /*  
+    font-family: 'Nerko One', cursive;
+    font-size: larger; */
+  }
+  
+  .nav2 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav2 a:hover {
+    color: #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  /* Aqui terminan los estilos de la segunda Navbar */

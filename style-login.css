@@ -1,0 +1,199 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1240.0890685801287 349.3887548060497L1169.4934348441511 353.08851519723123 1210.3408922989122 457.1320856056069z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M222.19170431435884 521.8048063550971L332.84655211782723 492.15492924756893 303.1966750102991 381.5000814441006 192.5418272068307 411.1499585516287z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M707.172366138469 424.0370566258805L759.5035803941977 311.81240549580184 647.278929264119 259.4811912400732 594.9477150083903 371.7058423701518z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1176.3068057771607 47.09766770746596L1091.4519871727969 129.0410135219906 1173.3953329873216 213.89583212635443 1258.2501515916854 131.9524863118298z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M402.2449676732058 349.77222936766333L506.9527599292305 245.06443711163854 297.537175417181 245.06443711163857z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M970.126%2c237.626C999.202%2c236.538%2c1019.341%2c211.819%2c1033.392%2c186.341C1046.839%2c161.959%2c1053.98%2c133.52%2c1041.177%2c108.794C1027.393%2c82.174%2c1000.102%2c64.399%2c970.126%2c64.161C939.761%2c63.92%2c912.059%2c81.227%2c897.099%2c107.652C882.357%2c133.693%2c883.433%2c165.316%2c898.091%2c191.404C913.069%2c218.062%2c939.569%2c238.769%2c970.126%2c237.626' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+  /* Estilos globales */
+
+  /* Aqui empiezan los estilos de el header */
+  header {
+    background-color: #0074D9; /* Cambiar el color de fondo a azul */
+    position: fixed;  /* Hacer que el encabezado sea fijo */
+    top: 0;  /* Establecer la posición superior en 0 */
+    left: 0; /* Establecer la posición izquierda en 0 */
+    width: 100%; /* Establecer la anchura al 100% */
+    z-index: 999; /* Asegurar que el encabezado aparezca por encima de cualquier otro contenido */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    max-height: 60px;
+  }
+  
+  .titulo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .login svg {
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .logo-ingresa {
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+  }
+  .logo-ingresa :hover {
+    color: #fff;
+  }
+  /* Hasta aqui llegan los estilos de el header */
+
+  /* Aqui empiezan los estilos de la segunda Navbar */
+  .nav2 {
+    margin-top: 50px;
+    padding-top: 50px;
+    margin-bottom: 15px;
+  }
+  .nav2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+  
+  .nav2 ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav2 li {
+    margin: 0 10px;
+    /*  
+    font-family: 'Nerko One', cursive;
+    font-size: larger; */
+  }
+  
+  .nav2 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .nav2 a:hover {
+    color: #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  /* Aqui terminan los estilos de la segunda Navbar */
+
+  /* Aqui empiezan los estilos del login */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Nerko One', cursive;;
+    font-size: 40px;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 400px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    border-radius: 5px;
+    border: solid 1px;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #0074D9;
+    text-align: center;
+  }
+
+  .link-2 {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #0074D9; 
+    text-align: center;   
+  }
+  
+  .button {
+    background-color: #0074D9;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  /* Aqui terminal los estilos del login */
+
+  /* Aqui empiezan los estilos del footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .copy-container {
+    position: relative;
+    z-index: 1;
+    margin-top: -50px; /* ajusta la distancia vertical al contenido del SVG */
+  }
+  
+  svg {
+    width: 100%;
+    height: auto;
+    fill: #0074D9;
+  }
+  
+
+  .copy-R {
+    text-align: center;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .location-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+   /* Aqui terminan los estilos del footer */
+  
