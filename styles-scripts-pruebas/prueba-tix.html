@@ -12,7 +12,7 @@
         <fieldset>
             <legend>Ingresa Datos</legend>
             <!-- <label for="input-data">Ingresa datos</label> -->
-            <textarea id="input-data"></textarea>
+            <textarea class="input-data-text" id="input-data"></textarea>
             <button type="button" onclick="clearTextArea()">Limpiar datos</button>
             <a href="index-cmiatajos.html">Go Back</a>
         </fieldset>
@@ -88,12 +88,12 @@
             <fieldset>
                 <legend>Generator</legend>
                 <div>
-                    <textarea id="output-area-resumen"></textarea>
+                    <textarea class="output-area-resumen-text" id="output-area-resumen"></textarea>
                     <button onclick="generateOutputResumen()">Generate Resumen</button>
                     <button onclick="copyToClipboard('output-area-resumen')">Copy Resumen</button>
                 </div>
                 <div>
-                    <textarea id="output-area"></textarea>
+                    <textarea class="output-area-text" id="output-area"></textarea>
                     <button onclick="generateOutput()">Generate Description</button>
                     <button onclick="copyToClipboard('output-area')">Copy Description</button>
                 </div>

@@ -102,3 +102,17 @@ input[disabled] {
 #output-data-10 {
     height: 10rem;
 }
+
+.input-data-text{
+    width: 755px;
+    height: 233px;
+}
+
+.output-area-resumen-text{
+    width: 745px;
+    height: 66px;
+}
+.output-area-text{
+    width: 797px;
+    height: 285px;
+}

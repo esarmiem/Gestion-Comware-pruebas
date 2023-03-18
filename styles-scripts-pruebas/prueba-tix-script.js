@@ -97,7 +97,7 @@ function copyToClipboard(elementId) {
     var copyText = document.getElementById(elementId);
     copyText.select();
     document.execCommand("copy");
-    alert("Copied to clipboard!");
+    // alert("Copied to clipboard!");
 }
 
 // Se presenta apertura simple en el anillo as4d8ads4(as8dasd) entre los clientes asdasd por el puerto Giga84/84/84 contra  por el puerto Giga//

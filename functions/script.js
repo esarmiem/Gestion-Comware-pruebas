@@ -3,7 +3,7 @@ function cm1_c1b() {
     var nit3 = nit1.split(" ")[0];
     
     if (isNaN(nit3)) {
-    alert('Corregir numero NIT');
+    // alert('Corregir numero NIT');
     return;
     }
     
