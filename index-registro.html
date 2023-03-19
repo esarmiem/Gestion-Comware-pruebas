@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-login.css">
+    <link rel="stylesheet" href="style-registro.css">
     <link rel="icon" type="image/x-icon" href="img/FAVICONxmen.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,23 +55,30 @@
         </div>
       </section>
       <!-- tipos de vista  -->
-      <!-- login  -->
-      <div class="container">
-        <h2 class="title"><i class="ti ti-user"></i>Inicia Sesión</h2>
-        <div class="form-container">
-          <form class="form">
-            <label class="label">Usuario</label>
-            <input type="text" name="username" class="input">
-            <label class="label">Contraseña</label>
-            <input type="password" name="password" class="input">
-            <a href="#" class="link">¿Olvidaste tu Contraseña?</a>
-            <button type="submit" class="button">Iniciar Sesión</button>
-            <a href="index-registro.html" class="link-2">¿No tienes cuenta? Registrate</a>
-          </form>
-        </div>
-      </div>
+      <!-- Registro  -->
+      <section>
+        <div class="container">
+            <h2 class="title"><i class="ti ti-user"></i>Regístrate</h2>
+            <div class="form-container">
+              <form class="form">
+                <label class="label">Nombres</label>
+                <input type="text" name="firstname" class="input">
+                <label class="label">Apellidos</label>
+                <input type="text" name="lastname" class="input">
+                <label class="label">Usuario de red</label>
+                <input type="text" name="username" class="input">
+                <label class="label">Contraseña</label>
+                <input type="password" name="password" class="input">
+                <label class="label">Confirmar contraseña</label>
+                <input type="password" name="confirm-password" class="input">
+                <button type="submit" class="button">Registrarse</button>
+                <a href="index-login.html" class="link">¿Ya tienes cuenta? Inicia sesión</a>
+              </form>
+            </div>
+          </div>
+      </section>
+      <!-- Registro  -->
     </main>
-      <!-- login  -->
       <!-- footer  -->
       <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5FB7E5" fill-opacity="1" d="M0,128L80,133.3C160,139,320,149,480,170.7C640,192,800,224,960,202.7C1120,181,1280,107,1360,69.3L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
@@ -79,4 +86,3 @@
      <!-- footer  -->
 </body>
 </html>
-      
