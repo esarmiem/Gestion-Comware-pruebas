@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-apertura-doble-2cliente.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>APERTURA DOBLE - APERTURA DE DOS O MÁS SWITCHES EN EL ANILLO</legend>
+            <div class="parent">
+                <!-- CLIENTE EXTREMO A -->
+                <!-- CLIENTE EXTREMO A -->
+                <!-- CLIENTE EXTREMO A -->
+                <!-- CLIENTE EXTREMO A -->
+                <fieldset>
+                    <legend>CLIENTE EXTREMO A</legend>
+                    <div class="div1">
+                        <div>
+                            <fieldset>
+                                <legend>Ingresa Datos</legend>
+                                <!-- <label for="input-data">Ingresa datos</label> -->
+                                <textarea class="input-data-text" id="input-dataD" cols="30" rows="10"></textarea>
+                                <button type="button" onclick="clearTextAreaD()">Limpiar todos los datos</button>
+                            </fieldset>
+                        </div>
+                        <!--  -->
+                        <fieldset class="no-border1">
+                            <div>
+                                <label for="output-data-1-d">ANILLO: </label>
+                                <input type="text" id="output-data-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-2-d">CIUDAD: </label>
+                                <input type="text" id="output-data-2-d" disabled>
+                            </div>
+                        </fieldset>
+                        <!-- CLIENTE EXTRMO A -->
+                        <fieldset>
+                            <div>
+                                <label for="output-data-3-d">NOMBRE EMPRESA: </label>
+                                <input type="text" id="output-data-3-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-4-d">IP SWITCH: </label>
+                                <input type="text" id="output-data-4-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-5-d">PUNTO DE CONTACTO(NOMBRE PERSONA)</label>
+                                <input type="text" id="output-data-5-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-6-d">CORREO ELECTRONICO: </label>
+                                <input type="email" id="output-data-6-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-7-d">NUMERO TELEFONO: </label>
+                                <input type="tel" id="output-data-7-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-8-d">DIRECCION: </label>
+                                <input type="text" id="output-data-8-d" disabled>
+                            </div>
+                            <div>
+                                <label for="">DISPONIBILIDAD: </label>
+                                <input type="datetime-local" name="" id="disponibilidadD">
+                                <input type="datetime-local" name="" id="disponibilidad-2D">
+                            </div>
+                            <div>
+                                <label for="">PEDIDO DE RETIRO: </label>
+                                <label for="si-retiroD">SI</label>
+                                <input type="radio" name="retiroD" id="si-retiroD" value="SI" onclick="uncheckNoD()">
+                                <label for="no-retiroD">NO</label>
+                                <input type="radio" name="retiroD" id="no-retiroD" value="NO" onclick="uncheckSiD()">
+                            </div>
+                            <div>
+                                <label for="output-data-9-d">DESCARTES REALIZADOS: </label>
+                                <textarea name="" id="output-data-9-d" cols="30" rows="10" readonly></textarea>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                </fieldset>
+                <!-- CLIENTE EXTREMO A -->
+                <!-- CLIENTE EXTREMO A -->
+                <!-- CLIENTE EXTREMO A -->
+                <!-- CLIENTE EXTREMO A -->
+                <!--  -->
+                <!-- CLIENTE EXTREMO B -->
+                <!-- CLIENTE EXTREMO B -->
+                <!-- CLIENTE EXTREMO B -->
+                <!-- CLIENTE EXTREMO B -->
+                <fieldset>
+                    <legend>CLIENTE EXTREMO B</legend>
+                    <div class="div2">
+                        <div>
+                            <fieldset>
+                                <legend>Ingresa Datos</legend>
+                                <!-- <label for="input-data">Ingresa datos</label> -->
+                                <textarea class="input-data-text" id="input-dataD-1" cols="30" rows="10"></textarea>
+                            </fieldset>
+                        </div>
+                        <!-- CLIENTE EXTRMO A -->
+                        <fieldset>
+                            <div>
+                                <label for="output-data-1-1-d">NOMBRE EMPRESA: </label>
+                                <input type="text" id="output-data-1-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-2-1-d">IP SWITCH: </label>
+                                <input type="text" id="output-data-2-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-3-1-d">PUNTO DE CONTACTO(NOMBRE PERSONA)</label>
+                                <input type="text" id="output-data-3-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-4-1-d">CORREO ELECTRONICO: </label>
+                                <input type="email" id="output-data-4-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-5-1-d">NUMERO TELEFONO: </label>
+                                <input type="tel" id="output-data-5-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="output-data-6-1-d">DIRECCION: </label>
+                                <input type="text" id="output-data-6-1-d" disabled>
+                            </div>
+                            <div>
+                                <label for="">DISPONIBILIDAD: </label>
+                                <input type="datetime-local" name="" id="disponibilidadD-1">
+                                <input type="datetime-local" name="" id="disponibilidad-2D-1">
+                            </div>
+                            <div>
+                                <label for="">PEDIDO DE RETIRO: </label>
+                                <label for="si-retiroD-1">SI</label>
+                                <input type="radio" name="retiroD-1" id="si-retiroD-1" value="SI" onclick="uncheckNoD1()">
+                                <label for="no-retiroD-1">NO</label>
+                                <input type="radio" name="retiroD-1" id="no-retiroD-1" value="NO" onclick="uncheckSiD1()">
+                            </div>
+                            <div>
+                                <label for="output-data-7-1-d">DESCARTES REALIZADOS: </label>
+                                <textarea name="" id="output-data-7-1-d" cols="30" rows="10" readonly></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                </fieldset>
+                <!-- CLIENTE EXTREMO B -->
+                <!-- CLIENTE EXTREMO B -->
+                <!-- CLIENTE EXTREMO B -->
+                <!-- CLIENTE EXTREMO B -->
+            </div>
+            <fieldset class="general-generator">
+                <legend>GENERADOR</legend>
+                <div>
+                    <textarea class="output-area-resumen-text" id="output-area-resumenD" cols="30" rows="10"
+                        readonly></textarea>
+                    <button onclick="generateOutputResumenD()">Generate Resumen</button>
+                    <button onclick="copyToClipboardD('output-area-resumenD')">Copy Resumen</button>
+                </div>
+                <div>
+                    <textarea class="output-area-text" id="output-areaD" cols="30" rows="10" readonly></textarea>
+                    <button onclick="generateOutputD()">Generate Description</button>
+                    <button onclick="copyToClipboardD('output-areaD')">Copy Description</button>
+                </div>
+            </fieldset>
+        </fieldset>
+    </div>
+    <script src="script-apertura-doble-2cliente.js"></script>
+</body>
+
+</html>

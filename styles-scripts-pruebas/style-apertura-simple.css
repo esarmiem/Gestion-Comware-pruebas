@@ -1,0 +1,35 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.no-border1,
+.no-border2 {
+    border: 0px;
+}
+
+.general-generator {
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+    text-align: center;
+}
+
+textarea {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
