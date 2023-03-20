@@ -45,6 +45,19 @@
     font-size: 1.8rem;
     /*font-family: 'Nerko One', cursive;*/
   }
+
+  h1 {
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
   .login svg {
     color: #fff;
