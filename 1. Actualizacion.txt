@@ -1,0 +1,2 @@
+1. Optimizacion de codigo de los JavaScript 3 archivos
+2. se modifico los id de referentes al cliente B de apertura-doble-2cliente.html y apertura simple, con el fin de simplificar y optimizar el codigo de los JS que los moeven
