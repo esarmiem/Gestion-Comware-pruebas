@@ -1,2 +1,6 @@
 1. Optimizacion de codigo de los JavaScript 3 archivos
-2. se modifico los id de referentes al cliente B de apertura-doble-2cliente.html y apertura simple, con el fin de simplificar y optimizar el codigo de los JS que los moeven
+*Se remplazaron la segmentacion individual del txto del textarea y la asignacion a el array tambien de forma individual   por un queryselector seleccionandolos desde el id el cual asigna de forma automatica los datos al array, para los 3 archivos.
+*Se simplifico la funcion cleartextarea en en un ciclo apoyado por un queryselector basado en el id, para los 3 archivos.
+*Se modifico la syntaxi de las funciones, se pasaron a flecha.
+*Se modifico la syntaxi de interna de la funcion generateOutput para los 3 archivos JS, se aplico un templateString y se elimino el array.  
+2. se modificaron los id de referentes al cliente B de apertura-doble-2cliente.html y apertura-simple.html, con el fin de simplificar y optimizar el codigo de los JS que tienen relacionado.
