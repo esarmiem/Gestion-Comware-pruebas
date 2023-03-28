@@ -67,99 +67,32 @@
             </div>
         </section>
         <!-- tipos de vista  -->
-        <!-- TIQUETES -->
-        <div>
-            <fieldset>
-                <legend>Ingresa Datos</legend>
-                <!-- <label for="input-data">Ingresa datos</label> -->
-                <textarea class="input-data-text" id="input-data"></textarea>
-                <button type="button" onclick="clearTextArea()">Limpiar datos</button>
-            </fieldset>
-        </div>
-        <!--  -->
-        <fieldset>
-            <legend>APERTURA SIMPLE - APERTURA SIN AFECTACIÓN</legend>
-            <div>
-                <label for="output-data-1">ANILLO: </label>
-                <input type="text" id="output-data-1" disabled>
-            </div>
-            <div>
-                <label for="output-data-2">CIUDAD: </label>
-                <input type="text" id="output-data-2" disabled>
-            </div>
-        </fieldset>
-        <!-- CLIENTE EXTRMO A -->
-        <fieldset>
-            <legend>CLIENTE EXTREMO A</legend>
-            <div>
-                <label for="output-data-3">NOMBRE EMPRESA: </label>
-                <input type="text" id="output-data-3" disabled>
-            </div>
-            <div>
-                <label for="output-data-4">IP SWITCH: </label>
-                <input type="text" id="output-data-4" disabled>
-            </div>
-            <div>
-                <label for="output-data-5">PUERTO SWITCH: </label>
-                <input type="text" id="output-data-5" disabled>
-            </div>
-            <div>
-                <label for="output-data-6">PUNTO DE CONTACTO(NOMBRE PERSONA)</label>
-                <input type="text" id="output-data-6" disabled>
-            </div>
-            <div>
-                <label for="output-data-7">DIRECCION: </label>
-                <input type="text" id="output-data-7" disabled>
-            </div>
-            <div>
-                <label for="output-data-8">NUMERO TELEFONO: </label>
-                <input type="tel" id="output-data-8" disabled>
-            </div>
-            <div>
-                <label for="output-data-9">CORREO ELECTRONICO: </label>
-                <input type="email" id="output-data-9" disabled>
-            </div>
-            <div>
-                <label for="">DISPONIBILIDAD: </label>
-                <input type="datetime-local" name="" id="disponibilidad">
-                <input type="datetime-local" name="" id="disponibilidad-2">
-            </div>
-            <div>
-                <form action="">
-                    <label for="browser">MEDIDAS TOMADAS OTDR: </label>
-                    <input list="browsers" name="browser" id="browser">
-                    <datalist id="browsers">
-                        <option value="No Aplica">
-                    </datalist>
-                </form>
-            </div>
-            <div>
-                <label for="">PEDIDO DE RETIRO: </label>
-                <label for="si-retiro">SI</label>
-                <input type="radio" name="retiro" id="si-retiro" value="SI" onclick="uncheckNo()">
-                <label for="no-retiro">NO</label>
-                <input type="radio" name="retiro" id="no-retiro" value="NO" onclick="uncheckSi()">
-            </div>
-            <div>
-                <label for="output-data-10">DESCARTES REALIZADOS: </label>
-                <textarea name="" id="output-data-10" cols="30" rows="10"></textarea>
-            </div>
-            <fieldset>
-                <legend>Generator</legend>
-                <div>
-                    <textarea class="output-area-resumen-text" id="output-area-resumen"></textarea>
-                    <button onclick="generateOutputResumen()">Generate Resumen</button>
-                    <button onclick="copyToClipboard('output-area-resumen')">Copy Resumen</button>
-                </div>
-                <div>
-                    <textarea class="output-area-text" id="output-area"></textarea>
-                    <button onclick="generateOutput()">Generate Description</button>
-                    <button onclick="copyToClipboard('output-area')">Copy Description</button>
-                </div>
-            </fieldset>
-        </fieldset>
-        <!-- TIQUETES -->
+        <!-- navbar tiquetes  -->
+        <section>
+            <nav class="nav3">
+                <ul class="ul-nav3">
+                    <li>
+                        <a href="">Apertura Simple</a>
+                    </li>
+                    <li>
+                        <a href="">Apertura Doble 1 Cliente</a>
+                    </li>
+                    <li>
+                        <a href="">Apertura Doble 2 o Más Clientes</a>
+                    </li>
+                    <li>
+                        <a href="">Retiro Desde Empalme</a>
+                    </li>
+                    <li>
+                        <a href="">Reingreso Al Anillo</a>
+                    </li>
+                    <li>
+                        <a href="">Alarma De Potencia</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- navbar tiquetes  -->
     </main>
-    <script src="Tiquetes/prueba-tix-script.js"></script>
 </body>
 </html>

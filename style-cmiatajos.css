@@ -32,6 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  height: 70px;
 }
 
 .logo img {
@@ -63,6 +64,7 @@ h1 {
   color: #fff;
   width: 2.5rem;
   height: 2.5rem;
+  padding-top: 9px;
 }
 .logo-ingresa {
   color: #fff;
@@ -77,9 +79,9 @@ h1 {
 
 /* Aqui empiezan los estilos de la segunda Navbar */
 .nav2 {
-  margin-top: 50px;
+  margin-top: 20px;
   padding-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .nav2 {
   display: flex;
