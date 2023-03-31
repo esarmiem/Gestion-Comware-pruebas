@@ -337,3 +337,13 @@
   }
 }
 /* Media query para tablets */
+  /* Media query para moviles */
+  @media (max-width: 480px) {
+    .nav2 li {
+      margin: 0 4px;
+    }
+    .nav2 a {
+      font-size: 12px;
+    }
+  }
+    /* Media query para moviles */

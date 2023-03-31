@@ -133,6 +133,7 @@
   .wallpaper {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
   }
   .wallpaper img {
     width: 780px;
@@ -208,7 +209,8 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .nav2 li {
@@ -255,6 +257,12 @@
   .wallpaper {
     display: flex;
     justify-content: center;
+  }
+  .nav2 li {
+    margin: 0 4px;
+  }
+  .nav2 a {
+    font-size: 12px;
   }
 }
 /* Media query para moviles */

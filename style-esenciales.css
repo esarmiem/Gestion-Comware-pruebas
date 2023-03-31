@@ -272,13 +272,11 @@
 
 /* Media query para moviles */
 @media (max-width: 480px) {
-  .wallpaper img {
-    max-width: 95%;
-    height: 350px;
+  .nav2 li {
+    margin: 0 4px;
   }
-  .wallpaper {
-    display: flex;
-    justify-content: center;
+  .nav2 a {
+    font-size: 12px;
   }
 }
 /* Media query para moviles */
