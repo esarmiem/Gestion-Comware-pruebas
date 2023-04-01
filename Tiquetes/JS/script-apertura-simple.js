@@ -85,7 +85,7 @@ DESCARTES REALIZADOS CLIENTE EXTREMO B: ${document.getElementById('output-dataB-
 };
 
 let generateOutputResumen =()=> {
-    const output = `Se presenta apertura simple en el ANILLO: ${document.getElementById('output-data-1').value} En la ciudad de: ${document.getElementById('output-data-2').value} Entre los clientes: ${document.getElementById('output-data-3').value} Por el puerto GIGA ${document.getElementById('output-data-5').value} Y el Puerto GIGA: ${document.getElementById('output-dataB-3-1').value}`;
+    const output = `Se presenta apertura simple en el ANILLO: ${document.getElementById('output-data-1').value} En la ciudad de: ${document.getElementById('input_ciudad').value} Entre los clientes: ${document.getElementById('input_nombreA').value} Por el puerto GIGA ${document.getElementById('input_puertoA').value} Y el Puerto GIGA: ${document.getElementById('inputB_puertoB').value}`;
     const outputArea_1 = document.getElementById('output-area-resumen');
     outputArea_1.value = output;
 };

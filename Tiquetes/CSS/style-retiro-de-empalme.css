@@ -1,3 +1,4 @@
+/*Sistema de cajas*/
 html {
     font-family: Arial, sans-serif;
 }
@@ -9,53 +10,59 @@ html {
     width: 100%;
     border-radius: 8px;
 }
-legend {
-    font-weight: bold;
-    text-align: center;
-}
 .ingresa-texto{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
 }
-.ingresa-texto > label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-#retiro_ip1, #retiro_ip2, #retiro_ip3, #retiro_ip4{
-    width: 55px;
-
-}
 .general-generator{
     display: flex;
     flex-direction: column;
     border-radius: 8px;
+    text-align: center;
 }
 .general-generator > div {
-    text-align: center;
     margin: 5px;
 }
-.output-area-resumen-text{
-    width: 100%;
-    height: 7em;
-    margin: 5px;
+
+/*Titulos*/
+legend {
+    font-weight: bold;
+    text-align: center;
 }
 h3{
     margin: 1px;
 }
-.output-area-text{
-    /* visibility: none; */
+
+/*Areas de Texto*/
+#output-area-resumen{
+    width: 100%;
+    height: 7em;
+    margin: 5px;
+}
+#output-area-TT{
     width: 100%;
     height: 18em;
     margin: 5px;
 }
 textarea{
     width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 1em;
     border-radius: 5px;
     font-size: 13px;
 }
+
+/*Entrada de texto y Botones*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 input[type="text"],
-textarea {
+input[type=number]{
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -71,7 +78,6 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0062cc;
 }

@@ -6,18 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style-apertura-simple.css">
-    <title>Document</title>
+    <title>Apertura Simple</title>
 </head>
 
 <body>
-    <!-- mover a apartertura especifica -->
-    <!-- <ol>
-        <li><a href="#part1part">Part 1</a></li>
-        <li><a href="#part2part">Part 2</a></li>
-    </ol> -->
-    <!-- mover a apartertura especifica -->
     <div>
-        <fieldset>
+        <fieldset class="contenedor">
             <legend>APERTURA SIMPLE - APERTURA SIN AFECTACIÓN</legend>
             <div class="parent">
                 <!-- CLIENTE EXTREMO A -->
@@ -26,82 +20,74 @@
                 <!-- CLIENTE EXTREMO A -->
                 <fieldset>
                     <legend>CLIENTE EXTREMO A</legend>
-                    <div class="div1">
+                    <div>
                         <div>
                             <fieldset>
                                 <legend>Ingresa Datos</legend>
-                                <!-- <label for="input-data">Ingresa datos</label> -->
-                                <textarea class="input-data-text" id="input-dataA" cols="30" rows="10"></textarea>
-                                <button type="button" onclick="clearTextAreaA()">Limpiar todos los datos</button>
+                                <textarea id="inputTextA" cols="30" rows="10"></textarea>
                             </fieldset>
                         </div>
-                        <!--  -->
-                        <fieldset class="no-border1">
+                        <fieldset>
                             <div>
-                                <label for="output-data-1">ANILLO: </label>
-                                <input type="text" id="output-data-1" disabled>
-                            </div>
-                            <div>
-                                <label for="output-data-2">CIUDAD: </label>
-                                <input type="text" id="output-data-2" disabled>
+                                <label for="input_anillo">ANILLO: </label>
+                                <input type="text" id="input_anillo" />
+                                <label for="input_ciudad">CIUDAD: </label>
+                                <input type="text" id="input_ciudad"/>
                             </div>
                         </fieldset>
                         <!-- CLIENTE EXTRMO A -->
-                        <fieldset>
+                        <fieldset class="clienteA">
                             <div>
-                                <label for="output-data-3">NOMBRE EMPRESA: </label>
-                                <input type="text" id="output-data-3" disabled>
+                                <label for="input_nombreA">NOMBRE EMPRESA: </label>
+                                <input type="text" id="input_nombreA" />
                             </div>
                             <div>
-                                <label for="output-data-4">IP SWITCH: </label>
-                                <input type="text" id="output-data-4" disabled>
+                                <label for="input_ipA">IP SWITCH: </label>
+                                <input type="text" id="input_ipA" />
+                                <label for="input_puertoA">PUERTO SWITCH: </label>
+                                <input type="text" id="input_puertoA" />
                             </div>
                             <div>
-                                <label for="output-data-5">PUERTO SWITCH: </label>
-                                <input type="text" id="output-data-5" disabled>
+                                <label for="input_contactoA">CONTACTO</label>
+                                <input type="text" id="input_contactoA" />
+                                <label for="input_direccionA">DIRECCION: </label>
+                                <input type="text" id="input_direccionA" />
                             </div>
                             <div>
-                                <label for="output-data-6">PUNTO DE CONTACTO(NOMBRE PERSONA)</label>
-                                <input type="text" id="output-data-6" disabled>
+                                <label for="input_telefonoA">TELEFONO: </label>
+                                <input type="tel" id="input_telefonoA" />
+                                <label for="input_correoA">CORREO: </label>
+                                <input type="email" id="input_correoA" />
                             </div>
                             <div>
-                                <label for="output-data-7">DIRECCION: </label>
-                                <input type="text" id="output-data-7" disabled>
+                                <label>DISPONIBILIDAD: </label>
+                                <input type="datetime-local" name="" id="disponibilidad_AS" />
+                                <input type="datetime-local" name="" id="disponibilidad_AS2" />
                             </div>
                             <div>
-                                <label for="output-data-8">NUMERO TELEFONO: </label>
-                                <input type="tel" id="output-data-8" disabled>
-                            </div>
-                            <div>
-                                <label for="output-data-9">CORREO ELECTRONICO: </label>
-                                <input type="email" id="output-data-9" disabled>
-                            </div>
-                            <div>
-                                <label for="">DISPONIBILIDAD: </label>
-                                <input type="datetime-local" name="" id="disponibilidad">
-                                <input type="datetime-local" name="" id="disponibilidad-2">
-                            </div>
-                            <div>
-                                <form action="">
-                                    <label for="browser">MEDIDAS TOMADAS OTDR: </label>
-                                    <input list="browsers" name="browser" id="browser">
-                                    <datalist id="browsers">
-                                        <option value="No Aplica">
-                                    </datalist>
+                                <form>
+                                    <label for="input_medidaA">MEDIDAS TOMADAS OTDR: </label>
+                                    <input type="text" name="browser" id="input_medidaA" />
                                 </form>
                             </div>
                             <div>
                                 <label for="">PEDIDO DE RETIRO: </label>
-                                <label for="si-retiro">SI</label>
-                                <input type="radio" name="retiro" id="si-retiro" value="SI" onclick="uncheckNo()">
-                                <label for="no-retiro">NO</label>
-                                <input type="radio" name="retiro" id="no-retiro" value="NO" onclick="uncheckSi()">
+                                
+                                    
+                                    <label for="retiroASiSimple">SI</label>
+                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroASiSimple" value="SI" onclick="uncheckNo()">
+                                    <label for="retiroANoSimple">NO</label>
+                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroANoSimple" value="NO" onclick="uncheckSi()">
+                                
+                                <!-- <label for="retiroASiSimple">SI</label>
+                                <input type="radio" name="retiro" id="retiroASiSimple" class="pedidoRA" value="SI" onclick="uncheckSi()"/>
+                                <label for="retiroANoSimple">NO</label>
+                                <input type="radio" name="retiro" id="retiroANoSimple" class="pedidoRA" value="NO" onclick="uncheckNo()"/> -->
                             </div>
                             <div>
-                                <label for="output-data-10">DESCARTES REALIZADOS: </label>
-                                <textarea name="" id="output-data-10" cols="30" rows="10" readonly></textarea>
+                                <label for="input_descartesA">DESCARTES REALIZADOS: </label>
+                                <textarea name="" id="input_descartesA" cols="30" rows="10" readonly></textarea>
                             </div>
-
                         </fieldset>
                     </div>
                 </fieldset>
@@ -116,93 +102,59 @@
                 <!-- CLIENTE EXTREMO B -->
                 <fieldset>
                     <legend>CLIENTE EXTREMO B</legend>
-                    <div class="div2">
+                    <div>
                         <div>
                             <fieldset>
                                 <legend>Ingresa Datos</legend>
                                 <!-- <label for="input-data">Ingresa datos</label> -->
-                                <textarea class="input-data-text" id="input-dataB" cols="30" rows="10"></textarea>
+                                <textarea id="inputTextB" cols="30" rows="10"></textarea>
                             </fieldset>
                         </div>
-                        <!--  -->
-                        <!-- <fieldset   class="no-border2">
+                        <fieldset class="clienteB">
                             <div>
-                                <label for="output-data-1">ANILLO: </label>
-                                <input type="text" id="output-data-1" disabled>
+                                <label for="inputB_nombreB">NOMBRE EMPRESA: </label>
+                                <input type="text" id="inputB_nombreB" />
                             </div>
                             <div>
-                                <label for="output-data-2">CIUDAD: </label>
-                                <input type="text" id="output-data-2" disabled>
-                            </div>
-                        </fieldset> -->
-                        <!-- CLIENTE EXTRMO A -->
-                        <fieldset>
-                            <div>
-                                <label for="output-data-1-1">NOMBRE EMPRESA: </label>
-                                <input type="text" id="output-dataB-1-1" disabled>
+                                <label for="inputB_ipB">IP SWITCH: </label>
+                                <input type="text" id="inputB_ipB" >
+                                <label for="inputB_puertoB">PUERTO SWITCH: </label>
+                                <input type="text" id="inputB_puertoB" />
                             </div>
                             <div>
-                                <label for="output-data-2-1">IP SWITCH: </label>
-                                <input type="text" id="output-dataB-2-1" disabled>
+                                <label for="inputB_contactoB">CONTACTO</label>
+                                <input type="text" id="inputB_contactoB"/>
+                                <label for="inputB_direccionB">DIRECCION: </label>
+                                <input type="text" id="inputB_direccionB" />
                             </div>
                             <div>
-                                <label for="output-data-3-1">PUERTO SWITCH: </label>
-                                <input type="text" id="output-dataB-3-1" disabled>
-                            </div>
-                            <div>
-                                <label for="output-data-4-1">PUNTO DE CONTACTO(NOMBRE PERSONA)</label>
-                                <input type="text" id="output-dataB-4-1" disabled>
-                            </div>
-                            <div>
-                                <label for="output-data-5-1">DIRECCION: </label>
-                                <input type="text" id="output-dataB-5-1" disabled>
-                            </div>
-                            <div>
-                                <label for="output-data-6-1">NUMERO TELEFONO: </label>
-                                <input type="tel" id="output-dataB-6-1" disabled>
-                            </div>
-                            <div>
-                                <label for="output-data-7">CORREO ELECTRONICO: </label>
-                                <input type="email" id="output-dataB-7-1" disabled>
+                                <label for="inputB_telefonoB">TELEFONO: </label>
+                                <input type="tel" id="inputB_telefonoB" />
+                                <label for="inputB_correoB">CORREO: </label>
+                                <input type="email" id="inputB_correoB" />
                             </div>
                             <div>
                                 <label for="">DISPONIBILIDAD: </label>
-                                <input type="datetime-local" name="" id="disponibilidadB">
-                                <input type="datetime-local" name="" id="disponibilidad-2B">
+                                <input type="datetime-local" name="" id="disponibilidad_BS" >
+                                <input type="datetime-local" name="" id="disponibilidad_BS2" >
                             </div>
                             <div>
                                 <form action="">
-                                    <label for="browserB">MEDIDAS TOMADAS OTDR: </label>
-                                    <input list="browsers" name="browserB" id="browserB">
-                                    <datalist id="browsers">
-                                        <option value="No AplicaB">
-                                    </datalist>
+                                    <label for="inputB_medidasB">MEDIDAS TOMADAS OTDR: </label>
+                                    <input type="text" name="browserB" id="inputB_medidasB" />
                                 </form>
                             </div>
                             <div>
                                 <label for="">PEDIDO DE RETIRO: </label>
-                                <label for="si-retiroB">SI</label>
-                                <input type="radio" name="retiroB" id="si-retiroB" value="SI" onclick="uncheckNoB()">
-                                <label for="no-retiroB">NO</label>
-                                <input type="radio" name="retiroB" id="no-retiroB" value="NO" onclick="uncheckSiB()">
+                                <label for="retiroBSiSimple">SI</label>
+                                <input type="radio" name="retiroB" id="retiroBSiSimple" value="SI" onclick="uncheckNoB()">
+                                <label for="retiroBNoSimple">NO</label>
+                                <input type="radio" name="retiroB" id="retiroBNoSimple" value="NO" onclick="uncheckSiB()">
                             </div>
                             <div>
-                                <label for="output-data-8-1">DESCARTES REALIZADOS: </label>
-                                <textarea name="" id="output-dataB-8-1" cols="30" rows="10" readonly></textarea>
+                                <label for="inputB_descarteB">DESCARTES REALIZADOS: </label>
+                                <textarea name="" id="inputB_descarteB" cols="30" rows="10" readonly></textarea>
                             </div>
-                            <!-- <fieldset>
-                                <legend>Generator</legend>
-                                <div>
-                                    <textarea class="output-area-resumen-text" id="output-area-resumen"></textarea>
-                                    <button onclick="generateOutputResumen()">Generate Resumen</button>
-                                    <button onclick="copyToClipboard('output-area-resumen')">Copy Resumen</button>
-                                </div>
-                                <div>
-                                    <textarea class="output-area-text" id="output-area"></textarea>
-                                    <button onclick="generateOutput()">Generate Description</button>
-                                    <button onclick="copyToClipboard('output-area')">Copy Description</button>
-                                </div>
-                            </fieldset> -->
                         </fieldset>
                     </div>
                 </fieldset>
@@ -213,20 +165,24 @@
             </div>
             <fieldset class="general-generator">
                 <legend>GENERADOR</legend>
-                <div>
-                    <textarea class="output-area-resumen-text" id="output-area-resumen" cols="30" rows="10" readonly></textarea>
-                    <button onclick="generateOutputResumen()">Generate Resumen</button>
-                    <button onclick="copyToClipboard('output-area-resumen')">Copy Resumen</button>
-                </div>
-                <div>
-                    <textarea class="output-area-text" id="output-area" cols="30" rows="10" readonly></textarea>
-                    <button onclick="generateOutput()">Generate Description</button>
-                    <button onclick="copyToClipboard('output-area')">Copy Description</button>
-                </div>
+                    <div>
+                        <button id="nuevo">NUEVO</button>
+                        <button id="resumenSimple">COPIAR RESUMEN</button>
+                        <button id="descripcionTT">COPIAR TT</button>
+                    </div>
+                    <div>
+                        <legend>Resumen</legend>
+                        <textarea id="inputText_resumenSimple" cols="30" rows="10" readonly></textarea>
+                    </div>
+                    <div class="largo">
+                        <legend>Descripcion</legend>
+                        <textarea class="largo" id="inputText_descripcionSimple" cols="30" rows="10" readonly></textarea>    
+                    </div>
             </fieldset>
         </fieldset>
     </div>
-    <script src="script-apertura-simple.js"></script>
+<script src="JS/generator.js"></script>
+<script src="JS/App.js"></script>
 </body>
 
 </html>

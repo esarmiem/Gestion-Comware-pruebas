@@ -12,47 +12,45 @@
         <legend>RETIRO DE EMPALME (Sin pedido de retiro)</legend>
         <fieldset>
             <legend>INGRESE DATOS</legend>
-            <div>
+            <section>
                 <div>
-                    <!-- <label for="input-data">Ingresa datos</label> -->
                     <textarea class="input-data-text" id="inputText" cols="30" rows="9"></textarea>    
                 </div>
                 <fieldset class="ingresa-texto">
                     <div>
-                        <label for="retiro_anillo">ANILLO</label>
-                        <input id="retiro_anillo" type="text" disabled/>
-                        <label for="retiro_ip1">IP SWITCH</label>
-                        <input onKeypress="solonume()" id="retiro_ip1" onpaste="setTimeout(mensaje_retiro1,50);" type="text" disabled/>
-                        <input onKeypress="solonume()" id="retiro_ip2" onpaste="setTimeout(mensaje_retiro1,50);" type="text" disabled/>
-                        <input onKeypress="solonume()" id="retiro_ip3" onpaste="setTimeout(mensaje_retiro1,50);" type="text" disabled/>
-                        <input onKeypress="solonume()" id="retiro_ip4" onpaste="setTimeout(mensaje_retiro1,50);" type="text" disabled/>
+                        <section>
+                            <label for="retiro_anillo">ANILLO</label>
+                            <input id="retiro_anillo" type="text" />
+                            <label for="retiro_ip">IP SWITCH</label>
+                            <input id="retiro_ip" type="number" />
+                        </section>
                     </div>
                     <div>
                         <label for="retiro_ciudad">CIUDAD</label>
-                        <input id="retiro_ciudad" type="text" disabled/>
+                        <input id="retiro_ciudad" type="text"/>
                         <label for="retiro_identificador">IDENTIFICADOR</label>
-                        <input id="retiro_identificador" type="text" disabled/>
+                        <input id="retiro_identificador" type="text"/>
                     </div>
                     <div>
                         <label for="retiro_nombre">NOMBRE</label>
-                        <input id="retiro_nombre" type="text" disabled/>
+                        <input id="retiro_nombre" type="text"/>
                         <label for="retiro_contacto">CONTACTO</label>
-                        <input id="retiro_contacto" type="text" disabled/>
+                        <input id="retiro_contacto" type="text"/>
                     </div>
                     <div>
                         <label for="retiro_telefono">TELÉFONO</label>
-                        <input onKeypress="solonume()" id="retiro_telefono" type="text" disabled/>
+                        <input onKeypress="solonume()" id="retiro_telefono" type="text"/>
                         <label for="retiro_direccion">DIRECCIÓN</label>
-                        <input id="retiro_direccion" type="text" disabled/>
+                        <input id="retiro_direccion" type="text"/>
                     </div>
                     <div>
-                        <label for="">DISPONIBILIDAD:</label>
-                        <input type="text" name="" id="retiro_disponibilidad" disabled>
+                        <label for="retiro_disponibilidad">DISPONIBILIDAD:</label>
+                        <input type="text" name="" id="retiro_disponibilidad"/>
                     </div>
                 </fieldset>
-            </div>
+            </section>
         </fieldset>
-
+        <!--Generador de resumen y Descripcion-->
         <fieldset class="general-generator">
             <legend>GENERADOR</legend>
                 <div>
@@ -62,22 +60,15 @@
                 </div>
                 <div>
                     <h3>Resumen</h3>
-                    <textarea class="output-area-resumen-text" id="output-area-resumen" cols="30" rows="10" readonly></textarea>
+                    <textarea id="output-area-resumen" cols="20" rows="10" readonly></textarea>
                 </div>
                 <div>
                     <h3>Descripcion</h3>
-                    <textarea class="output-area-text" id="output-area-TT" cols="30" rows="10" readonly></textarea>
+                    <textarea id="output-area-TT" cols="20" rows="20" readonly></textarea>
                 </div>
-            <!-- <div class="aperturas_fijos">
-                <div class="botones_aperturas_fijos" onClick="copiar_aperturas1(4)">
-                    <div>COPIAR RESUMEN</div>
-                </div>
-                <div class="botones_aperturas_fijos" onClick="copiar_aperturas2(4)">
-                    <div>COPIAR TT</div>
-                </div>
-            </div> -->
         </fieldset>
     </fieldset>
-    <script src="JS/script-retiro-de-empalme.js"></script>
+    <script src="JS/generator.js"></script>
+    <script src="JS/App.js"></script>
 </body>
 </html>
