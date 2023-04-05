@@ -61,8 +61,8 @@
                             </div>
                             <div>
                                 <label>DISPONIBILIDAD: </label>
-                                <input type="datetime-local" name="" id="disponibilidad_AS" />
-                                <input type="datetime-local" name="" id="disponibilidad_AS2" />
+                                <input type="datetime-local" name="" id="disponibilidad_A" />
+                                <input type="datetime-local" name="" id="disponibilidad_A2" />
                             </div>
                             <div>
                                 <form>
@@ -72,17 +72,10 @@
                             </div>
                             <div>
                                 <label for="">PEDIDO DE RETIRO: </label>
-                                
-                                    
-                                    <label for="retiroASiSimple">SI</label>
-                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroASiSimple" value="SI" onclick="uncheckNo()">
-                                    <label for="retiroANoSimple">NO</label>
-                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroANoSimple" value="NO" onclick="uncheckSi()">
-                                
-                                <!-- <label for="retiroASiSimple">SI</label>
-                                <input type="radio" name="retiro" id="retiroASiSimple" class="pedidoRA" value="SI" onclick="uncheckSi()"/>
+                                <label for="retiroASiSimple">SI</label>
+                                <input type="radio" name="pedido" class="pedidoRA" id="retiroASi" value="SI" onclick="uncheckNo()">
                                 <label for="retiroANoSimple">NO</label>
-                                <input type="radio" name="retiro" id="retiroANoSimple" class="pedidoRA" value="NO" onclick="uncheckNo()"/> -->
+                                <input type="radio" name="pedido" class="pedidoRA" id="retiroANo" value="NO" onclick="uncheckSi()">
                             </div>
                             <div>
                                 <label for="input_descartesA">DESCARTES REALIZADOS: </label>
@@ -106,7 +99,6 @@
                         <div>
                             <fieldset>
                                 <legend>Ingresa Datos</legend>
-                                <!-- <label for="input-data">Ingresa datos</label> -->
                                 <textarea id="inputTextB" cols="30" rows="10"></textarea>
                             </fieldset>
                         </div>
@@ -147,9 +139,9 @@
                             <div>
                                 <label for="">PEDIDO DE RETIRO: </label>
                                 <label for="retiroBSiSimple">SI</label>
-                                <input type="radio" name="retiroB" id="retiroBSiSimple" value="SI" onclick="uncheckNoB()">
+                                <input type="radio" name="retiroB" id="retiroBSi" value="SI" onclick="uncheckNoB()">
                                 <label for="retiroBNoSimple">NO</label>
-                                <input type="radio" name="retiroB" id="retiroBNoSimple" value="NO" onclick="uncheckSiB()">
+                                <input type="radio" name="retiroB" id="retiroBNo" value="NO" onclick="uncheckSiB()">
                             </div>
                             <div>
                                 <label for="inputB_descarteB">DESCARTES REALIZADOS: </label>
@@ -172,17 +164,17 @@
                     </div>
                     <div>
                         <legend>Resumen</legend>
-                        <textarea id="inputText_resumenSimple" cols="30" rows="10" readonly></textarea>
+                        <textarea id="inputText_resumen" cols="30" rows="10" readonly></textarea>
                     </div>
                     <div class="largo">
                         <legend>Descripcion</legend>
-                        <textarea class="largo" id="inputText_descripcionSimple" cols="30" rows="10" readonly></textarea>    
+                        <textarea class="largo" id="inputText_descripcion" cols="30" rows="10" readonly></textarea>    
                     </div>
             </fieldset>
         </fieldset>
     </div>
-<script src="JS/generator.js"></script>
-<script src="JS/App.js"></script>
+<script src="JS/Generator.js"></script>
+<script src="JS/apertura-simple.js"></script>
 </body>
 
 </html>
