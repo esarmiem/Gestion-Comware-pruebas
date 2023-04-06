@@ -1,122 +1,135 @@
 /* Estilos globales */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1015%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(241%2c 245%2c 246%2c 1)'%3e%3c/rect%3e%3cpath d='M135.68708088822328 497.62863899753484L128.16341527251177 411.63274750146553 2.9314108362635523 465.9161916730675z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1173.2906768819223 187.37673080537598L1173.2906768819223 51.758676035139814 1037.6726221116862 187.376730805376z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M890.019%2c500.079C941.961%2c500.585%2c995.172%2c481.374%2c1020.557%2c436.055C1045.488%2c391.546%2c1030.913%2c338.252%2c1005.417%2c294.064C979.906%2c249.851%2c941.045%2c208.432%2c890.019%2c209.821C840.571%2c211.167%2c809.314%2c256.979%2c785.011%2c300.063C761.285%2c342.123%2c741.366%2c390.798%2c763.813%2c433.554C787.506%2c478.683%2c839.051%2c499.583%2c890.019%2c500.079' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1034.093%2c618.433C1068.496%2c620.276%2c1104.604%2c609.544%2c1122.61%2c580.172C1141.306%2c549.673%2c1138.8%2c509.829%2c1118.887%2c480.11C1100.86%2c453.206%2c1066.462%2c447.033%2c1034.093%2c448.063C1003.904%2c449.024%2c973.607%2c459.271%2c958.156%2c485.224C942.383%2c511.717%2c945.337%2c544.707%2c960.607%2c571.493C976.035%2c598.557%2c1002.985%2c616.767%2c1034.093%2c618.433' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M450.72398377694776 57.29938311974893L309.2695576133514 19.39678386340541 271.3669583570079 160.85121002700174 412.8213845206042 198.75380928334528z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M908.407%2c199.614C931.656%2c199.203%2c945.336%2c176.491%2c957.115%2c156.442C969.126%2c135.999%2c983.135%2c112.546%2c971.799%2c91.722C960.175%2c70.368%2c932.714%2c66.409%2c908.407%2c66.966C885.294%2c67.495%2c861.264%2c74.409%2c849.854%2c94.516C838.559%2c114.421%2c845.488%2c138.224%2c856.626%2c158.217C868.153%2c178.908%2c884.726%2c200.032%2c908.407%2c199.614' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1015'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-size: 170%;
-  }
-  /* Estilos globales */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1325%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(241%2c 245%2c 246%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c319.275C66.821%2c324.493%2c136.761%2c336.132%2c196.541%2c305.824C258.758%2c274.28%2c309.182%2c217.458%2c331.306%2c151.302C352.585%2c87.672%2c317.648%2c21.857%2c313.908%2c-45.133C309.701%2c-120.476%2c343.889%2c-200.491%2c307.959%2c-266.848C270.02%2c-336.916%2c197.81%2c-393.65%2c118.966%2c-405.161C41.928%2c-416.408%2c-23.683%2c-355.459%2c-95.656%2c-325.773C-158.988%2c-299.651%2c-239.765%2c-297.814%2c-278.421%2c-241.254C-316.798%2c-185.102%2c-291.716%2c-109.659%2c-289.826%2c-41.671C-288.26%2c14.651%2c-287.024%2c69.388%2c-268.31%2c122.533C-248.116%2c179.88%2c-226.785%2c240.64%2c-177.755%2c276.592C-127.598%2c313.37%2c-62.007%2c314.432%2c0%2c319.275' fill='%23e2eaed'%3e%3c/path%3e%3cpath d='M1440 1174.283C1553.11 1167.0520000000001 1610.147 1034.394 1705.234 972.712 1799.745 911.403 1955.741 919.111 1995.723 813.79 2036.326 706.832 1928.784 602.048 1886.2640000000001 495.837 1854.305 416.005 1824.404 339.7 1777.165 267.845 1723.0729999999999 185.56599999999997 1676.859 94.267 1590.8029999999999 46.412000000000035 1494.27-7.2690000000000055 1380.184-33.912000000000035 1271.6779999999999-13.253000000000043 1158.22 8.347999999999956 1035.473 60.50599999999997 981.226 162.47000000000003 927.716 263.049 1005.691 382.98400000000004 1000.329 496.78499999999997 995.684 595.386 923.918 688.232 951.9970000000001 782.864 981.15 881.115 1072.093 943.954 1152.039 1008.077 1240.28 1078.854 1327.111 1181.5 1440 1174.283' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1325'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* Estilos globales */
 
-  /* Aqui empiezan los estilos de el header */
-  header {
-    background: #2090e4;
-    background: linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);
-    background: -webkit-linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);
-    background: -moz-linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);/* Cambiar el color de fondo a azul */
-    position: fixed;  /* Hacer que el encabezado sea fijo */
-    top: 0;  /* Establecer la posición superior en 0 */
-    left: 0; /* Establecer la posición izquierda en 0 */
-    width: 100%; /* Establecer la anchura al 100% */
-    z-index: 999; /* Asegurar que el encabezado aparezca por encima de cualquier otro contenido */
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 70px;
-  }
-  
-  .logo img {
-    width: 120px;
-    max-height: 60px;
-  }
-  
-  .titulo h1 {
-    color: #fff;
-    margin: 0;
-    font-size: 1.8rem;
-    /*font-family: 'Nerko One', cursive;*/
-  }
+/* Aqui empiezan los estilos de el header */
+header {
+  background: #2090e4;
+  background: linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);
+  background: -webkit-linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);
+  background: -moz-linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);/* Cambiar el color de fondo a azul */
+  position: fixed;  /* Hacer que el encabezado sea fijo */
+  top: 0;  /* Establecer la posición superior en 0 */
+  left: 0; /* Establecer la posición izquierda en 0 */
+  width: 100%; /* Establecer la anchura al 100% */
+  z-index: 999; /* Asegurar que el encabezado aparezca por encima de cualquier otro contenido */
+}
 
-  h1 {
-    animation: fadein 2s;
-  }
-  
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .login svg {
-    color: #fff;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding-top: 9px;
-  }
-  .logo-ingresa {
-    color: #fff;
-    font-size: small;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .logo-ingresa :hover {
-    color: #fff;
-  }
-  /* Hasta aqui llegan los estilos de el header */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+}
 
-  /* Aqui empiezan los estilos de la segunda Navbar */
-  .nav2 {
-    margin-top: 20px;
-    padding-top: 50px;
-    margin-bottom: 0px;
+.logo img {
+  width: 120px;
+  max-height: 60px;
+}
+
+.titulo h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.8rem;
+  /*font-family: 'Nerko One', cursive;*/
+}
+
+h1 {
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  .nav2 {
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
+  to {
+    opacity: 1;
   }
-  
-  .nav2 ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav2 li {
-    margin: 0 10px;
-    /*  
-    font-family: 'Nerko One', cursive;
-    font-size: larger; */
-  }
-  
-  .nav2 a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    border-bottom: 2px solid transparent;
-  }
-  
-  .nav2 a:hover {
-    color: #000;
-    font-weight: bold;
-    border-bottom: 2px solid #000;
-  }
-  /* Aqui terminan los estilos de la segunda Navbar */
+}
+
+.login svg {
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-top: 9px;
+}
+.logo-ingresa {
+  color: #fff;
+  font-size: small;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo-ingresa :hover {
+  color: #fff;
+}
+/* Hasta aqui llegan los estilos de el header */
+
+/* Aqui empiezan los estilos de la segunda Navbar */
+.nav2 {
+  background: #2090e4;
+  background: linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);
+  background: -webkit-linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);
+  background: -moz-linear-gradient(180deg,#2090e4 0%, #5fb7e5 80%);/* Cambiar el color de fondo a azul */
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  position: fixed;
+  top: 70px; /* ajusta la posición vertical según el alto del header */
+  left: 0;
+  width: 100%;
+  z-index: 998; /* menor que el z-index del header */
+}
+.nav2 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.nav2 ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-left: 75px;
+  padding: 0;
+}
+
+.nav2 li {
+  margin: 0 10px;
+  /*  
+  font-family: 'Nerko One', cursive;
+  font-size: larger; */
+}
+
+.nav2 a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #F1F5F6;
+  border-bottom: 2px solid transparent;
+}
+
+.nav2 a:hover {
+  color: #F1F5F6;
+  font-weight: bold;
+  border-bottom: 2px solid #F1F5F6;
+  padding-bottom: 3px;
+}
+/* Aqui terminan los estilos de la segunda Navbar */
 
   /* Aqui empiezan los estilos del login */
   .container {
@@ -125,6 +138,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
+    margin-top: 100px;
   }
   
   .title {
