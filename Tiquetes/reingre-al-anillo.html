@@ -7,72 +7,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reingreso al anillo</title>
     <link rel="stylesheet" href="CSS/style-reingreso-al-anillo.css">
+    <link rel="icon" type="image/x-icon" href="/img/FAVICONxmen.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,100;1,300&family=Nerko+One&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital@1&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 
 <body>
-    <fieldset class="parent">
-        <legend>REINGRESO AL ANILLO</legend>
-        <fieldset>
-            <legend>INGRESE DATOS</legend>
-            <section class="ingresa-texto">
-                <section>
-                    <!-- <label for="input-data">Ingresa datos</label> -->
-                    <textarea class="input-data-text" id="inputTextRein" cols="30" rows="9"></textarea>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="/img/logo-header-1.png" alt="Logo"></a>
+            </div>
+            <div class="titulo">
+                <h1>X-MEN (GESTIÓN COMWARE)</h1>
+            </div>
+            <div class="login">
+                <a href="index-login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </a>
+                <a class="logo-ingresa" href="/index-login.html">
+                    <p>Ingresa</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar -->
+    <main>
+        <!-- tipos de vista  -->
+        <section>
+            <div class="nav2">
+                <ul>
+                    <li>
+                        <a aria-current="page" href="/index-cmiatajos.html">CMI / ATAJOS</a>
+                    </li>
+                    <li>
+                        <a href="/index-notas.html">NOTAS</a>
+                    </li>
+                    <li>
+                        <a href="/index-tiquetes.html">TIQUETES</a>
+                    </li>
+                    <li>
+                        <a href="/index-esenciales.html">ESENCIALES</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- tipos de vista  -->
+    </main>
+    <section>
+        <nav class="nav3">
+            <ul>
+                <li>
+                    <a href="">Apertura Simple</a>
+                </li>
+                <li>
+                    <a href="">Apertura Doble 1 Cliente</a>
+                </li>
+                <li>
+                    <a href="">Apertura Doble 2 o Más Clientes</a>
+                </li>
+                <li>
+                    <a href="/Tiquetes/retiro-de-empalme.html">Retiro Desde Empalme</a>
+                </li>
+                <li>
+                    <a href="/Tiquetes/reingre-al-anillo.html">Reingreso Al Anillo</a>
+                </li>
+                <li>
+                    <a href="">Alarma De Potencia</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="all-tiquetes">
+        <fieldset class="parent">
+            <legend>REINGRESO AL ANILLO</legend>
+            <fieldset>
+                <legend>INGRESE DATOS</legend>
+                <section class="ingresa-texto">
+                    <section>
+                        <!-- <label for="input-data">Ingresa datos</label> -->
+                        <textarea class="input-data-text" id="inputTextRein" cols="30" rows="9"></textarea>
+                    </section>
+                    <section>
+                        <label for="rein_anillo">ANILLO</label>
+                        <input id="rein_anillo" type="text" />
+                        <label for="rein_ip">IP SWITCH</label>
+                        <input id="rein_ip" type="text" />
+                    </section>
+                    <section>
+                        <label for="rein_ciudad">CIUDAD</label>
+                        <input id="rein_ciudad" type="text" />
+                        <label for="rein_identificador">IDENTIFICADOR</label>
+                        <input id="rein_identificador" type="text" />
+                    </section>
+                    <section>
+                        <label for="rein_nombre">NOMBRE</label>
+                        <input id="rein_nombre" type="text" />
+                        <label for="rein_contacto">CONTACTO CLIENTE</label>
+                        <input id="rein_contacto" type="text" />
+                    </section>
+                    <section>
+                        <label for="rein_telefono">TELÉFONO</label>
+                        <input id="rein_telefono" type="text" />
+                        <label for="rein_direccion">DIRECCIÓN</label>
+                        <input id="rein_direccion" type="text" />
+                    </section>
+                    <section>
+                        <label for="">DISPONIBILIDAD</label>
+                        <input type="datetime-local" name="" id="disponibilidad_ARein" />
+                        <input type="datetime-local" name="" id="disponibilidad_A2Rein" />
+                    </section>
+                    <section class="descartes-container">
+                        <label for="rein_descartesreingreso">DESCARTES REALIZADOS</label>
+                        <p>Recuerde modificar o agregar las consideraciones de acuerdo al incidente</p>
+                        <textarea class="output_descartes" id="rein_descartesreingreso"></textarea>
+                    </section>
+                </section>
+            </fieldset>
+            <fieldset class="general-generator">
+                <legend>GENERADOR</legend>
+                <section class="button-container">
+                    <button id="nuevoRein">Nuevo</button>
+                    <button id="resumeRein">Copiar Resumen</button>
+                    <button id="descripcionRein">Copiar TT</button>
                 </section>
                 <section>
-                    <label for="rein_anillo">ANILLO</label>
-                    <input id="rein_anillo" type="text" />
-                    <label for="rein_ip">IP SWITCH</label>
-                    <input id="rein_ip" type="text" />
+                    <h3>Resumen</h3>
+                    <textarea class="output-area-resumen-text" id="input_resumenRein" cols="30" rows="10"
+                        readonly></textarea>
                 </section>
                 <section>
-                    <label for="rein_ciudad">CIUDAD</label>
-                    <input id="rein_ciudad" type="text" />
-                    <label for="rein_identificador">IDENTIFICADOR</label>
-                    <input id="rein_identificador" type="text" />
+                    <h3>Descripción</h3>
+                    <textarea class="output-area-text" id="input_descripcionRein" cols="30" rows="10"
+                        readonly></textarea>
                 </section>
-                <section>
-                    <label for="rein_nombre">NOMBRE</label>
-                    <input id="rein_nombre" type="text" />
-                    <label for="rein_contacto">CONTACTO CLIENTE</label>
-                    <input id="rein_contacto" type="text" />
-                </section>
-                <section>
-                    <label for="rein_telefono">TELÉFONO</label>
-                    <input id="rein_telefono" type="text" />
-                    <label for="rein_direccion">DIRECCIÓN</label>
-                    <input id="rein_direccion" type="text" />
-                </section>
-                <section>
-                    <label for="">DISPONIBILIDAD</label>
-                    <input type="datetime-local" name="" id="disponibilidad_ARein" />
-                    <input type="datetime-local" name="" id="disponibilidad_A2Rein" />
-                </section>
-                <section>
-                    <label for="rein_descartesreingreso">DESCARTES REALIZADOS</label>
-                    <p><strong>Recuerde modificar o agregar las consideraciones de acuerdo al incidente</strong></p>
-                    <textarea class="output_descartes" id="rein_descartesreingreso"></textarea>
-                </section>
-            </section>
+            </fieldset>
         </fieldset>
-        <fieldset class="general-generator">
-            <legend>GENERADOR</legend>
-            <section class="button-container">
-                <button id="nuevoRein">NUEVO</button>
-                <button id="resumeRein">COPIAR RESUMEN</button>
-                <button id="descripcionRein">COPIAR TT</button>
-            </section>
-            <section>
-                <h3>Resumen</h3>
-                <textarea class="output-area-resumen-text" id="input_resumenRein" cols="30" rows="10"
-                    readonly></textarea>
-            </section>
-            <section>
-                <h3>Descripcion</h3>
-                <textarea class="output-area-text" id="input_descripcionRein" cols="30" rows="10" readonly></textarea>
-            </section>
-        </fieldset>
-    </fieldset>
+    </section>
     <script src="JS/Generator.js"></script>
     <script src="JS/reingreso-anillo.js"></script>
 </body>
