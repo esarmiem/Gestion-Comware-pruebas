@@ -1,0 +1,334 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1325%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(241%2c 245%2c 246%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c319.275C66.821%2c324.493%2c136.761%2c336.132%2c196.541%2c305.824C258.758%2c274.28%2c309.182%2c217.458%2c331.306%2c151.302C352.585%2c87.672%2c317.648%2c21.857%2c313.908%2c-45.133C309.701%2c-120.476%2c343.889%2c-200.491%2c307.959%2c-266.848C270.02%2c-336.916%2c197.81%2c-393.65%2c118.966%2c-405.161C41.928%2c-416.408%2c-23.683%2c-355.459%2c-95.656%2c-325.773C-158.988%2c-299.651%2c-239.765%2c-297.814%2c-278.421%2c-241.254C-316.798%2c-185.102%2c-291.716%2c-109.659%2c-289.826%2c-41.671C-288.26%2c14.651%2c-287.024%2c69.388%2c-268.31%2c122.533C-248.116%2c179.88%2c-226.785%2c240.64%2c-177.755%2c276.592C-127.598%2c313.37%2c-62.007%2c314.432%2c0%2c319.275' fill='%23e2eaed'%3e%3c/path%3e%3cpath d='M1440 1174.283C1553.11 1167.0520000000001 1610.147 1034.394 1705.234 972.712 1799.745 911.403 1955.741 919.111 1995.723 813.79 2036.326 706.832 1928.784 602.048 1886.2640000000001 495.837 1854.305 416.005 1824.404 339.7 1777.165 267.845 1723.0729999999999 185.56599999999997 1676.859 94.267 1590.8029999999999 46.412000000000035 1494.27-7.2690000000000055 1380.184-33.912000000000035 1271.6779999999999-13.253000000000043 1158.22 8.347999999999956 1035.473 60.50599999999997 981.226 162.47000000000003 927.716 263.049 1005.691 382.98400000000004 1000.329 496.78499999999997 995.684 595.386 923.918 688.232 951.9970000000001 782.864 981.15 881.115 1072.093 943.954 1152.039 1008.077 1240.28 1078.854 1327.111 1181.5 1440 1174.283' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1325'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Estilos globales */
+
+/* Aqui empiezan los estilos de el header */
+header {
+    background: #2090e4;
+    background: linear-gradient(180deg, #2090e4 0%, #5fb7e5 80%);
+    background: -webkit-linear-gradient(180deg, #2090e4 0%, #5fb7e5 80%);
+    background: -moz-linear-gradient(180deg, #2090e4 0%, #5fb7e5 80%);
+    /* Cambiar el color de fondo a azul */
+    position: fixed;
+    /* Hacer que el encabezado sea fijo */
+    top: 0;
+    /* Establecer la posición superior en 0 */
+    left: 0;
+    /* Establecer la posición izquierda en 0 */
+    width: 100%;
+    /* Establecer la anchura al 100% */
+    z-index: 999;
+    /* Asegurar que el encabezado aparezca por encima de cualquier otro contenido */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+}
+
+.logo img {
+    width: 120px;
+    max-height: 60px;
+}
+
+.titulo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 1.8rem;
+    /*font-family: 'Nerko One', cursive;*/
+}
+
+h1 {
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.login svg {
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 9px;
+}
+
+.logo-ingresa {
+    color: #fff;
+    font-size: small;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-ingresa :hover {
+    color: #fff;
+}
+
+/* Hasta aqui llegan los estilos de el header */
+
+/* Aqui empiezan los estilos de la segunda Navbar */
+.nav2 {
+    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.nav2 ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 li {
+    margin: 0 10px;
+    /*  
+    font-family: 'Nerko One', cursive;
+    font-size: larger; */
+}
+
+.nav2 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+}
+
+.nav2 a:hover {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+/* Aqui terminan los estilos de la segunda Navbar */
+
+/* Aqui empiezan los estilos de la segunda Navbar */
+.nav3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 18px;
+    border: solid 1px #5fb7e5;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.ul-nav3 {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-nav3 li {
+    margin: 0 10px;
+}
+
+.ul-nav3 li a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.ul-nav3 li a:hover {
+    background-color: #5FB7E5;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .nav3 {
+        height: auto;
+        border: none;
+    }
+
+    .ul-nav3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-nav3 li {
+        margin: 10px 0;
+    }
+
+    .ul-nav3 li a {
+        padding: 5px;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .nav3 {
+        height: auto;
+        border: none;
+    }
+
+    .ul-nav3 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ul-nav3 li {
+        margin: 0 20px;
+    }
+
+    .ul-nav3 li a {
+        padding: 10px;
+    }
+}
+
+/* Aqui terminan los estilos de la tercera Navbar */
+
+/* Aqui empiezan los estilos del tiquete */
+.parent {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.parent>fieldset {
+    width: 100%;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+legend {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ingresa-texto {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.ingresa-texto>fieldset {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.input-data-text{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 7em;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.moduloGiga{
+    margin: 8px;
+}
+.moduloGiga>section{
+    margin: 8px;
+}
+
+.general-generator {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.general-generator>section {
+    text-align: center;
+    margin: 5px;
+}
+
+.output-area-resumen-text {
+    width: 100%;
+    height: 7em;
+    margin: 5px;
+    font-size: 13px;
+}
+.output_descartes{
+    width: 100%;
+    height: 7em;
+    margin: 5px;
+    font-size: 16px;
+}
+h3 {
+    margin-top: 10px;
+}
+
+.output-area-text {
+    /* visibility: none; */
+    width: 100%;
+    height: 25em;
+    margin: 5px;
+    font-size: 13px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: #5FB7E5;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    width: 15%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2090e4;
+}
+
+input[disabled] {
+    background-color: #eee;
+    color: #777;
+}
+/* Aqui terminan los estilos del tiquete */

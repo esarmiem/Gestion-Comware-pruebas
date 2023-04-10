@@ -123,3 +123,125 @@ DESCARTES REALIZADOS: ${this.entrada11}
 NOTA: Se debe garantizar que al cerrar el anillo los niveles de potencia queden entre los rangos establecidos`
 }
 }
+
+class DescripcionAlarmaPotencia {
+    constructor() {
+this.ap_potencia_anillo = document.getElementById('ap_potencia_anillo').value;
+this.ap_potencia_ciudad = document.getElementById('ap_potencia_ciudad').value;
+this.ap_potencia_nombrea = document.getElementById('ap_potencia_nombrea').value;
+this.ap_potencia_ipa = document.getElementById('ap_potencia_ipa').value;
+this.ap_potencia_puertoa = document.getElementById('ap_potencia_puertoa').value;
+this.ap_potencia_correoa = document.getElementById('ap_potencia_correoa').value;
+this.ap_potencia_contactoa = document.getElementById('ap_potencia_contactoa').value;
+this.ap_potencia_telefonoa = document.getElementById('ap_potencia_telefonoa').value;
+this.ap_potencia_direcciona = document.getElementById('ap_potencia_direcciona').value;
+this.ap_potencia_disponibilidada1 = document.getElementById('potencia_disponibilidada1').value;
+this.ap_potencia_disponibilidada2 = document.getElementById('potencia_disponibilidada2').value;
+this.ap_potencia_descartesa = document.getElementById('ap_potencia_descartesa').value;
+
+this.ap_potencia_nombreb = document.getElementById('apB_potencia_nombreb').value;
+this.ap_potencia_ipb = document.getElementById('apB_potencia_ipb').value;
+this.ap_potencia_puertob = document.getElementById('apB_potencia_puertob').value;
+this.ap_potencia_correob = document.getElementById('apB_potencia_correob').value;
+this.ap_potencia_contactob = document.getElementById('apB_potencia_contactob').value;
+this.ap_potencia_telefonob = document.getElementById('apB_potencia_telefonob').value;
+this.ap_potencia_direccionb = document.getElementById('apB_potencia_direccionb').value;
+this.ap_potencia_disponibilidadb1 = document.getElementById('potencia_disponibilidadb1').value;
+this.ap_potencia_disponibilidadb2 = document.getElementById('potencia_disponibilidadb2').value;
+this.ap_potencia_descartesb = document.getElementById('apB_potencia_descartesb').value;
+  
+this.modulocliente_a1 = document.querySelector(`input[name="gigaa1"]:checked`).value;
+
+}
+
+descripcionAlarmaDePotencias() {
+    return `Se presenta alarma de potencia en el anillo ${this.ap_potencia_anillo} entre los clientes ${this.ap_potencia_nombrea} por el puerto Giga ${this.ap_potencia_puertoa} contra ${this.ap_potencia_nombreb} por el puerto Giga ${this.ap_potencia_puertob}
+  
+ANILLO: ${this.ap_potencia_anillo}
+CIUDAD: ${this.ap_potencia_ciudad}
+NOMBRE CLIENTE EXTREMO A: ${this.ap_potencia_nombrea}
+IP SWITCH CLIENTE EXTREMO A: ${this.ap_potencia_ipa}
+CONTACTO CLIENTE EXTREMO A: ${this.ap_potencia_contactoa}
+CORREO CLIENTE EXTREMO A: ${this.ap_potencia_correoa}
+DIRECCION CLIENTE EXTREMO A: ${this.ap_potencia_direcciona}
+TELÉFONO CLIENTE EXTREMO A: ${this.ap_potencia_telefonoa}
+DISPONIBILIAD HORARIA CLIENTE EXTREMO A: ${this.ap_potencia_disponibilidada1} a ${this.ap_potencia_disponibilidada2}
+DESCARTES REALIZADOS CLIENTE EXTREMO A: ${this.ap_potencia_descartesa}
+    
+NOMBRE CLIENTE EXTREMO B: ${this.ap_potencia_nombreb}
+IP SWITCH CLIENTE EXTREMO B: ${this.ap_potencia_ipb}
+CONTACTO CLIENTE EXTREMO B: ${this.ap_potencia_contactob}
+CORREO CLIENTE EXTREMO B: ${this.ap_potencia_correob}
+DIRECCION CLIENTE EXTREMO B: ${this.ap_potencia_direccionb}
+TELÉFONO CLIENTE EXTREMO B: ${this.ap_potencia_telefonob}
+DISPONIBILIAD HORARIA CLIENTE EXTREMO B: ${this.ap_potencia_disponibilidadb1} a ${this.ap_potencia_disponibilidadb2}
+DESCARTES REALIZADOS CLIENTE EXTREMO B: ${this.ap_potencia_descartesb}
+    
+MÓDULO CLIENTE A GIGA 0/0/1: ${this.modulocliente_a1}
+MÓDULO CLIENTE A GIGA 0/0/2: ${this.modulocliente_a2}
+MÓDULO CLIENTE B GIGA 0/0/1: ${this.modulocliente_b1}
+MÓDULO CLIENTE B GIGA 0/0/2: ${this.modulocliente_b2}`;
+}
+
+resumenAlarmaDePotencias() {
+  return `Se presenta alarma de potencia en el anillo ${this.ap_potencia_anillo} entre los clientes ${this.ap_potencia_nombrea} por el puerto Giga ${this.ap_potencia_puertoa} contra ${this.ap_potencia_nombreb} por el puerto Giga ${this.ap_potencia_puertob}`;}
+
+}
+
+
+  
+//     constructor() {
+// this.ap_potencia_anillo = document.getElementById('ap_potencia_anillo').value;
+// this.ap_potencia_ciudad = document.getElementById('ap_potencia_ciudad').value;
+// this.ap_potencia_nombrea = document.getElementById('ap_potencia_nombrea').value;
+// this.ap_potencia_ipa = document.getElementById('ap_potencia_ipa').value;
+// this.ap_potencia_puertoa = document.getElementById('ap_potencia_puertoa').value;
+// this.ap_potencia_correoa = document.getElementById('ap_potencia_correoa').value;
+// this.ap_potencia_contactoa = document.getElementById('ap_potencia_contactoa').value;
+// this.ap_potencia_telefonoa = document.getElementById('ap_potencia_telefonoa').value;
+// this.ap_potencia_direcciona = document.getElementById('ap_potencia_direcciona').value;
+// this.ap_potencia_disponibilidada1 = document.getElementById('potencia_disponibilidada1').value;
+// this.ap_potencia_disponibilidada2 = document.getElementById('potencia_disponibilidada2').value;
+// this.ap_potencia_descartesa = document.getElementById('ap_potencia_descartesa').value;
+
+// this.ap_potencia_nombreb = document.getElementById('apB_potencia_nombreb').value;
+// this.ap_potencia_ipb = document.getElementById('apB_potencia_ipb').value;
+// this.ap_potencia_puertob = document.getElementById('apB_potencia_puertob').value;
+// this.ap_potencia_correob = document.getElementById('apB_potencia_correob').value;
+// this.ap_potencia_contactob = document.getElementById('apB_potencia_contactob').value;
+// this.ap_potencia_telefonob = document.getElementById('apB_potencia_telefonob').value;
+// this.ap_potencia_direccionb = document.getElementById('apB_potencia_direccionb').value;
+// this.ap_potencia_disponibilidadb1 = document.getElementById('potencia_disponibilidadb1').value;
+// this.ap_potencia_disponibilidadb2 = document.getElementById('potencia_disponibilidadb2').value;
+// this.ap_potencia_descartesb = document.getElementById('apB_potencia_descartesb').value;
+
+
+// const radioA1 = document.querySelector(`input[name="gigaa1"]`);
+// if(radioA1.checked){
+//   this.modulocliente_a1 = radioA1.value;
+// }else{
+//   this.modulocliente_a1 = null;
+// }
+ 
+
+//     const moduloA2 = document.querySelector(`input[name="gigaa2"]:checked`);
+//     if (moduloA2) {
+//       this.modulocliente_a2 = moduloA2.value;
+//     } else {
+//       this.modulocliente_a2 = null;
+//     }
+
+//     const moduloB1 = document.querySelector(`input[name="gigab1"]:checked`);
+//     if (moduloB1) {
+//       this.modulocliente_b1 = moduloB1.value;
+//     } else {
+//       this.modulocliente_b1 = null;
+//     }
+
+//     const moduloB2 = document.querySelector(`input[name="gigab2"]:checked`);
+//     if (moduloB2) {
+//       this.modulocliente_b2 = moduloB2.value;
+//     } else {
+//       this.modulocliente_b2 = null;
+//     }
+// }
