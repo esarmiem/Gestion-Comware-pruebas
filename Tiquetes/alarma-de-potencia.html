@@ -27,7 +27,7 @@
                             <input id="ap_potencia_ciudad" type="text" />
                         </section>
                     </fieldset>
-    
+                
                     <!-- CLIENTE EXTREMO A -->
                     <fieldset>
                         <section>
@@ -46,7 +46,7 @@
                                 <label for="ap_potencia_correoa">CORREO</label>
                                 <input id="ap_potencia_correoa" type="text" />
                                 <label for="ap_potencia_contactoa">CONTACTO</labe>
-                                <input id="ap_potencia_contactoa" type="text" />
+                                    <input id="ap_potencia_contactoa" type="text" />
                             </div>
                             <div>
                                 <label for="ap_potencia_telefonoa">TELÉFONO</label>
@@ -56,17 +56,18 @@
                             </div>
                             <div>
                                 <label for="ap_potencia_disponibilidada">DISPONIBILIDAD</label>
-                                <input type="datetime-local" name="" id="potencia_disponibilidada1" >
-                                <input type="datetime-local" name="" id="potencia_disponibilidada2" >
+                                <input type="datetime-local" name="" id="potencia_disponibilidada1">
+                                <input type="datetime-local" name="" id="potencia_disponibilidada2">
                             </div>
                             <div>
-                                <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones de acuerdo al incidente! </p>
+                                <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones de acuerdo al
+                                    incidente! </p>
                                 <textarea class="input-data-text" id="ap_potencia_descartesa"></textarea>
                             </div>
                         </section>
                     </fieldset>
                     <!-- CLIENTE EXTREMO A -->
-    
+                
                     <!-- CLIENTE EXTREMO B -->
                     <fieldset>
                         <section>
@@ -98,58 +99,71 @@
                             </div>
                             <div>
                                 <label for="apB_potencia_disponibilidadb">DISPONIBILIDAD</label>
-                                <input type="datetime-local" name="" id="potencia_disponibilidadb1" >
-                                <input type="datetime-local" name="" id="potencia_disponibilidadb2" >
+                                <input type="datetime-local" name="" id="potencia_disponibilidadb1">
+                                <input type="datetime-local" name="" id="potencia_disponibilidadb2">
                             </div>
                             <div>
                                 <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones de acuerdo
-                                        al incidente!</p>
+                                    al incidente!</p>
                                 <textarea class="input-data-text" id="apB_potencia_descartesb"></textarea>
                             </div>
                         </section>
                     </fieldset>
                     <!-- CLIENTE EXTREMO B -->
-
-                     <!-- MODULO GIGAS -->
-                <fieldset>
-                    <legend>MÓDULOS GIGAS</legend>
-                    <section class="moduloGiga">
-                        <section>
-                            <div>
-                                <label>MÓDULO CLIENTE A GIGA 0/0/1</label>
-                                <input type="radio" name="gigaa1" id="ap_potencia_clientea1a" value="sfp10k" >sfp10k
-                                <input type="radio" name="gigaa1" id="ap_potencia_clientea1b" value="sfp20k" >sfp20k
-                                <input type="radio" name="gigaa1" id="ap_potencia_clientea1c" value="sfp40k" >sfp40k
-                            </div>
-                            <div>
-                                <label>MÓDULO CLIENTE A GIGA 0/0/2</label>
-                                <input type="radio" name="gigaa2" id="ap_potencia_clientea2a" value="sfp10k">sfp10k
-                                <input type="radio" name="gigaa2" id="ap_potencia_clientea2b" value="sfp20k">sfp20k
-                                <input type="radio" name="gigaa2" id="ap_potencia_clientea2c" value="sfp40k">sfp40k
-                            </div>
-                            <div>
-                                <label>MÓDULO CLIENTE B GIGA 0/0/1</label>
-                                <input type="radio" name="gigab1" id="ap_potencia_clienteb1a" value="sfp10k">sfp10k
-                                <input type="radio" name="gigab1" id="ap_potencia_clienteb1b" value="sfp20k">sfp20k
-                                <input type="radio" name="gigab1" id="ap_potencia_clienteb1c" value="sfp40k">sfp40k
-                            </div>
-                            <div>
-                                <label>MÓDULO CLIENTE B GIGA 0/0/2</label>
-                                <input type="radio" name="gigab2" id="ap_potencia_clienteb2a" value="sfp10k">sfp10k
-                                <input type="radio" name="gigab2" id="ap_potencia_clienteb2b" value="sfp20k">sfp20k
-                                <input type="radio" name="gigab2" id="ap_potencia_clienteb2c" value="sfp40k">sfp40k
-                            </div>
+                
+                    <!-- MODULO GIGAS -->
+                    <fieldset>
+                        <legend>MÓDULOS GIGAS</legend>
+                        <section class="moduloGiga">
+                            <section>
+                                <div>
+                                    <label>MÓDULO CLIENTE A GIGA 0/0/1</label>
+                                    <input type="radio" name="gigaa1" id="ap_potencia_clientea1a" value="sfp10k"
+                                        onClick="modulocliente_a1 = 'sfp10k';">sfp10k
+                                    <input type="radio" name="gigaa1" id="ap_potencia_clientea1b" value="sfp20k"
+                                        onClick="modulocliente_a1 = 'sfp20k';">sfp20k
+                                    <input type="radio" name="gigaa1" id="ap_potencia_clientea1c" value="sfp40k"
+                                        onClick="modulocliente_a1 = 'sfp40k';">sfp40k
+                                </div>
+                                <div>
+                                    <label>MÓDULO CLIENTE A GIGA 0/0/2</label>
+                                    <input type="radio" name="gigaa2" id="ap_potencia_clientea2a" value="sfp10k"
+                                        onClick="modulocliente_a2 = 'sfp10k';">sfp10k
+                                    <input type="radio" name="gigaa2" id="ap_potencia_clientea2b" value="sfp20k"
+                                        onClick="modulocliente_a2 = 'sfp20k';">sfp20k
+                                    <input type="radio" name="gigaa2" id="ap_potencia_clientea2c" value="sfp40k"
+                                        onClick="modulocliente_a2 = 'sfp40k';">sfp40k
+                                </div>
+                                <div>
+                                    <label>MÓDULO CLIENTE B GIGA 0/0/1</label>
+                                    <input type="radio" name="gigab1" id="ap_potencia_clienteb1a" value="sfp10k"
+                                        onClick="modulocliente_b1 = 'sfp10k';">sfp10k
+                                    <input type="radio" name="gigab1" id="ap_potencia_clienteb1b" value="sfp20k"
+                                        onClick="modulocliente_b1 = 'sfp20k';">sfp20k
+                                    <input type="radio" name="gigab1" id="ap_potencia_clienteb1c" value="sfp40k"
+                                        onClick="modulocliente_b1 = 'sfp40k';">sfp40k
+                                </div>
+                                <div>
+                                    <label>MÓDULO CLIENTE B GIGA 0/0/2</label>
+                                    <input type="radio" name="gigab2" id="ap_potencia_clienteb2a" value="sfp10k"
+                                        onClick="modulocliente_b2 = 'sfp10k';">sfp10k
+                                    <input type="radio" name="gigab2" id="ap_potencia_clienteb2b" value="sfp20k"
+                                        onClick="modulocliente_b2 = 'sfp20k';">sfp20k
+                                    <input type="radio" name="gigab2" id="ap_potencia_clienteb2c" value="sfp40k"
+                                        onClick="modulocliente_b2 = 'sfp40k';">sfp40k
+                                </div>
+                            </section>
+                            <section>
+                                <p><strong>NOTA: </strong>Para el diligenciamiento del valor de los módulos (en la plantilla), a
+                                    continuación se detalla la nemotecnia que deben utilizar:</p>
+                            </section>
+                            <section>
+                                <div>&#8226; Módulo de 10 Kilómetros &#8212; <strong>sfp10k</strong></div>
+                                <div>&#8226; Módulo de 20 Kilómetros &#8212; <strong>sfp20k</strong></div>
+                                <div>&#8226; Módulo de 40 Kilómetros &#8212; <strong>sfp40k</strong></div>
+                            </section>
                         </section>
-                        <section>
-                            <p><strong>NOTA: </strong>Para el diligenciamiento del valor de los módulos (en la plantilla), a continuación se detalla la nemotecnia que deben utilizar:</p>
-                        </section>
-                        <section>
-                            <div>&#8226; Módulo de 10 Kilómetros &#8212; <strong>sfp10k</strong></div>
-                            <div>&#8226; Módulo de 20 Kilómetros &#8212; <strong>sfp20k</strong></div>
-                            <div>&#8226; Módulo de 40 Kilómetros &#8212; <strong>sfp40k</strong></div>
-                        </section>
-                    </section>
-                </fieldset>
+                    </fieldset>
                 </section>
             </fieldset>
     
@@ -177,7 +191,7 @@
             </fieldset>
         </fieldset>
     </main>
-    <script src="JS/Generator.js"></script>
+    <script src="JS/GeneradorTR.js"></script>
     <script src="JS/alarma-de-potencial.js"></script>
 </body>
 </html>

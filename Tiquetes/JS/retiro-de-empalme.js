@@ -14,16 +14,16 @@ document.getElementById("nuevoR").addEventListener("click", ()=>{
     eraserInfo.forEach(output => output.value = '');
 });
 
-// Boton Copiar Resumen
 document.getElementById("generateCopyResumen").addEventListener( "click", ()=>{
-  const resumenRetiro = new ResumenGenerator( "retiro_anillo", "", "retiro_nombre" );
-  document.getElementById("output-area-resumen").value = resumenRetiro.resumenRetiroEmpalme();
-  copyToResumen();
-})
-let copyToResumen =()=> {
+  const resumenRetiro = new SummaryGenerator( "retiro_anillo", "retiro_nombre" );
+  document.getElementById("output-area-resumen").value = resumenRetiro.resumenRetiroDesdeEmpalme();
+  copyToResumenRTE();
+  })
+let copyToResumenRTE =()=> {
   let copyText = document.getElementById("output-area-resumen");
   copyText.select();
-  document.execCommand("copy");}
+  document.execCommand("copy");
+  }
 
 //Boton Copiar TT
 document.getElementById("generateCopyTT").addEventListener("click", ()=>{

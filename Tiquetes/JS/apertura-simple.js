@@ -31,8 +31,8 @@ document.getElementById("nuevo").addEventListener("click", ()=>{
 
 // Boton Copiar Resumen
 document.getElementById("resumenSimple").addEventListener( "click", ()=>{
-  const generator = new ResumenGenerator( "input_anillo", "input_ciudad", "input_nombreA", "input_puertoA", "inputB_puertoB" );
-  document.getElementById("inputText_resumen").value = generator.generateResumen();
+  const generator = new SummaryGenerator( "input_anillo", "input_ciudad", "input_nombreA", "inputB_nombreB", "input_puertoA", "inputB_puertoB" );
+  document.getElementById("inputText_resumen").value = generator.resumenAperturaSimple();
   copyToResumen();
 })
 

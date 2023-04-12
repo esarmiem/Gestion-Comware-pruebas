@@ -16,8 +16,8 @@ document.getElementById("nuevoRein").addEventListener("click", ()=>{
 
 // Boton Copiar Resumen
 document.getElementById("resumeRein").addEventListener( "click", ()=>{
-  const resumenReingreso = new ResumenGenerator( "rein_anillo", "rein_ciudad", "rein_nombre" );
-  document.getElementById("input_resumenRein").value = resumenReingreso.resumenReingreso();
+  const resumenReingreso = new SummaryGenerator( "rein_anillo", "rein_ciudad", "rein_nombre" );
+  document.getElementById("input_resumenRein").value = resumenReingreso. resumenReingresoDelAnillo();
   copyToResumen();
 })
 let copyToResumen =()=> {
