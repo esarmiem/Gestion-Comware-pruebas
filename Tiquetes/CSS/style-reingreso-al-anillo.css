@@ -258,6 +258,10 @@ h1 {
 /* Media query para moviles */
 
 /* Aqui empiezan los estilos del tiquete */
+.transtition{
+    display: none;
+}
+
 .all-tiquetes {
     margin-top: 170px;
 }

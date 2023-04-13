@@ -17,6 +17,10 @@ body {
   background-size: 100%;
 }
 
+/*CLASE EXCLUSIVA PARA LA ROTACION DE LAS VISTAS EN TIQUETES*/
+.oculto{
+  display: none;
+}
 /* Estilos globales */
 
   /* Aqui empiezan los estilos de el header */

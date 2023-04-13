@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reingreso al anillo</title>
+    <link rel="stylesheet" href="CSS/tiquetes-inside.css">>
+    <link rel="icon" type="image/x-icon" href="/img/FAVICONxmen.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,100;1,300&family=Nerko+One&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital@1&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="/img/logo-header-1.png" alt="Logo"></a>
+            </div>
+            <div class="titulo">
+                <h1>X-MEN (GESTIÓN COMWARE)</h1>
+            </div>
+            <div class="login">
+                <a href="index-login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </a>
+                <a class="logo-ingresa" href="/index-login.html">
+                    <p>Ingresa</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar -->
+    <main>
+        <!-- tipos de vista  -->
+        <section>
+            <div class="nav2">
+                <ul>
+                    <li>
+                        <a aria-current="page" href="/index-cmiatajos.html">CMI / ATAJOS</a>
+                    </li>
+                    <li>
+                        <a href="/index-notas.html">NOTAS</a>
+                    </li>
+                    <li>
+                        <a href="tiquetes-inside.html">TIQUETES</a>
+                    </li>
+                    <li>
+                        <a href="/index-esenciales.html">ESENCIALES</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- tipos de vista  -->
+    </main>
+    <section>
+        <nav class="nav3">
+            <ul>
+                <li>
+                    <a id="apSimple">Apertura Simple</a>
+                </li>
+                <li>
+                    <a id="apDoble">Apertura Doble 1 Cliente</a>
+                </li>
+                <li>
+                    <a id="apDoble2C">Apertura Doble 2 o Más Clientes</a>
+                </li>
+                <li>
+                    <a id="retiroDE">Retiro Desde Empalme</a>
+                </li>
+                <li>
+                    <a id="reingresoAnillo" >Reingreso Al Anillo</a>
+                </li>
+                <li>
+                    <a id="alarmaPO">Alarma De Potencia</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="all-tiquetes">
+        <!--APERTURA SIMPLE-->
+        <fieldset id="apertura_simple">
+            <legend>APERTURA SIMPLE - APERTURA SIN AFECTACIÓN</legend>
+            <section class="contenedor">
+                <section>
+                    <!-- CLIENTE EXTREMO A -->
+                    <fieldset>
+                        <legend>CLIENTE EXTREMO A</legend>
+                        <div>
+                            <div>
+                                <fieldset>
+                                    <legend>Ingresa Datos</legend>
+                                    <textarea id="inputTextA" cols="30" rows="10"></textarea>
+                                </fieldset>
+                            </div>
+                            <fieldset>
+                                <div>
+                                    <label for="input_anillo">ANILLO: </label>
+                                    <input type="text" id="input_anillo" />
+                                    <label for="input_ciudad">CIUDAD: </label>
+                                    <input type="text" id="input_ciudad" />
+                                </div>
+                            </fieldset>
+                            <!-- CLIENTE EXTRMO A -->
+                            <fieldset class="clienteA">
+                                <div>
+                                    <label for="input_nombreA">NOMBRE EMPRESA: </label>
+                                    <input type="text" id="input_nombreA" />
+                                </div>
+                                <div>
+                                    <label for="input_ipA">IP SWITCH: </label>
+                                    <input type="text" id="input_ipA" />
+                                    <label for="input_puertoA">PUERTO SWITCH: </label>
+                                    <input type="text" id="input_puertoA" />
+                                </div>
+                                <div>
+                                    <label for="input_contactoA">CONTACTO</label>
+                                    <input type="text" id="input_contactoA" />
+                                    <label for="input_direccionA">DIRECCION: </label>
+                                    <input type="text" id="input_direccionA" />
+                                </div>
+                                <div>
+                                    <label for="input_telefonoA">TELEFONO: </label>
+                                    <input type="tel" id="input_telefonoA" />
+                                    <label for="input_correoA">CORREO: </label>
+                                    <input type="email" id="input_correoA" />
+                                </div>
+                                <div>
+                                    <label>DISPONIBILIDAD: </label>
+                                    <input type="datetime-local" name="" id="disponibilidad_A" />
+                                    <input type="datetime-local" name="" id="disponibilidad_A2" />
+                                </div>
+                                <div>
+                                    <form>
+                                        <label for="input_medidaA">MEDIDAS TOMADAS OTDR: </label>
+                                        <input type="text" name="browser" id="input_medidaA" />
+                                    </form>
+                                </div>
+                                <div>
+                                    <label for="">PEDIDO DE RETIRO: </label>
+                                    <label for="retiroASiSimple">SI</label>
+                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroASi" value="SI">
+                                    <label for="retiroANoSimple">NO</label>
+                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroANo" value="NO">
+                                </div>
+                                <div>
+                                    <label for="input_descartesA">DESCARTES REALIZADOS: </label>
+                                    <textarea name="" id="input_descartesA" cols="30" rows="10" readonly></textarea>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                    <!-- CLIENTE EXTREMO A -->
+                    <!--  -->
+                    <!-- CLIENTE EXTREMO B -->
+                    <fieldset>
+                        <legend>CLIENTE EXTREMO B</legend>
+                        <div>
+                            <div>
+                                <fieldset>
+                                    <legend>Ingresa Datos</legend>
+                                    <textarea id="inputTextB" cols="30" rows="10"></textarea>
+                                </fieldset>
+                            </div>
+                            <fieldset class="clienteB">
+                                <div>
+                                    <label for="inputB_nombreB">NOMBRE EMPRESA: </label>
+                                    <input type="text" id="inputB_nombreB" />
+                                </div>
+                                <div>
+                                    <label for="inputB_ipB">IP SWITCH: </label>
+                                    <input type="text" id="inputB_ipB">
+                                    <label for="inputB_puertoB">PUERTO SWITCH: </label>
+                                    <input type="text" id="inputB_puertoB" />
+                                </div>
+                                <div>
+                                    <label for="inputB_contactoB">CONTACTO</label>
+                                    <input type="text" id="inputB_contactoB" />
+                                    <label for="inputB_direccionB">DIRECCION: </label>
+                                    <input type="text" id="inputB_direccionB" />
+                                </div>
+                                <div>
+                                    <label for="inputB_telefonoB">TELEFONO: </label>
+                                    <input type="tel" id="inputB_telefonoB" />
+                                    <label for="inputB_correoB">CORREO: </label>
+                                    <input type="email" id="inputB_correoB" />
+                                </div>
+                                <div>
+                                    <label for="">DISPONIBILIDAD: </label>
+                                    <input type="datetime-local" name="" id="disponibilidad_BS">
+                                    <input type="datetime-local" name="" id="disponibilidad_BS2">
+                                </div>
+                                <div>
+                                    <form action="">
+                                        <label for="inputB_medidasB">MEDIDAS TOMADAS OTDR: </label>
+                                        <input type="text" name="browserB" id="inputB_medidasB" />
+                                    </form>
+                                </div>
+                                <div>
+                                    <label for="">PEDIDO DE RETIRO: </label>
+                                    <label for="retiroBSiSimple">SI</label>
+                                    <input type="radio" name="retiroB" id="retiroBSi" value="SI">
+                                    <label for="retiroBNoSimple">NO</label>
+                                    <input type="radio" name="retiroB" id="retiroBNo" value="NO">
+                                </div>
+                                <div>
+                                    <label for="inputB_descarteB">DESCARTES REALIZADOS: </label>
+                                    <textarea name="" id="inputB_descarteB" cols="30" rows="10" readonly></textarea>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                    <!-- CLIENTE EXTREMO B -->
+                </section>
+                <section class="general-generator">
+                    <fieldset>
+                        <legend>GENERADOR</legend>
+                        <div>
+                            <button id="nuevo">NUEVO</button>
+                            <button id="resumenSimple">COPIAR RESUMEN</button>
+                            <button id="descripcionTT">COPIAR TT</button>
+                        </div>
+                        <div>
+                            <legend>Resumen</legend>
+                            <textarea id="inputText_resumen" cols="30" rows="10" readonly></textarea>
+                        </div>
+                        <div class="largo">
+                            <legend>Descripcion</legend>
+                            <textarea class="largo" id="inputText_descripcion" cols="30" rows="10" readonly></textarea>
+                        </div>
+        
+                    </fieldset>
+                </section>
+            </section>
+        </fieldset>
+        <!--APERTURA DOBLE-->
+        <fieldset id="apertura_doble" class="oculto">
+            <legend>APERTURA DOBLE - APERTURA DIRECTA CONTRA EL NE</legend>
+            <section class="parent">
+                <fieldset>
+                    <legend>INGRESE DATOS</legend>
+                    <section>
+                        <div>
+                            <textarea class="input-data-text" id="input-dataC"></textarea>
+                        </div>
+                        <!--  -->
+                        <div>
+                            <label for="output-dataC-1-c">ANILLO: </label>
+                            <input type="text" id="output-dataC-1-c">
+                            <label for="output-dataC-2-c">IP SWITCH: </label>
+                            <input type="text" id="output-dataC-2-c">
+                        </div>
+                        <div>
+                            <label for="output-dataC-3-c">CIUDAD: </label>
+                            <input type="text" id="output-dataC-3-c">
+                            <label for="output-data-4-c">NOMBRE EMPRESA: </label>
+                            <input type="text" id="output-dataC-4-c">
+                        </div>
+                        <div>
+                            <label for="output-data-5-c">CONTACTO: </label>
+                            <input type="text" id="output-dataC-5-c">
+                            <label for="output-data-6-c">DIRECCION</label>
+                            <input type="text" id="output-dataC-6-c">
+                        </div>
+                        <div>
+                            <label for="output-data-7-c">CORREO: </label>
+                            <input type="text" id="output-dataC-7-c">
+                            <label for="output-data-8-c">TELEFONO: </label>
+                            <input type="tel" id="output-dataC-8-c">
+                        </div>
+                        <div>
+                            <label for="">DISPONIBILIDAD: </label>
+                            <input type="datetime-local" name="" id="disponibilidadC">
+                            <input type="datetime-local" name="" id="disponibilidad-2C">
+                        </div>
+                        <div>
+                            <label for="browserC">MEDIDAS TOMADAS OTDR: </label>
+                            <input type="text" name="browserC" id="output-dataC-9-c">
+                        </div>
+                        <div>
+                            <label for="">PEDIDO DE RETIRO: </label>
+                            <label for="si-retiroC">SI</label>
+                            <input type="radio" name="retiroC" id="si-retiroC" value="SI">
+                            <label for="no-retiroC">NO</label>
+                            <input type="radio" name="retiroC" id="no-retiroC" value="NO">
+                        </div>
+                        <div>
+                            <p>DESCARTES REALIZADOS: </p>
+                            <textarea class="input-data-text" name="" id="output-dataC-10-c" cols="30" rows="10"></textarea>
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset class="general-generator">
+                    <legend>GENERADOR</legend>
+                    <section>
+                        <div>
+                            <button id="nuevoAD">NUEVO</button>
+                            <button id="resumeAD">COPIAR RESUMEN</button>
+                            <button id="descripcionAD">COPIAR TT</button>
+                        </div>
+                        <div>
+                            <h3>Resumen</h3>
+                            <textarea class="output-area-resumen-text" id="output-area-resumenC" cols="30" rows="10"
+                                readonly></textarea>
+                        </div>
+                        <div>
+                            <h3>Descripcion</h3>
+                            <textarea class="output-area-text" id="output-areaC" cols="30" rows="10" readonly></textarea>
+                        </div>
+                    </section>
+                </fieldset>
+            </section>
+        </fieldset>
+        <!--APERTURA DOBLE 2 CLIENTES-->
+        <fieldset id="apertura_D2clientes" class="oculto">
+            <legend>APERTURA DOBLE - APERTURA DE DOS O MÁS SWITCHES EN EL ANILLO</legend>
+            <section class="parent">
+                <!-- CLIENTE EXTREMO A -->
+                <fieldset>
+                    <legend>INGRESE DATOS</legend>
+                    <section class="ingresa-texto">
+                        <section>
+                            <div>
+                                <textarea class="input-data-text" id="input-dataD" cols="30" rows="10"></textarea>
+                            </div>
+                            <!--  -->
+                            <fieldset>
+                                <div>
+                                    <label for="output-data-1-d">ANILLO: </label>
+                                    <input type="text" id="output-data-1-d">
+                                    <label for="output-data-2-d">CIUDAD: </label>
+                                    <input type="text" id="output-data-2-d">
+                                </div>
+                            </fieldset>
+                            <!-- CLIENTE EXTRMO A -->
+                            <fieldset>
+                                <legend>CLIENTE EXTREMO A</legend>
+                                <section>
+        
+                                    <div>
+                                        <label for="output-data-3-d">NOMBRE: </label>
+                                        <input type="text" id="output-data-3-d">
+                                        <label for="output-data-4-d">IP SWITCH: </label>
+                                        <input type="text" id="output-data-4-d">
+                                    </div>
+                                    <div>
+                                        <label for="output-data-5-d">CONTACTO: </label>
+                                        <input type="text" id="output-data-5-d">
+                                        <label for="output-data-6-d">CORREO: </label>
+                                        <input type="email" id="output-data-6-d">
+                                    </div>
+                                    <div>
+                                        <label for="output-data-7-d">TELEFONO: </label>
+                                        <input type="tel" id="output-data-7-d">
+                                        <label for="output-data-8-d">DIRECCION: </label>
+                                        <input type="text" id="output-data-8-d">
+                                    </div>
+                                    <div>
+                                        <label for="">DISPONIBILIDAD: </label>
+                                        <input type="datetime-local" name="" id="disponibilidadD">
+                                        <input type="datetime-local" name="" id="disponibilidad-2D">
+                                    </div>
+                                    <div>
+                                        <label for="">PEDIDO DE RETIRO: </label>
+                                        <label for="si-retiroD">SI</label>
+                                        <input type="radio" name="retiroD" id="si-retiroD" value="SI">
+                                        <label for="no-retiroD">NO</label>
+                                        <input type="radio" name="retiroD" id="no-retiroD" value="NO">
+                                    </div>
+                                    <div>
+                                        <p>DESCARTES REALIZADOS: </p>
+                                        <textarea class="input-data-text" name="" id="output-data-9-d" cols="30" rows="10"
+                                            readonly></textarea>
+                                    </div>
+                                </section>
+                            </fieldset>
+                        </section>
+                        <!-- CLIENTE EXTREMO A -->
+                        <!--  -->
+                        <!-- CLIENTE EXTREMO B -->
+                        <fieldset>
+                            <legend>CLIENTE EXTREMO B</legend>
+                            <div class="div2">
+                                <div>
+                                    <fieldset>
+                                        <textarea class="input-data-text" id="input-dataD-1" cols="30" rows="10"></textarea>
+                                    </fieldset>
+                                </div>
+                                <!-- CLIENTE EXTRMO A -->
+                                <fieldset>
+                                    <div>
+                                        <label for="output-data-1-1-d">NOMBRE: </label>
+                                        <input type="text" id="output-dataB-1-d">
+                                        <label for="output-data-2-1-d">IP SWITCH: </label>
+                                        <input type="text" id="output-dataB-2-d">
+                                    </div>
+                                    <div>
+                                        <label for="output-data-3-1-d">CONTACTO: </label>
+                                        <input type="text" id="output-dataB-3-d">
+                                        <label for="output-data-4-1-d">CORREO: </label>
+                                        <input type="email" id="output-dataB-4-d">
+                                    </div>
+                                    <div>
+                                        <label for="output-data-5-1-d">TELEFONO: </label>
+                                        <input type="tel" id="output-dataB-5-d">
+                                        <label for="output-data-6-1-d">DIRECCION: </label>
+                                        <input type="text" id="output-dataB-6-d">
+                                    </div>
+                                    <div>
+                                        <label for="">DISPONIBILIDAD: </label>
+                                        <input type="datetime-local" name="" id="disponibilidadD-1">
+                                        <input type="datetime-local" name="" id="disponibilidad-2D-1">
+                                    </div>
+                                    <div>
+                                        <label for="">PEDIDO DE RETIRO: </label>
+                                        <label for="si-retiroD-1">SI</label>
+                                        <input type="radio" name="retiroD-1" id="si-retiroD-1" value="SI">
+                                        <label for="no-retiroD-1">NO</label>
+                                        <input type="radio" name="retiroD-1" id="no-retiroD-1" value="NO">
+                                    </div>
+                                    <div>
+                                        <p>DESCARTES REALIZADOS: </p>
+                                        <textarea class="input-data-text" name="" id="output-dataB-7-d" cols="30" rows="10"
+                                            readonly></textarea>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </fieldset>
+                    </section>
+                </fieldset>
+                <!-- CLIENTE EXTREMO B -->
+        
+                <fieldset class="general-generator">
+                    <legend>GENERADOR</legend>
+                    <section>
+                        <div>
+                            <button id="nuevoAD2">NUEVO</button>
+                            <button id="resumeAD2">COPIAR RESUMEN</button>
+                            <button id="descripcionAD2">COPIAR TT</button>
+                        </div>
+                        <div>
+                            <h3>Resumen</h3>
+                            <textarea class="output-area-resumen-text" id="output-area-resumenD" cols="30" rows="10"
+                                readonly></textarea>
+                        </div>
+                        <div>
+                            <h3>Descripcion</h3>
+                            <textarea class="output-area-text" id="output-areaD" cols="30" rows="10" readonly></textarea>
+                        </div>
+                    </section>
+                </fieldset>
+            </section>
+        </fieldset>
+        <!--RETIRO DEL EMPALME-->
+        <fieldset id="retiro_empalme" class="oculto">
+            <legend>RETIRO DE EMPALME (Sin pedido de retiro)</legend>
+            <section class="parent">
+                <fieldset>
+                    <legend>INGRESE DATOS</legend>
+                    <div>
+                        <div>
+                            <!-- <label for="input-data">Ingresa datos</label> -->
+                            <textarea class="input-data-text" id="inputText" cols="30" rows="9"></textarea>
+                        </div>
+                        <fieldset class="ingresa-texto">
+                            <div>
+                                <label for="retiro_anillo">ANILLO</label>
+                                <input id="retiro_anillo" type="text">
+                                <label for="retiro_ip1">IP SWITCH</label>
+                                <input type="text" id="retiro_ip" />
+                            </div>
+                            <div>
+                                <label for="retiro_ciudad">CIUDAD</label>
+                                <input id="retiro_ciudad" type="text">
+                                <label for="retiro_identificador">IDENTIFICADOR</label>
+                                <input id="retiro_identificador" type="text">
+                            </div>
+                            <div>
+                                <label for="retiro_nombre">NOMBRE</label>
+                                <input id="retiro_nombre" type="text">
+                                <label for="retiro_contacto">CONTACTO</label>
+                                <input id="retiro_contacto" type="text">
+                            </div>
+                            <div>
+                                <label for="retiro_telefono">TELÉFONO</label>
+                                <input id="retiro_telefono" type="text">
+                                <label for="retiro_direccion">DIRECCIÓN</label>
+                                <input id="retiro_direccion" type="text">
+                            </div>
+                            <div>
+                                <label for="">DISPONIBILIDAD:</label>
+                                <input type="datetime-local" name="" id="disponibilidad_AR" />
+                                <input type="datetime-local" name="" id="disponibilidad_A2R" />
+                            </div>
+                        </fieldset>
+                    </div>
+                </fieldset>
+        
+                <fieldset class="general-generator">
+                    <legend>GENERADOR</legend>
+                    <div class="button-container">
+                        <button id="nuevoR">Nuevo</button>
+                        <button id="generateCopyResumen">Copiar Resumen</button>
+                        <button id="generateCopyTT">Copiar TT</button>
+                    </div>
+                    <div>
+                        <h3>Resumen</h3>
+                        <textarea class="output-area-resumen-text" id="output-area-resumen" cols="30" rows="10"
+                            readonly></textarea>
+                    </div>
+                    <div>
+                        <h3>Descripción</h3>
+                        <textarea class="output-area-text" id="output-area-TT" cols="30" rows="10" readonly></textarea>
+                    </div>
+                </fieldset>
+            </section>
+        </fieldset>
+        <!--REINGRESO DEL ANILLO-->
+        <fieldset id="reingreso_anillo" class="oculto">
+            <legend>REINGRESO AL ANILLO</legend>
+            <section class="parent">
+                <fieldset>
+                    <legend>INGRESE DATOS</legend>
+                    <section class="ingresa-texto">
+                        <section>
+                            <textarea class="input-data-text" id="inputTextRein" cols="30" rows="9"></textarea>
+                        </section>
+                        <section>
+                            <label for="rein_anillo">ANILLO</label>
+                            <input id="rein_anillo" type="text" />
+                            <label for="rein_ip">IP SWITCH</label>
+                            <input id="rein_ip" type="text" />
+                        </section>
+                        <section>
+                            <label for="rein_ciudad">CIUDAD</label>
+                            <input id="rein_ciudad" type="text" />
+                            <label for="rein_identificador">IDENTIFICADOR</label>
+                            <input id="rein_identificador" type="text" />
+                        </section>
+                        <section>
+                            <label for="rein_nombre">NOMBRE</label>
+                            <input id="rein_nombre" type="text" />
+                            <label for="rein_contacto">CONTACTO CLIENTE</label>
+                            <input id="rein_contacto" type="text" />
+                        </section>
+                        <section>
+                            <label for="rein_telefono">TELÉFONO</label>
+                            <input id="rein_telefono" type="text" />
+                            <label for="rein_direccion">DIRECCIÓN</label>
+                            <input id="rein_direccion" type="text" />
+                        </section>
+                        <section>
+                            <label for="">DISPONIBILIDAD</label>
+                            <input type="datetime-local" name="" id="disponibilidad_ARein" />
+                            <input type="datetime-local" name="" id="disponibilidad_A2Rein" />
+                        </section>
+                        <section>
+                            <label for="rein_descartesreingreso">DESCARTES REALIZADOS</label>
+                            <p><strong>Recuerde modificar o agregar las consideraciones de acuerdo al incidente</strong></p>
+                            <textarea class="output_descartes" id="rein_descartesreingreso"></textarea>
+                        </section>
+                    </section>
+                </fieldset>
+                <fieldset class="general-generator">
+                    <legend>GENERADOR</legend>
+                    <section class="button-container">
+                        <button id="nuevoRein">NUEVO</button>
+                        <button id="resumeRein">COPIAR RESUMEN</button>
+                        <button id="descripcionRein">COPIAR TT</button>
+                    </section>
+                    <section>
+                        <h3>Resumen</h3>
+                        <textarea class="output-area-resumen-text" id="input_resumenRein" cols="30" rows="10"
+                            readonly></textarea>
+                    </section>
+                    <section>
+                        <h3>Descripcion</h3>
+                        <textarea class="output-area-text" id="input_descripcionRein" cols="30" rows="10" readonly></textarea>
+                    </section>
+                </fieldset>
+            </section>
+        </fieldset>
+        <!--ALARMA DE POTENCIA-->
+        <fieldset id="alarma_potencia" class="oculto">
+            <legend>ALARMA DE POTENCIA</legend>
+            <section class="parent">
+                <fieldset>
+                    <legend>INGRESE DATOS</legend>
+                    <section class="ingresa-texto">
+                        <section>
+                            <textarea class="input-data-text" id="inputTextAp" cols="30" rows="9"></textarea>
+                        </section>
+                        <fieldset>
+                            <section>
+                                <label for="ap_potencia_anillo">ANILLO</label>
+                                <input id="ap_potencia_anillo" type="text" />
+                                <label for="ap_potencia_ciudad">CIUDAD</label>
+                                <input id="ap_potencia_ciudad" type="text" />
+                            </section>
+                        </fieldset>
+        
+                        <!-- CLIENTE EXTREMO A -->
+                        <fieldset>
+                            <section>
+                                <legend>CLIENTE EXTREMO A</legend>
+                                <div>
+                                    <label for="ap_potencia_nombrea">NOMBRE</label>
+                                    <input id="ap_potencia_nombrea" type="text" />
+                                </div>
+                                <div>
+                                    <label for="ap_potencia_ipa">IP SWITCH</label>
+                                    <input id="ap_potencia_ipa" type="text" />
+                                    <label for="ap_potencia_puertoa">PUERTO</label>
+                                    <input id="ap_potencia_puertoa" type="text" />
+                                </div>
+                                <div>
+                                    <label for="ap_potencia_correoa">CORREO</label>
+                                    <input id="ap_potencia_correoa" type="text" />
+                                    <label for="ap_potencia_contactoa">CONTACTO</labe>
+                                        <input id="ap_potencia_contactoa" type="text" />
+                                </div>
+                                <div>
+                                    <label for="ap_potencia_telefonoa">TELÉFONO</label>
+                                    <input id="ap_potencia_telefonoa" type="text" />
+                                    <label for="ap_potencia_direcciona">DIRECCIÓN</label>
+                                    <input id="ap_potencia_direcciona" type="text" />
+                                </div>
+                                <div>
+                                    <label for="ap_potencia_disponibilidada">DISPONIBILIDAD</label>
+                                    <input type="datetime-local" name="" id="potencia_disponibilidada1">
+                                    <input type="datetime-local" name="" id="potencia_disponibilidada2">
+                                </div>
+                                <div>
+                                    <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones
+                                        de acuerdo al
+                                        incidente! </p>
+                                    <textarea class="input-data-text" id="ap_potencia_descartesa"></textarea>
+                                </div>
+                            </section>
+                        </fieldset>
+                        <!-- CLIENTE EXTREMO A -->
+        
+                        <!-- CLIENTE EXTREMO B -->
+                        <fieldset>
+                            <section>
+                                <legend>CLIENTE EXTREMO B</legend>
+                                <div>
+                                    <textarea class="input-data-text" id="inputTextApB" cols="30" rows="9"></textarea>
+                                </div>
+                                <div>
+                                    <label for="apB_potencia_nombreb">NOMBRE</label>
+                                    <input id="apB_potencia_nombreb" type="text" />
+                                </div>
+                                <div>
+                                    <label for="apB_potencia_ipb">IP SWITCH</label>
+                                    <input id="apB_potencia_ipb" type="text" />
+                                    <label for="apB_potencia_puertob">PUERTO</label>
+                                    <input id="apB_potencia_puertob" type="text" />
+                                </div>
+                                <div>
+                                    <label for="apB_potencia_correob">CORREO</label>
+                                    <input id="apB_potencia_correob" type="text" />
+                                    <label for="apB_potencia_contactob">CONTACTO</label>
+                                    <input id="apB_potencia_contactob" type="text" />
+                                </div>
+                                <div>
+                                    <label for="apB_potencia_telefonob">TELÉFONO</label>
+                                    <input id="apB_potencia_telefonob" type="text" style="width:120px;" />
+                                    <label for="apB_potencia_direccionb">DIRECCIÓN</label>
+                                    <input id="apB_potencia_direccionb" type="text" />
+                                </div>
+                                <div>
+                                    <label for="apB_potencia_disponibilidadb">DISPONIBILIDAD</label>
+                                    <input type="datetime-local" name="" id="potencia_disponibilidadb1">
+                                    <input type="datetime-local" name="" id="potencia_disponibilidadb2">
+                                </div>
+                                <div>
+                                    <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones
+                                        de acuerdo
+                                        al incidente!</p>
+                                    <textarea class="input-data-text" id="apB_potencia_descartesb"></textarea>
+                                </div>
+                            </section>
+                        </fieldset>
+                        <!-- CLIENTE EXTREMO B -->
+        
+                        <!-- MODULO GIGAS -->
+                        <fieldset>
+                            <legend>MÓDULOS GIGAS</legend>
+                            <section class="moduloGiga">
+                                <section>
+                                    <div>
+                                        <label>MÓDULO CLIENTE A GIGA 0/0/1</label>
+                                        <input type="radio" name="gigaa1" id="ap_potencia_clientea1a" value="sfp10k"
+                                            onClick="modulocliente_a1 = 'sfp10k';">sfp10k
+                                        <input type="radio" name="gigaa1" id="ap_potencia_clientea1b" value="sfp20k"
+                                            onClick="modulocliente_a1 = 'sfp20k';">sfp20k
+                                        <input type="radio" name="gigaa1" id="ap_potencia_clientea1c" value="sfp40k"
+                                            onClick="modulocliente_a1 = 'sfp40k';">sfp40k
+                                    </div>
+                                    <div>
+                                        <label>MÓDULO CLIENTE A GIGA 0/0/2</label>
+                                        <input type="radio" name="gigaa2" id="ap_potencia_clientea2a" value="sfp10k"
+                                            onClick="modulocliente_a2 = 'sfp10k';">sfp10k
+                                        <input type="radio" name="gigaa2" id="ap_potencia_clientea2b" value="sfp20k"
+                                            onClick="modulocliente_a2 = 'sfp20k';">sfp20k
+                                        <input type="radio" name="gigaa2" id="ap_potencia_clientea2c" value="sfp40k"
+                                            onClick="modulocliente_a2 = 'sfp40k';">sfp40k
+                                    </div>
+                                    <div>
+                                        <label>MÓDULO CLIENTE B GIGA 0/0/1</label>
+                                        <input type="radio" name="gigab1" id="ap_potencia_clienteb1a" value="sfp10k"
+                                            onClick="modulocliente_b1 = 'sfp10k';">sfp10k
+                                        <input type="radio" name="gigab1" id="ap_potencia_clienteb1b" value="sfp20k"
+                                            onClick="modulocliente_b1 = 'sfp20k';">sfp20k
+                                        <input type="radio" name="gigab1" id="ap_potencia_clienteb1c" value="sfp40k"
+                                            onClick="modulocliente_b1 = 'sfp40k';">sfp40k
+                                    </div>
+                                    <div>
+                                        <label>MÓDULO CLIENTE B GIGA 0/0/2</label>
+                                        <input type="radio" name="gigab2" id="ap_potencia_clienteb2a" value="sfp10k"
+                                            onClick="modulocliente_b2 = 'sfp10k';">sfp10k
+                                        <input type="radio" name="gigab2" id="ap_potencia_clienteb2b" value="sfp20k"
+                                            onClick="modulocliente_b2 = 'sfp20k';">sfp20k
+                                        <input type="radio" name="gigab2" id="ap_potencia_clienteb2c" value="sfp40k"
+                                            onClick="modulocliente_b2 = 'sfp40k';">sfp40k
+                                    </div>
+                                </section>
+                                <section>
+                                    <p><strong>NOTA: </strong>Para el diligenciamiento del valor de los módulos (en la
+                                        plantilla), a
+                                        continuación se detalla la nemotecnia que deben utilizar:</p>
+                                </section>
+                                <section>
+                                    <div>&#8226; Módulo de 10 Kilómetros &#8212; <strong>sfp10k</strong></div>
+                                    <div>&#8226; Módulo de 20 Kilómetros &#8212; <strong>sfp20k</strong></div>
+                                    <div>&#8226; Módulo de 40 Kilómetros &#8212; <strong>sfp40k</strong></div>
+                                </section>
+                            </section>
+                        </fieldset>
+                    </section>
+                </fieldset>
+        
+                <!--GENERADOR-->
+                <fieldset class="general-generator">
+                    <legend>GENERADOR</legend>
+                    <section>
+                        <section>
+                            <section class="button-container">
+                                <button id="nuevoAp">NUEVO</button>
+                                <button id="resumeAp">COPIAR RESUMEN</button>
+                                <button id="descripcionAp">COPIAR TT</button>
+                            </section>
+                            <section>
+                                <h3>Resumen</h3>
+                                <textarea class="output-area-resumen-text" id="input_resumenADP" cols="30" rows="10"
+                                    readonly></textarea>
+                            </section>
+                            <section>
+                                <h3>Descripcion</h3>
+                                <textarea class="output-area-text" id="input_descripcionAP" cols="30" rows="10"
+                                    readonly></textarea>
+                            </section>
+                        </section>
+                    </section>
+                </fieldset>
+            </section>
+        </fieldset>
+    </section>
+    </main>
+    <script src="JS/GeneradorTR.js"></script>
+    <script src="JS/apertura-simple.js"></script>
+    <script src="JS/apertura-doble.js"></script>
+    <script src="JS/apertura-doble-2clientes.js"></script>
+    <script src="JS/retiro-de-empalme.js"></script>
+    <script src="JS/reingreso-anillo.js"></script>
+    <script src="JS/alarma-de-potencial.js"></script>
+    <script src="JS/App.js"></script>
+</body>
+
+</html>
