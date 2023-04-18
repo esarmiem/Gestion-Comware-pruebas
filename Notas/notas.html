@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas📝</title>
+    <link rel="stylesheet" href="notas.css">
+</head>
+<body>
+    <main>
+        <fieldset class="notaBody">
+            <legend>NOTAS</legend>
+            <!--Barra de titulos-->
+            <section id="segui_uno">
+                <fieldset>
+                    <section id="TITULOS" class="topBox">
+                    <div id="T1">
+                        <p>1. PRINCIPAL (Nombre)</p>
+                    </div>
+                    <div id="segui_T2">
+                        <p>2. SECUNDARIO (Apellido)</p>
+                    </div>
+                    <div id="segui_T3" class="trabajoEN">
+                        <p>3. TRABAJO EN..</p>
+                        <label for="chequeotipo1">Nivel 1</label>
+                        <input type="radio" id="chequeotipo1" value="tiponivel1" checked="true" onChange="segui_principal()"
+                            name="tiponiveles">
+                        <label for="chequeotipo2">Nivel 2</label>
+                        <input type="radio" id="chequeotipo2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="chequeotipo3">Ingraestructura</label>
+                        <input type="radio" id="chequeotipo3" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="chequeotipo4">Eventos</label>
+                        <input type="radio" id="chequeotipo4" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="chequeotipo5">Otro grupo</label>
+                        <input type="radio" id="chequeotipo5" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                    </div>
+                    </section>
+                </fieldset>
+
+                <fieldset>
+                    <section class="middleBox">
+                        <fieldset class="firstMiddleBox">
+                            <section id="segui_grupo1">
+                                <div>
+                                    <input id="nivel1" type="radio" value="S3GU1M13NT0_N1" checked="true"
+                                        onChange="segui ='S3GU1M13NT0_N1';segui_principal();" name="G1">
+                                    <label for="nivel">N1</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="S3GU1M13NT0_N2" onChange="segui ='S3GU1M13NT0_N2CW';segui_principal();"
+                                        name="G1">
+                                    <label for="">N2 CONWARE</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="S3GU1M13NT0_N2" onChange="segui ='S3GU1M13NT0_N2TG';segui_principal();"
+                                        name="G1">
+                                    <label for="">N2 TIGO</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="S3GU1M13NT0_LC" onChange="segui ='S3GU1M13NT0_LC';segui_principal()"
+                                        name="G1">
+                                    <label for="">LC</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="S3GU1M13NT0_MESATT" onChange="segui ='S3GU1M13NT0_MESATT';segui_principal()"
+                                        name="G1">
+                                    <label for="">MESA TT</label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="S3GU1M13NT0_3V3NT0S"
+                                        onChange="segui ='S3GU1M13NT0_3V3NT0S';segui_principal()" name="G1">
+                                    <label for="">EVENTOS</label>
+                                </div>
+                                <div id="tipousu123">
+                                    MODO NMC
+                                </div>
+                            </section>
+                        </fieldset>
+                    
+                        <!--Hasta que no se entienda la logica-->
+                        <fieldset class="secondMiddleBox">
+                            <section id="segui_grupo2">
+                                <div id="grupollamada1">
+                                    <input id="llamada1" type="radio" value="value1" checked="true"
+                                        onchange="bandareso='f';borrartextis();segui_myFunction();" name="G2">
+                                    <label for="llamada1">LLAMADA</label>
+                                </div>
+                                <div id="grupocorreo1">
+                                    <input type="radio" value="value2" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction2();">
+                                    <label for="">CORREO</label>
+                                </div>
+                                <div id="grupoestadoactual">
+                                    <input type="radio" value="value2" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction2b();">
+                                    <label for="">ESTADO ACT</label>
+                                </div>
+                                <div id="grupopermiso1">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3();">
+                                    <label for="">PERMISO</label>
+                                </div>
+                                <div id="grupoespecialista1">
+                                    <input type="radio" value="value3" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3a();">
+                                    <label for="">COM. ESPECIALISTA</label>
+                                </div>
+                                <div id="grupoapoyo1">
+                                    <input type="radio" value="apoyis333" name="G2" id="apoyis333"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3b();">
+                                    <label for="">APOYO</label>
+                                </div>
+                                <div id="grupopeservicio1">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c();">
+                                    <label for="">PE. SERVICIO</label>
+                                </div>
+                                <div id="grupodiagnostico1">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c2();">
+                                    <label for="">DIAG. BASICO</label>
+                                </div>
+                                <div id="grupodiagnostico2">
+                                    <input id="diagnosticoavanzado1" type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c2a(this.checked);">
+                                    <label for="">DIAG. AVANZADO</label>
+                                </div>
+                                <div id="grupodiagnostico11">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c2B();">
+                                    <label for="">MOTIVO ESPERA</label>
+                                </div>
+                                <div id="mesaquemas">
+                                    <input type="radio" value="value6" name="G2" id="encampo333"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3d();">
+                                    <label for="">EN CAMPO</label>
+                                </div>
+                                <div id="catamas">
+                                    <input type="radio" value="value6" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3e();">
+                                    <label for="">DE_SIMPLE_DOBLE</label>
+                                </div>
+                                <div id="norequiere1">
+                                    <input type="radio" value="value6" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3f();">
+                                    <label for="">VISITA NO REQ</label>
+                                </div>
+                                <div id="grupodesdelegado1">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c3();">
+                                    <label for="">DESDE LEGADO</label>
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1');borrartextis();segui_myFunction3c4();">
+                                    <label for="">RESOLUCIÓN</label>
+                                </div>
+                                <div id="mesa2">
+                                    <input type="radio" value="value6" name="G2" id="encampo3334"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3da();">
+                                    <label for="">G. CUADRILLAS</label>
+                                </div>
+                                <div id="mesa3">
+                                    <input type="radio" value="value6" name="G2" id="encampo3335"
+                                        onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3db();">
+                                    <label for="">G. NOC CARGUE</label>
+                                </div>
+                                <div id="mesaquemas1">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='f';cambiartextis('1');borrartextis();segui_myFunction3c4a();">
+                                    <label for="">CHAT RESOLUCIÓN</label>
+                                </div>
+                                <div id="gruporesolución2">
+                                    <input type="radio" value="value4" name="G2"
+                                        onchange="bandareso='v';cambiartextis('2') ;borrartextis();segui_myFunction3c5();">
+                                    <label for="">RESOLUCIÓN</label>
+                                </div>
+                            </section>
+                        </fieldset>
+                        <!--Hasta que no se entienda la logica-->
+                    
+                        <!--Tercera Caja-->
+                        <section id="segui_grupo3" class="thirdMiddleBox">
+                                <div id="segui_grupo3s1">
+                                    <div>
+                                        <input type="radio" value="value1" checked="true" id="entra1"
+                                            onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction4();" name="G3a">
+                                        <label for="entra1">ENTRANTE</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" value="value2" id="sale1"
+                                            onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction5();" name="G3a">
+                                        <label for="sale1">SALIENTE</label>
+                                    </div>
+                                    <p>Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147">
+                                    </p>
+                                </div>
+                    
+                                <div id="segui_grupo3s2">
+                                    <div id="aclaraciones">
+                                        <p><strong>Aclaración:</strong></p>
+                                        <p>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada
+                                            con el siguiente avance:</p>
+                                        <p><strong>(Anexar contenido)</strong></p>
+                                    </div>
+                                </div>
+                        </section>
+                    </section>
+                </fieldset>
+            
+                <section class="belowBox">
+                    <div class="inpOut">
+                    <input type="text" value="S3GU1M13NT0_N1:llamadadelcliente" class="estilito2d" id="segui_texto3" onkeydown="return false;" onChange="f1()">
+
+                    <textarea id="segui_texto1" class="estilito2e" onkeyup="segui_principal()">
+De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:
+Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
+                    </textarea>
+
+                    <textarea id="segui_texto2"></textarea>
+                </div>
+            
+                    <p id="p2"></p>
+            
+                    <!--Remplazar por botones-->
+                    <div id="botonera1">
+                        Presiona F2 para copiar - Presiona F9 para texto en blanco</div>
+                    <div id="botonera2b">
+                        <button onclick="segui_copiarAlPortapapeles('p2')" ;> Copiar </button>
+                        <button onclick="segui_limpiartext()" ;> Nuevo </button>
+                    </div>
+                </section>
+            </section>
+        </fieldset>
+        <script>
+            var tmovie1 = 12;
+            var tmovie2 = -500;
+            var timeout = 0;
+            var falsis = 'f';
+            var direccion = '1';
+
+            function cambiar_botones() {
+                if (falsis == 'f') {
+                    if (direccion = '1') {
+
+                        desaparecer();
+                    }
+                }
+                if (falsis == 'v') {
+                    if (direccion = '2') {
+                        aparecer();
+
+                    }
+                }
+
+            }
+            function funcionando() {
+                if (tmovie1 > -500) {
+                    tmovie1 = parseInt(tmovie1) - 1;
+
+                    document.getElementById("botonera2b").style.marginLeft = tmovie1 + 'px'
+                    // document.getElementById("elDiv").style.marginleft = x +'px'
+                    aparecer();
+                }
+                else {
+                    document.getElementById("botonera1").style.marginLeft = '12px';
+                    tmovie1 = 12;
+                    falsis = 'f';
+                    direccion = '1';
+                }
+            }
+            function funcionando2() {
+                document.getElementById("botonera1").style.marginLeft = '-500px'
+                if (tmovie2 < 150) {
+                    tmovie2 = parseInt(tmovie2) + 1;
+
+                    document.getElementById("botonera2b").style.marginLeft = tmovie2 + 'px'
+                    // document.getElementById("elDiv").style.marginleft = x +'px'
+                    desaparecer();
+
+                }
+                else {
+                    //document.getElementById("botonera1").style.marginLeft = '-500px'; 
+                    tmovie2 = -500;
+                    falsis = 'v';
+                    direccion = '2';
+                }
+                //alert (falsis);
+            }
+            function aparecer() {
+                timeout = setTimeout("funcionando()", 0.00521);
+
+            }
+            function desaparecer() {
+                timeout = setTimeout("funcionando2()", 0.00521);
+
+            }
+        </script>
+    </main>
+<script src="codigo_segui1.js"></script>
+</body>
+</html>

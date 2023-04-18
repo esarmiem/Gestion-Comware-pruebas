@@ -1,0 +1,58 @@
+
+.notaBody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+/*------------------------------------*/
+.topBox{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.topBox > div {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.topBox > .trabajoEN {
+    width: 60%;
+}
+.trabajoEN > input, p {
+    margin: 10px;
+}
+/*--------------------------------------*/
+.middleBox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.firstMiddleBox{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.secondMiddleBox{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.thirdMiddleBox{
+    display: flex;
+    width: 60%;
+}
+/*---------------------------------------*/
+.belowBox{
+    display: flex;
+    flex-direction: column;
+}
+.belowBox > .inpOut {
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------------*/
+textarea{
+    height: 120px;
+}
+fieldset{
+    border-radius: 5px;
+}
