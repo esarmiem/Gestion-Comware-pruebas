@@ -95,7 +95,7 @@
         <!--APERTURA SIMPLE-->
         <fieldset id="apertura_simple">
             <legend>APERTURA SIMPLE - APERTURA SIN AFECTACIÓN</legend>
-            <section class="contenedor">
+            <section class="parent">
                 <section>
                     <!-- CLIENTE EXTREMO A -->
                     <fieldset>
@@ -104,11 +104,11 @@
                             <div>
                                 <fieldset>
                                     <legend>Ingresa Datos</legend>
-                                    <textarea id="inputTextA" cols="30" rows="10"></textarea>
+                                    <textarea class="text-area-ingresa--datos" id="inputTextA" cols="30" rows="9"></textarea>
                                 </fieldset>
                             </div>
-                            <fieldset>
-                                <div>
+                            <fieldset class="fieldset-container--main">
+                                <div class="fieldset-container--city-anillo">
                                     <label for="input_anillo">ANILLO: </label>
                                     <input type="text" id="input_anillo" />
                                     <label for="input_ciudad">CIUDAD: </label>
@@ -135,9 +135,9 @@
                                 </div>
                                 <div>
                                     <label for="input_telefonoA">TELEFONO: </label>
-                                    <input type="tel" id="input_telefonoA" />
+                                    <input type="text" id="input_telefonoA" />
                                     <label for="input_correoA">CORREO: </label>
-                                    <input type="email" id="input_correoA" />
+                                    <input type="text" id="input_correoA" />
                                 </div>
                                 <div>
                                     <label>DISPONIBILIDAD: </label>
@@ -148,32 +148,30 @@
                                     <form>
                                         <label for="input_medidaA">MEDIDAS TOMADAS OTDR: </label>
                                         <input type="text" name="browser" id="input_medidaA" />
+                                        <label for="">PEDIDO DE RETIRO: </label>
+                                        <label for="retiroASiSimple">SI</label>
+                                        <input type="radio" name="pedido" class="pedidoRA" id="retiroASi" value="SI">
+                                        <label for="retiroANoSimple">NO</label>
+                                        <input type="radio" name="pedido" class="pedidoRA" id="retiroANo" value="NO">
                                     </form>
                                 </div>
                                 <div>
-                                    <label for="">PEDIDO DE RETIRO: </label>
-                                    <label for="retiroASiSimple">SI</label>
-                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroASi" value="SI">
-                                    <label for="retiroANoSimple">NO</label>
-                                    <input type="radio" name="pedido" class="pedidoRA" id="retiroANo" value="NO">
-                                </div>
-                                <div>
                                     <label for="input_descartesA">DESCARTES REALIZADOS: </label>
-                                    <textarea name="" id="input_descartesA" cols="30" rows="10" readonly></textarea>
+                                    <textarea class="output-descartes" id="input_descartesA" cols="30" rows="8"></textarea>
                                 </div>
                             </fieldset>
                         </div>
                     </fieldset>
                     <!-- CLIENTE EXTREMO A -->
-                    <!--  -->
+
                     <!-- CLIENTE EXTREMO B -->
                     <fieldset>
                         <legend>CLIENTE EXTREMO B</legend>
                         <div>
-                            <div>
+                            <div class="fieldset-container--main">
                                 <fieldset>
                                     <legend>Ingresa Datos</legend>
-                                    <textarea id="inputTextB" cols="30" rows="10"></textarea>
+                                    <textarea class="text-area-ingresa--datos" id="inputTextB" cols="30" rows="9"></textarea>
                                 </fieldset>
                             </div>
                             <fieldset class="clienteB">
@@ -195,9 +193,9 @@
                                 </div>
                                 <div>
                                     <label for="inputB_telefonoB">TELEFONO: </label>
-                                    <input type="tel" id="inputB_telefonoB" />
+                                    <input type="text" id="inputB_telefonoB" />
                                     <label for="inputB_correoB">CORREO: </label>
-                                    <input type="email" id="inputB_correoB" />
+                                    <input type="text" id="inputB_correoB" />
                                 </div>
                                 <div>
                                     <label for="">DISPONIBILIDAD: </label>
@@ -208,18 +206,16 @@
                                     <form action="">
                                         <label for="inputB_medidasB">MEDIDAS TOMADAS OTDR: </label>
                                         <input type="text" name="browserB" id="inputB_medidasB" />
+                                        <label for="">PEDIDO DE RETIRO: </label>
+                                        <label for="retiroBSiSimple">SI</label>
+                                        <input type="radio" name="retiroB" id="retiroBSi" value="SI">
+                                        <label for="retiroBNoSimple">NO</label>
+                                        <input type="radio" name="retiroB" id="retiroBNo" value="NO">
                                     </form>
                                 </div>
                                 <div>
-                                    <label for="">PEDIDO DE RETIRO: </label>
-                                    <label for="retiroBSiSimple">SI</label>
-                                    <input type="radio" name="retiroB" id="retiroBSi" value="SI">
-                                    <label for="retiroBNoSimple">NO</label>
-                                    <input type="radio" name="retiroB" id="retiroBNo" value="NO">
-                                </div>
-                                <div>
                                     <label for="inputB_descarteB">DESCARTES REALIZADOS: </label>
-                                    <textarea name="" id="inputB_descarteB" cols="30" rows="10" readonly></textarea>
+                                    <textarea name="" id="inputB_descarteB" cols="30" rows="8"></textarea>
                                 </div>
                             </fieldset>
                         </div>
@@ -229,20 +225,19 @@
                 <section class="general-generator">
                     <fieldset>
                         <legend>GENERADOR</legend>
-                        <div>
-                            <button id="nuevo">NUEVO</button>
-                            <button id="resumenSimple">COPIAR RESUMEN</button>
-                            <button id="descripcionTT">COPIAR TT</button>
+                        <div class="button-container">
+                            <button id="nuevo">Nuevo</button>
+                            <button id="resumenSimple">Copiar Resumen</button>
+                            <button id="descripcionTT">Copiar TT</button>
                         </div>
                         <div>
-                            <legend>Resumen</legend>
-                            <textarea id="inputText_resumen" cols="30" rows="10" readonly></textarea>
+                            <h3>Resumen</h3>
+                            <textarea class="output-area-resumen-text" id="inputText_resumen" cols="30" rows="10" readonly></textarea>
                         </div>
                         <div class="largo">
-                            <legend>Descripcion</legend>
-                            <textarea class="largo" id="inputText_descripcion" cols="30" rows="10" readonly></textarea>
+                            <h3 class="description-title-h3">Descripción</h3>
+                            <textarea class="output-description--simple" class="output-area-text" id="inputText_descripcion" cols="30" rows="10" readonly></textarea>
                         </div>
-        
                     </fieldset>
                 </section>
             </section>
@@ -255,9 +250,8 @@
                     <legend>INGRESE DATOS</legend>
                     <section>
                         <div>
-                            <textarea class="input-data-text" id="input-dataC"></textarea>
+                            <textarea class="input-data-text" id="input-dataC" cols="30" rows="9"></textarea>
                         </div>
-                        <!--  -->
                         <div>
                             <label for="output-dataC-1-c">ANILLO: </label>
                             <input type="text" id="output-dataC-1-c">
@@ -280,7 +274,7 @@
                             <label for="output-data-7-c">CORREO: </label>
                             <input type="text" id="output-dataC-7-c">
                             <label for="output-data-8-c">TELEFONO: </label>
-                            <input type="tel" id="output-dataC-8-c">
+                            <input type="text" id="output-dataC-8-c">
                         </div>
                         <div>
                             <label for="">DISPONIBILIDAD: </label>
@@ -290,8 +284,6 @@
                         <div>
                             <label for="browserC">MEDIDAS TOMADAS OTDR: </label>
                             <input type="text" name="browserC" id="output-dataC-9-c">
-                        </div>
-                        <div>
                             <label for="">PEDIDO DE RETIRO: </label>
                             <label for="si-retiroC">SI</label>
                             <input type="radio" name="retiroC" id="si-retiroC" value="SI">
@@ -300,17 +292,17 @@
                         </div>
                         <div>
                             <p>DESCARTES REALIZADOS: </p>
-                            <textarea class="input-data-text" name="" id="output-dataC-10-c" cols="30" rows="10"></textarea>
+                            <textarea class="input-data-text" name="" id="output-dataC-10-c" cols="30" rows="8"></textarea>
                         </div>
                     </section>
                 </fieldset>
                 <fieldset class="general-generator">
                     <legend>GENERADOR</legend>
                     <section>
-                        <div>
-                            <button id="nuevoAD">NUEVO</button>
-                            <button id="resumeAD">COPIAR RESUMEN</button>
-                            <button id="descripcionAD">COPIAR TT</button>
+                        <div class="button-container">
+                            <button id="nuevoAD">Nuevo</button>
+                            <button id="resumeAD">Copiar Resumen</button>
+                            <button id="descripcionAD">Copiar TT</button>
                         </div>
                         <div>
                             <h3>Resumen</h3>
@@ -318,8 +310,8 @@
                                 readonly></textarea>
                         </div>
                         <div>
-                            <h3>Descripcion</h3>
-                            <textarea class="output-area-text" id="output-areaC" cols="30" rows="10" readonly></textarea>
+                            <h3 class="description-title-h3">Descripción</h3>
+                            <textarea class="output-description--ne" class="output-area-text" id="output-areaC" cols="30" rows="10" readonly></textarea>
                         </div>
                     </section>
                 </fieldset>
@@ -335,11 +327,10 @@
                     <section class="ingresa-texto">
                         <section>
                             <div>
-                                <textarea class="input-data-text" id="input-dataD" cols="30" rows="10"></textarea>
+                                <textarea class="input-data-text" id="input-dataD" cols="30" rows="9"></textarea>
                             </div>
-                            <!--  -->
                             <fieldset>
-                                <div>
+                                <div class="fieldset-container--city-anillo">
                                     <label for="output-data-1-d">ANILLO: </label>
                                     <input type="text" id="output-data-1-d">
                                     <label for="output-data-2-d">CIUDAD: </label>
@@ -350,7 +341,6 @@
                             <fieldset>
                                 <legend>CLIENTE EXTREMO A</legend>
                                 <section>
-        
                                     <div>
                                         <label for="output-data-3-d">NOMBRE: </label>
                                         <input type="text" id="output-data-3-d">
@@ -361,11 +351,11 @@
                                         <label for="output-data-5-d">CONTACTO: </label>
                                         <input type="text" id="output-data-5-d">
                                         <label for="output-data-6-d">CORREO: </label>
-                                        <input type="email" id="output-data-6-d">
+                                        <input type="text" id="output-data-6-d">
                                     </div>
                                     <div>
                                         <label for="output-data-7-d">TELEFONO: </label>
-                                        <input type="tel" id="output-data-7-d">
+                                        <input type="text" id="output-data-7-d">
                                         <label for="output-data-8-d">DIRECCION: </label>
                                         <input type="text" id="output-data-8-d">
                                     </div>
@@ -383,24 +373,21 @@
                                     </div>
                                     <div>
                                         <p>DESCARTES REALIZADOS: </p>
-                                        <textarea class="input-data-text" name="" id="output-data-9-d" cols="30" rows="10"
-                                            readonly></textarea>
+                                        <textarea class="input-data-text" name="" id="output-data-9-d" cols="30" rows="8"></textarea>
                                     </div>
                                 </section>
                             </fieldset>
                         </section>
                         <!-- CLIENTE EXTREMO A -->
-                        <!--  -->
                         <!-- CLIENTE EXTREMO B -->
                         <fieldset>
                             <legend>CLIENTE EXTREMO B</legend>
                             <div class="div2">
-                                <div>
+                                <div class="ingresa-doble2--container">
                                     <fieldset>
-                                        <textarea class="input-data-text" id="input-dataD-1" cols="30" rows="10"></textarea>
+                                        <textarea class="input-data-text" id="input-dataD-1" cols="30" rows="9"></textarea>
                                     </fieldset>
                                 </div>
-                                <!-- CLIENTE EXTRMO A -->
                                 <fieldset>
                                     <div>
                                         <label for="output-data-1-1-d">NOMBRE: </label>
@@ -412,11 +399,11 @@
                                         <label for="output-data-3-1-d">CONTACTO: </label>
                                         <input type="text" id="output-dataB-3-d">
                                         <label for="output-data-4-1-d">CORREO: </label>
-                                        <input type="email" id="output-dataB-4-d">
+                                        <input type="text" id="output-dataB-4-d">
                                     </div>
                                     <div>
                                         <label for="output-data-5-1-d">TELEFONO: </label>
-                                        <input type="tel" id="output-dataB-5-d">
+                                        <input type="text" id="output-dataB-5-d">
                                         <label for="output-data-6-1-d">DIRECCION: </label>
                                         <input type="text" id="output-dataB-6-d">
                                     </div>
@@ -434,8 +421,7 @@
                                     </div>
                                     <div>
                                         <p>DESCARTES REALIZADOS: </p>
-                                        <textarea class="input-data-text" name="" id="output-dataB-7-d" cols="30" rows="10"
-                                            readonly></textarea>
+                                        <textarea class="input-data-text" name="" id="output-dataB-7-d" cols="30" rows="8"></textarea>
                                     </div>
                                 </fieldset>
                             </div>
@@ -447,10 +433,10 @@
                 <fieldset class="general-generator">
                     <legend>GENERADOR</legend>
                     <section>
-                        <div>
-                            <button id="nuevoAD2">NUEVO</button>
-                            <button id="resumeAD2">COPIAR RESUMEN</button>
-                            <button id="descripcionAD2">COPIAR TT</button>
+                        <div class="button-container">
+                            <button id="nuevoAD2">Nuevo</button>
+                            <button id="resumeAD2">Copiar Resumen</button>
+                            <button id="descripcionAD2">Copiar TT</button>
                         </div>
                         <div>
                             <h3>Resumen</h3>
@@ -458,15 +444,15 @@
                                 readonly></textarea>
                         </div>
                         <div>
-                            <h3>Descripcion</h3>
-                            <textarea class="output-area-text" id="output-areaD" cols="30" rows="10" readonly></textarea>
+                            <h3 class="description-title-h3">Descripción</h3>
+                            <textarea class="output-description--simple" class="output-area-text" id="output-areaD" cols="30" rows="10" readonly></textarea>
                         </div>
                     </section>
                 </fieldset>
             </section>
         </fieldset>
         <!--RETIRO DEL EMPALME-->
-        <fieldset id="retiro-empalme" class="oculto">
+        <fieldset id="retiro_empalme" class="oculto">
             <legend>RETIRO DE EMPALME (Sin pedido de retiro)</legend>
             <section class="parent">
                 <fieldset>
@@ -570,17 +556,17 @@
                         </section>
                         <section>
                             <label for="rein_descartesreingreso">DESCARTES REALIZADOS</label>
-                            <p><strong>Recuerde modificar o agregar las consideraciones de acuerdo al incidente</strong></p>
-                            <textarea class="output_descartes" id="rein_descartesreingreso"></textarea>
+                            <p class="text-anillo">Recuerde modificar o agregar las consideraciones de acuerdo al incidente</p>
+                            <textarea class="output-descartes--anillo" class="output_descartes" id="rein_descartesreingreso" cols="30" rows="8"></textarea>
                         </section>
                     </section>
                 </fieldset>
                 <fieldset class="general-generator">
                     <legend>GENERADOR</legend>
                     <section class="button-container">
-                        <button id="nuevoRein">NUEVO</button>
-                        <button id="resumeRein">COPIAR RESUMEN</button>
-                        <button id="descripcionRein">COPIAR TT</button>
+                        <button id="nuevoRein">Nuevo</button>
+                        <button id="resumeRein">Copiar Resumen</button>
+                        <button id="descripcionRein">Copiar TT</button>
                     </section>
                     <section>
                         <h3>Resumen</h3>
@@ -588,8 +574,8 @@
                             readonly></textarea>
                     </section>
                     <section>
-                        <h3>Descripcion</h3>
-                        <textarea class="output-area-text" id="input_descripcionRein" cols="30" rows="10" readonly></textarea>
+                        <h3 class="description-title-h3">Descripción</h3>
+                        <textarea class="output-description--anillo" class="output-area-text" id="input_descripcionRein" cols="30" rows="10" readonly></textarea>
                     </section>
                 </fieldset>
             </section>
@@ -605,18 +591,17 @@
                             <textarea class="input-data-text" id="inputTextAp" cols="30" rows="9"></textarea>
                         </section>
                         <fieldset>
-                            <section>
+                            <section class="fieldset-container--city-anillo">
                                 <label for="ap_potencia_anillo">ANILLO</label>
                                 <input id="ap_potencia_anillo" type="text" />
                                 <label for="ap_potencia_ciudad">CIUDAD</label>
                                 <input id="ap_potencia_ciudad" type="text" />
                             </section>
                         </fieldset>
-        
                         <!-- CLIENTE EXTREMO A -->
-                        <fieldset>
+                        <fieldset class="container-extremo-a-potencia">
                             <section>
-                                <legend>CLIENTE EXTREMO A</legend>
+                                <legend class="legend-title--potencia">CLIENTE EXTREMO A</legend>
                                 <div>
                                     <label for="ap_potencia_nombrea">NOMBRE</label>
                                     <input id="ap_potencia_nombrea" type="text" />
@@ -645,10 +630,10 @@
                                     <input type="datetime-local" name="" id="potencia_disponibilidada2">
                                 </div>
                                 <div>
-                                    <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones
+                                    <p><b>DESCARTES REALIZADOS</b> ¡Recuerde modificar o agregar las consideraciones
                                         de acuerdo al
                                         incidente! </p>
-                                    <textarea class="input-data-text" id="ap_potencia_descartesa"></textarea>
+                                    <textarea class="output-descartes--potencia" class="input-data-text" id="ap_potencia_descartesa"></textarea>
                                 </div>
                             </section>
                         </fieldset>
@@ -689,10 +674,10 @@
                                     <input type="datetime-local" name="" id="potencia_disponibilidadb2">
                                 </div>
                                 <div>
-                                    <p><strong>DESCARTES REALIZADOS</strong> ¡Recuerde modificar o agregar las consideraciones
+                                    <p><b>DESCARTES REALIZADOS</b> ¡Recuerde modificar o agregar las consideraciones
                                         de acuerdo
                                         al incidente!</p>
-                                    <textarea class="input-data-text" id="apB_potencia_descartesb"></textarea>
+                                    <textarea class="output-descartes--potencia" class="input-data-text" id="apB_potencia_descartesb"></textarea>
                                 </div>
                             </section>
                         </fieldset>
@@ -741,14 +726,14 @@
                                     </div>
                                 </section>
                                 <section>
-                                    <p><strong>NOTA: </strong>Para el diligenciamiento del valor de los módulos (en la
+                                    <p><b>NOTA: </b>Para el diligenciamiento del valor de los módulos (en la
                                         plantilla), a
                                         continuación se detalla la nemotecnia que deben utilizar:</p>
                                 </section>
                                 <section>
-                                    <div>&#8226; Módulo de 10 Kilómetros &#8212; <strong>sfp10k</strong></div>
-                                    <div>&#8226; Módulo de 20 Kilómetros &#8212; <strong>sfp20k</strong></div>
-                                    <div>&#8226; Módulo de 40 Kilómetros &#8212; <strong>sfp40k</strong></div>
+                                    <div>&#8226; Módulo de 10 Kilómetros &#8212; <b>sfp10k</b></div>
+                                    <div>&#8226; Módulo de 20 Kilómetros &#8212; <b>sfp20k</b></div>
+                                    <div>&#8226; Módulo de 40 Kilómetros &#8212; <b>sfp40k</b></div>
                                 </section>
                             </section>
                         </fieldset>
@@ -761,18 +746,18 @@
                     <section>
                         <section>
                             <section class="button-container">
-                                <button id="nuevoAp">NUEVO</button>
-                                <button id="resumeAp">COPIAR RESUMEN</button>
-                                <button id="descripcionAp">COPIAR TT</button>
+                                <button id="nuevoAp">Nuevo</button>
+                                <button id="resumeAp">Copiar Resumen</button>
+                                <button id="descripcionAp">Copiar TT</button>
                             </section>
                             <section>
                                 <h3>Resumen</h3>
-                                <textarea class="output-area-resumen-text" id="input_resumenADP" cols="30" rows="10"
+                                <textarea class="ouput-resumen--potencia" class="output-area-resumen-text" id="input_resumenADP" cols="30" rows="10"
                                     readonly></textarea>
                             </section>
                             <section>
                                 <h3>Descripcion</h3>
-                                <textarea class="output-area-text" id="input_descripcionAP" cols="30" rows="10"
+                                <textarea class="output-description--potencia" class="output-area-text" id="input_descripcionAP" cols="30" rows="10"
                                     readonly></textarea>
                             </section>
                         </section>
