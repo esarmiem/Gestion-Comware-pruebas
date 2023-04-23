@@ -24,17 +24,17 @@
                     </div>
                     <div id="segui_T3" class="trabajoEN">
                         <p>3. TRABAJO EN..</p>
-                        <label for="chequeotipo1">Nivel 1</label>
-                        <input type="radio" id="chequeotipo1" value="tiponivel1" onChange="segui_principal()"
+                        <label for="titulo_1">Nivel 1</label>
+                        <input type="radio" id="titulo_1" value="tiponivel1" onChange="segui_principal()"
                             name="tiponiveles">
-                        <label for="chequeotipo2">Nivel 2</label>
-                        <input type="radio" id="chequeotipo2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                        <label for="chequeotipo3">Infraestructura</label>
-                        <input type="radio" id="chequeotipo3" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                        <label for="chequeotipo4">Eventos</label>
-                        <input type="radio" id="chequeotipo4" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                        <label for="chequeotipo5">Otro grupo</label>
-                        <input type="radio" id="chequeotipo5" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="titulo_2">Nivel 2</label>
+                        <input type="radio" id="titulo_2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="titulo_3">Ingraestructura</label>
+                        <input type="radio" id="titulo_3" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="titulo_4">Eventos</label>
+                        <input type="radio" id="titulo_4" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                        <label for="titulo_5">Otro grupo</label>
+                        <input type="radio" id="titulo_5" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
                     </div>
                     </section>
                 </fieldset>
@@ -44,7 +44,8 @@
                         <fieldset class="firstMiddleBox">
                             <section id="segui_grupo1">
                                 <div>
-                                    <input id="nivel1" type="radio" value="S3GU1M13NT0_N1" onChange="segui ='S3GU1M13NT0_N1';segui_principal();" name="G1">
+                                    <input id="nivel1" type="radio" value="S3GU1M13NT0_N1"
+                                        onChange="segui ='S3GU1M13NT0_N1';segui_principal();" name="G1">
                                     <label for="nivel">N1</label>
                                 </div>
                                 <div>
@@ -72,14 +73,19 @@
                                         onChange="segui ='S3GU1M13NT0_3V3NT0S';segui_principal()" name="G1">
                                     <label for="">EVENTOS</label>
                                 </div>
+                                <!-- <div id="tipousu123">
+                                    MODO NMC
+                                </div> -->
                             </section>
                         </fieldset>
                     
-                        <!--Hasta que no se entienda la logica-->
+                        <!--DIAGNOSTICO-->
                         <fieldset class="secondMiddleBox">
+                            <legend>DIAGNOSTICO</legend>
                             <section id="segui_grupo2">
                                 <div id="grupollamada1">
-                                    <input id="llamada1" type="radio" value="value1" onchange="bandareso='f';borrartextis();segui_myFunction();" name="G2">
+                                    <input id="llamada1" type="radio" value="value1" 
+                                        onchange="bandareso='f';borrartextis();segui_myFunction();" name="G2">
                                     <label for="llamada1">LLAMADA</label>
                                 </div>
                                 <div id="grupocorreo1">
@@ -146,6 +152,8 @@
                                     <input type="radio" value="value4" name="G2"
                                         onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c3();">
                                     <label for="">DESDE LEGADO</label>
+                                </div>
+                                <div>
                                     <input type="radio" value="value4" name="G2"
                                         onchange="bandareso='f';cambiartextis('1');borrartextis();segui_myFunction3c4();">
                                     <label for="">RESOLUCIÓN</label>
@@ -175,7 +183,7 @@
                         <!--Hasta que no se entienda la logica-->
                     
                         <!--Tercera Caja-->
-                        <section id="segui_grupo3" class="thirdMiddleBox" >
+                        <section id="segui_grupo3" class="thirdMiddleBox">
                                 <div id="segui_grupo3s1">
                                     <div>
                                         <input type="radio" value="value1" id="entra1"
@@ -187,18 +195,19 @@
                                             onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction5();" name="G3a">
                                         <label for="sale1">SALIENTE</label>
                                     </div>
-                                    <p>Ubicación en Bmc<img src="img/segui2.png" width="304" height="147">
+                                    <p>Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147">
                                     </p>
                                 </div>
+                    
                                 <div id="segui_grupo3s2">
                                     <div id="aclaraciones">
-                                        <div><strong>Aclaración:</strong></div>
-                                        <div>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada
-                                            con el siguiente avance:</div>
+                                        <p><strong>Aclaración:</strong></p>
+                                        <p>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada
+                                            con el siguiente avance:</p>
                                         <p><strong>(Anexar contenido)</strong></p>
                                     </div>
                                 </div>
-                        </section> 
+                        </section>
                     </section>
                 </fieldset>
             
@@ -211,16 +220,17 @@ De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos regis
 Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
                     </textarea>
 
-                    <textarea id="segui_texto2" ></textarea>
+                    <textarea id="segui_texto2"></textarea>
                 </div>
             
                     <p id="p2"></p>
             
                     <!--Remplazar por botones-->
-                    <div id="botonera1"></div>
+                    <div id="botonera1">
+                        Presiona F2 para copiar - Presiona F9 para texto en blanco</div>
                     <div id="botonera2b">
-                        <button onclick="segui_copiarAlPortapapeles('p2')" ;>COPIAR</button>
-                        <button onclick="segui_limpiartext()" ;>NUEVO</button>
+                        <button onclick="segui_copiarAlPortapapeles('p2')" ;> Copiar </button>
+                        <button onclick="segui_limpiartext()" ;> Nuevo </button>
                     </div>
                 </section>
             </section>
@@ -290,8 +300,6 @@ Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
             }
         </script>
     </main>
-
-<script src="codigo_segui1.js"></script><script src="codigo_segui2.js"></script>
-<script src="codigo_cmi1.js"></script>
+<script src="notas.js"></script>
 </body>
 </html>

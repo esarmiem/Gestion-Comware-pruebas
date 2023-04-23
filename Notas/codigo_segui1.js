@@ -1,28 +1,42 @@
 var segui = "S3GU1M13NT0_N1";
 var resultado1 = "llamadadelcliente";
-var imaginas1 =
-  '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div>';
-var imaginas2 =
-  '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147"><div></div></div>';
-var aclaracion1 =
-  '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-var aclaracion2 =
-  '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-var aclaracion3a =
-  '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>  ';
-var aclaracion3b =
-  "<b>  De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:  </b>(Anexar contenido)";
-var aclaracion4 = "</div>";
 
-var aclaraciones = aclaracion1 + aclaracion2 + aclaracion3a + aclaracion3b; //falta cerrarla en cada 1 con la 3b y la 4
+const aclaraciones = `
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style=" font-size:19px;"><b>Aclaración:</b></p>
+      <p>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance: (Anexar contenido)</p>
+    </div>
+  </div>
+`;
 
-txt0 = "De acuerdo a la comunicación establecida nombre: XXX Teléfono: XXX :\n";
-txt0 += "(contenido)";
-txt0 += "\nSeguiremos gestionando su caso en pro de una solución oportuna";
-txt0 += "\nID llamada:";
+const imaginas1 = `
+  <div style="float: left; margin: 5px; width:300px;height:147px">
+    Ubicación en Bmc
+    <img src="img/segui1.png" width="304" height="147">
+    <div></div>
+  </div>
+`;
+
+const imaginas2 = `
+  <div style="float: left; margin: 5px; width:300px;height:147px">
+    Ubicación en Bmc
+    <img src="img/segui2.png" width="304" height="147">
+    <div></div>
+  </div>
+`;
+
+ const nombre = "XXX";
+ const telefono = "XXX";
+ const contenido = "(contenido)";
+ const idLlamada = "(ID llamada)";
+ 
+ const textoS = `De acuerdo a la comunicación establecida nombre: ${nombre} Teléfono: ${telefono}:\n${contenido}\nSeguiremos gestionando su caso en pro de una solución oportuna\nID llamada: ${idLlamada}`;
+
+ //------------------------------------------COPIAR TEXTO!!!--------------------------------------------//
+ //---------------------------------------------REPLANTEAR----------------------------------------------//
 function cargar1() {
-  //alert ('sdfs');
-  //segui_myFunction;
+
 }
 var funcionario1 = "";
 var bandareso = "f";
@@ -31,7 +45,6 @@ window.onkeydown = tecla;
 function tecla(event) {
   num = event.keyCode;
 
-  //event.preventDefault();
 
   if (num == 113) {
     segui_copiarAlPortapapeles("p2");
@@ -45,7 +58,6 @@ function tecla(event) {
     cambiar_botones();
   }
   if (num == 115) {
-    //f4	falla -
 
     if (funcionario1 == "") {
       funcionario1 = "*NMC*";
@@ -64,16 +76,17 @@ function tecla(event) {
     segui_principal();
   }
   if (num == 116) {
-    //f5
   }
   if (num == 117) {
-    //f6
+
   }
 }
 function cambiar_botones() {}
 function borrartextis() {
   document.getElementById("segui_texto1").value = "";
 }
+//-------------------------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------//
 function cambiartextis(orden) {}
 sconte1 = '<input  type="radio" value="value2" name="G25"  checked="true"';
 sconte2 = '<input  type="radio" value="value2" name="G25" ';
@@ -81,7 +94,6 @@ sconte2 = '<input  type="radio" value="value2" name="G25" ';
 var_nota1 = "Nota pública";
 var_nota2 = "Nota interna";
 
-//contenido1 = sconte1 + ' onchange="segui_notas(11)">' +var_nota1+ sconte2 + ' onchange="segui_notas(12)">'+var_nota2;
 contenido1 = var_nota2;
 contenido2 = var_nota1;
 contenido3 = var_nota1;
@@ -89,18 +101,9 @@ contenido4 = var_nota1;
 contenido5 = var_nota1;
 contenido6 = var_nota1;
 contenido7 = var_nota1;
-//contenido2 = sconte1 + ' onchange="segui_notas(21)">' +var_nota1 + sconte2 + ' onchange="segui_notas(22)">' +var_nota2;
-
-//contenido3 = sconte1 + ' onchange="segui_notas(31)">' +var_nota1 + sconte2 + ' onchange="segui_notas(32)">'+var_nota2;
-//contenido4 = sconte1 + ' onchange="segui_notas(41)">' +var_nota1+ sconte2 + ' onchange="segui_notas(42)">'+var_nota2;
-//contenido5 = sconte1 + ' onchange="segui_notas(51)">' +var_nota1+ sconte2 + ' onchange="segui_notas(52)">'+var_nota2;
-//contenido6 = sconte1 + ' onchange="segui_notas(61)">' +var_nota1+ sconte2 + ' onchange="segui_notas(62)">'+var_nota2;
-//contenido7 = sconte1 + ' onchange="segui_notas(71)">' +var_nota1+ sconte2 + ' onchange="segui_notas(72)">'+var_nota2;
 
 contenido_viati = var_nota1;
 
-//contenido_viati = sconte1 + ' onchange="segui_notas(81)">' +var_nota1 + sconte2 + ' onchange="segui_notas(82)">' +var_nota2;
-//var_nota1 = notainterna1; en un array
 function segui_notas(nota) {
   switch (nota) {
     case 11:
@@ -153,7 +156,6 @@ function segui_notas(nota) {
       break;
 
     default:
-    // code block
   }
 
   document.getElementById("segui_texto1").value = t_inter;
@@ -163,34 +165,32 @@ function segui_notas(nota) {
 
 function segui_limpiartext() {
   document.getElementById("segui_texto1").value = "";
-  //document.getElementById('segui_texto1').innerHTML = '';
   document.getElementById("segui_texto3").value = "";
   segui_principal();
   document.getElementById("segui_texto1").focus();
 }
-
+//------------------------------------------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------------------------------------------//
 function segui_myFunction() {
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<input  type="radio" value="value1" checked="true" id="entra1" onChange="segui_myFunction4();" name="G3a">ENTRANTE<br>';
-  texto +=
-    '<input  type="radio" value="value2"                id="sale1" onChange="segui_myFunction5();"  name="G3a">SALIENTE<br>';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>';
-  texto +=
-    "<b>  De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:</b>(Anexar contenido)</div> </div>";
-
-  texto_interno =
-    "De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:\n";
-  texto_interno += "\n";
-  texto_interno +=
-    "Seguiremos gestionando su caso en pro de una solución oportuna.\n\nID llamada:\n\n";
+  const texto = `
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <input type="radio" value="value1" checked="true" id="entra1" onChange="segui_myFunction4();" name="G3a">ENTRANTE<br>
+    <input type="radio" value="value2" id="sale1" onChange="segui_myFunction5();" name="G3a">SALIENTE<br>
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc<img src="img/segui2.png" width="304" height="147">
+    </div>
+  </div>
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style="color:red;font-size:19px; "><b >Aclaración:</b><p><br>
+      <b>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance:</b>(Anexar contenido)
+    </div>
+  </div>
+`;
+  const texto_interno = `De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance:
+Seguiremos gestionando su caso en pro de una solución oportuna.
+ID llamada:
+`;
 
   resultado1 = "llamadadelcliente";
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -201,23 +201,26 @@ function segui_myFunction() {
 function segui_myFunction2() {
   resultado1 = "correodelcliente";
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<input  type="radio" value="value1" checked="true" id="entra2" onChange="segui_myFunction7();" name="G3a">ENTRANTE<br>';
-  texto +=
-    '<input  type="radio" value="value2"                id="sale2" onChange="segui_myFunction8();"  name="G3a">SALIENTE<br>';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>';
-  texto += "<b>  Se debe adjuntar correo  </b></div> </div>";
+  const texto = `
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <input type="radio" value="value1" checked="true" id="entra2" onChange="segui_myFunction7();" name="G3a">ENTRANTE<br>
+    <input type="radio" value="value2" id="sale2" onChange="segui_myFunction8();" name="G3a">SALIENTE<br>
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui1.png" width="304" height="147">
+    </div>
+  </div>
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style="color:red;font-size:19px; "><b>Aclaración:</b><p><br>
+      <b>Se debe adjuntar correo</b>
+    </div>
+  </div>
+`;
 
-  texto_interno =
-    "Se brinda respuesta a la solicitud del cliente en el correo adjunto.\n\n";
+  const texto_interno = `Se brinda respuesta a la solicitud del cliente en el correo adjunto.
+
+`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -225,24 +228,25 @@ function segui_myFunction2() {
 }
 function segui_myFunction2b() {
   resultado1 = "estadoactualdelcaso";
+  
+  const texto = `
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui2.png" width="304" height="147">
+      <div></div>
+    </div>
+  </div>
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style="color:red;font-size:19px; "><b>Aclaración:</b><p><br>
+      <b>Avance: </b>Ingresar contenido del avance sin descartes tecnicos de manejo interno<br>
+      Estas notas enviadas no requieren enviarse desde el buzón. Solo requiere enviarse colocando la nota como pública
+    </div>
+  </div>
+`;
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>';
-  texto +=
-    "<b>  Avance: </b>Ingresar contenido del avance sin descartes tecnicos de manejo interno<br>";
-  texto +=
-    "Estas notas enviadas no requieren enviarse desde el buzón. Solo requiere enviarse colocando la nota como pública</div> </div>";
-
-  //texto_interno=  'Avance: \n';
-  texto_interno =
-    "\nSeguiremos gestionando su caso en pro de una solución oportuna.\n\n";
+  const texto_interno = `Seguiremos gestionando su caso en pro de una solución oportuna`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -251,31 +255,29 @@ function segui_myFunction2b() {
 function segui_myFunction3() {
   resultado1 = "p3rm1s01";
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto += '<div style="float:left; width:160px; height:50px">';
-  texto +=
-    '<div class="textonoedicion" id="permiso2" style="float:left;width:50px;height:50px; color: green;border: 1px solid green; border-radius:10px;  border-radius:50px;font-size:35px; text-align:center">1</div>';
-  texto +=
-    '<div style="float:left;width:50px;height:50px;  border-radius:50px;background-image: url(m3.png); ';
-  texto +=
-    'background-size:105px;cursor:pointer;" onclick="coloca1()"></div><div style="float:left;width:50px;height:50px;  ';
-  texto +=
-    'border-radius:50px;background-image: url(m3.png);  background-size:105px; background-position: 100% 50%; cursor:pointer; " onclick="coloca2()"></div>';
-  texto +=
-    '</div> <br> <div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc <img src="ima2/segui2.png" width="304" height="147"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>';
-  texto +=
-    "<b>  Se debe indicar el número de veces que se ha gestionado </b></div> </div>";
+  const texto = `
+  <div id="segui_grupo3s1" style="display: flex; flex-direction: column;">
+    <div style="display: flex; height:20%">
+      <div class="textonoedicion" id="permiso2" style="width:33%; 1px position: relative; border: solid #2090e4; border-radius:50px; font-size:35px; text-align:center">1</div>
+      <div style="float:left;width:33%; border-radius:50px;background-image: url('img/mas+.png'); background-size:105px; cursor:pointer;" onclick="coloca1()"></div>
+      <div style="float:left;width:33%; border-radius:50px;background-image: url('img/menos-.png'); background-size:105px; cursor:pointer;" onclick="coloca2()"></div>
+    </div>
+    <br>
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui2.png" width="304" height="147">
+    </div>
+  </div>
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style="color:red;font-size:19px;"><b>Aclaración:</b></p><br>
+      <b>Se debe indicar el número de veces que se ha gestionado</b>
+    </div>
+  </div>`;
 
-  txt1 =
-    "Estamos gestionando el permiso de ingreso a sus instalaciones de acuerdo a los siguientes datos:\n\n";
-  txt1 += "Tipo de Permiso:\n\n";
-  txt1 += "Documentación adjunta:\n\n";
+  const txt1 =`Estamos gestionando el permiso de ingreso a sus instalaciones de acuerdo a los siguientes datos:
+Tipo de Permiso:
+Documentación adjunta:`;
 
   document.getElementById("segui_texto1").value = txt1;
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -285,31 +287,32 @@ function segui_myFunction3() {
 function segui_myFunction3a() {
   resultado1 = "c0mun1c4c10ndelespecialista";
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<input type="radio" value="value11" checked="true" id="entra2" onchange="segui_myFunction7b()" name="G3ab">ENTRANTE<br>';
-  texto +=
-    '<input type="radio" value="value22"                id="sale2" onchange="segui_myFunction8b()"  name="G3ab">SALIENTE<br>';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:17px; "><b >  Aclaración:</b><p><br>';
-  texto +=
-    "<b> Canal de comunicación  </b><u>(correo,telefóno, whatsapp, teams)</u><br>";
-  texto +=
-    "<b> Rol del especialista  </b><u>(especialista, personal campo, coordinador, lider)</u><br>";
-  texto +=
-    "<b>  El especialista incluye al personal de campo que escribe</b> </div> </div>";
+  const texto = `
 
-  texto_interno = "Especialista que escribe:\n";
-  texto_interno += "Canal de comunicación:\n";
-  texto_interno += "Rol del especialista:\n";
-  texto_interno += "Avance o gestión solicitada por  el especialista:\n";
-  texto_interno += "Apoyo ofrecido:\n\n";
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <input type="radio" value="value11" checked="true" id="entra2" onchange="segui_myFunction7b()" name="G3ab">ENTRANTE<br>
+    <input type="radio" value="value22" id="sale2" onchange="segui_myFunction8b()" name="G3ab">SALIENTE<br>
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui1.png" width="304" height="147">
+    </div>
+  </div>
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style="color:red;font-size:17px; "><b >  Aclaración:</b><p>
+      <br>
+      <b>Canal de comunicación</b><u>(correo,telefóno, whatsapp, teams)</u><br>
+      <b>Rol del especialista</b><u>(especialista, personal campo, coordinador, lider)</u><br>
+      <b> El especialista incluye al personal de campo que escribe</b>
+    </div>
+  </div>
+`;
+  const texto_interno = `Especialista que escribe:
+Canal de comunicación:
+Rol del especialista:
+Avance o gestión solicitada por  el especialista:
+Apoyo ofrecido:
+`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -320,53 +323,78 @@ function segui_myFunction3a() {
 function segui_myFunction3b() {
   resultado1 = "4poyo_highN1";
 
-  txt1 =
-    '<div style="float:left; width:180px; font-size:17px;"><input   type="radio" value="value6"        checked="true"  id="apoyo1" onchange="segui_myFunction12()"  name="G3a">High N1<br><input   type="radio" value="value7"     id="apoyo2" onchange="segui_myFunction12b()"  name="G3a">High N2<br><input   type="radio" value="value7"      id="apoyo2" onchange="segui_myFunction13()"  name="G3a">Medium voz  <br><input   type="radio" value="value8"     id="apoyo3" onchange="segui_myFunction14()"  name="G3a">Medium datacenter<br><input   type="radio" value="value9"     id="apoyo4" onchange="segui_myFunction15()"  name="G3a">Medium conectividad <br><input   type="radio" value="value10"      id="apoyo5" onchange="segui_myFunction16()"  name="G3a">Medium movilidad<br><input   type="radio" value="value15"        id="apoyo10" onchange="segui_myFunction22c()"  name="G3a">Infraestructura<br><input   type="radio" value="value11"       id="apoyo6" onchange="segui_myFunction17()"  name="G3a">Low<br><input   type="radio" value="value12"       id="apoyo7" onchange="segui_myFunction18()"  name="G3a">Stts<br></div>';
+  const txt1 = `
+<div style="display: flex; flex-direction: column; width: 50%;">
+      <div style="display: flex; ">
+        <div style="width: 50%;">
+          <input type="radio" value="value6" checked="true" id="apoyo1" onchange="segui_myFunction12()" name="G3a">High N1<br>
+          <input type="radio" value="value7" id="apoyo2" onchange="segui_myFunction12b()" name="G3a">High N2<br>
+          <input type="radio" value="value7" id="apoyo2" onchange="segui_myFunction13()" name="G3a">Medium voz<br>
+          <input type="radio" value="value8" id="apoyo3" onchange="segui_myFunction14()" name="G3a">Medium datacenter<br>
+          <input type="radio" value="value9" id="apoyo4" onchange="segui_myFunction15()" name="G3a">Medium conectividad<br>
+          <input type="radio" value="value10" id="apoyo5" onchange="segui_myFunction16()" name="G3a">Medium movilidad<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction22c()"name="G3a">Infraestructura<br>
+          <input type="radio" value="value11" id="apoyo6" onchange="segui_myFunction17()" name="G3a">Low<br>
+          <input type="radio" value="value12" id="apoyo7" onchange="segui_myFunction18()" name="G3a">Stts<br>
+        </div>
+        <div style="width: 50%;">
+          <input type="radio" value="value12" id="apoyo7" onchange="segui_myFunction18b()" name="G3a">Stts N2<br>
+          <input type="radio" value="value14" id="apoyo8" onchange="segui_myFunction19()" name="G3a">Cambios<br>
+          <input type="radio" value="value15" id="apoyo9" onchange="segui_myFunction20()" name="G3a">Offline<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction21()" name="G3a">Eventos<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction22()" name="G3a">Edatel<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction22b()" name="G3a">Despacho<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction22d()" name="G3a">MFO<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction22e()" name="G3a">Conectividad TV N2<br>
+          <input type="radio" value="value15" id="apoyo10" onchange="segui_myFunction22f()" name="G3a">Voz y colaboracion N2
+        </div>
+      </div>
+      <div class="contenidillo" id="contenido_segui" style="text-align: center; padding: 10px; margin: 5px;">
+        Nota interna
+      </div>
+ </div>
+<section style="display: flex; flex-direction: column; width: 50%; float: left;">
+  <p class="contenidillo1" id="contenido_segui23" style="text-align: center;">Aclaracion</p>
+  <p>"Indica el apoyo que un analista presta a otro. Es registrado por quien realizó el apoyo. La nemotecnia irá acompañada con el nombre del grupo al cual pertenece el analista que brindó el apoyo."</p>
+</section>
+`;
 
-  txt2 =
-    '<div style="float:left; width:180px;font-size:17px;"><input   type="radio" value="value12"       id="apoyo7" onchange="segui_myFunction18b()"  name="G3a">Stts N2<br><input   type="radio" value="value14"        id="apoyo8" onchange="segui_myFunction19()"  name="G3a">Cambios<br><input   type="radio" value="value15"        id="apoyo9" onchange="segui_myFunction20()"  name="G3a">Offline <br><input   type="radio" value="value15"        id="apoyo10" onchange="segui_myFunction21()"  name="G3a">Eventos<br><input   type="radio" value="value15"        id="apoyo10" onchange="segui_myFunction22()"  name="G3a">Edatel <br><input   type="radio" value="value15"        id="apoyo10" onchange="segui_myFunction22b()"  name="G3a">Despacho<br><input   type="radio" value="value15"     id="apoyo10" onchange="segui_myFunction22d()"  name="G3a">MFO<br><input   type="radio" value="value15"      id="apoyo10" onchange="segui_myFunction22e()"  name="G3a">Conectividad TV N2 <br><input   type="radio" value="value15"      id="apoyo10" onchange="segui_myFunction22f()"  name="G3a">Voz y colaboracion N2<br></div>';
-
-  txt3 =
-    '<div class="contenidillo" style="float:left; position: absolute; border: 1px solid green; margin-top:200px; margin-left:100px;" id="contenido_segui">Nota interna</div>';
-  txt4 =
-    '<div class="contenidillo1" style="float:left; position: absolute; border: 1px solid green; margin-top:300px; margin-left:100px;" id="contenido_segui23">aclaracion1</div>';
-
-  texto =
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-top:-190px; margin-left:340px;">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px; padding: 5px;">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><><br>';
-  texto += "Indica el apoyo que un analista presta a otro. Es registrado por quien realizó el apoyo. La nemotecnia irá acompañada con el nombre del grupo al cual pertenece el analista que brindó el apoyo.";
-
-  document.getElementById("segui_grupo3").innerHTML =
-    txt1 + txt2 + txt3 + texto;
+  document.getElementById("segui_grupo3").innerHTML = txt1;
   document.getElementById("segui_texto1").value = "Descripción del apoyo:";
 
-  //document.getElementById("segui_grupo3").innerHTML = txt4;
   segui_principal();
 }
 
 function segui_myFunction3c() {
   resultado1 = "p3s3rv1c10";
 
-  texto_interno = "Prueba realizada:\n";
-  texto_interno += "Herramienta utilizada: \n";
-  texto_interno += "Resultado obtenido:\n\n";
+  const texto_interno = `Prueba realizada:
+Herramienta utilizada:
+Resultado obtenido:`;
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+const texto = `
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui1.png" width="304" height="147">
+      <div></div>
+    </div>
+  </div>`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   document.getElementById("segui_grupo3").innerHTML = texto;
   segui_principal();
 }
 function segui_myFunction3c2() {
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+
+  const texto = `
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui1.png" width="304" height="147">
+      <div></div>
+    </div>
+  </div>`;
 
   resultado1 = "d1agnostico";
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -374,10 +402,10 @@ function segui_myFunction3c2() {
   z = document.getElementById("chequeotipo3").checked;
 
   if (z == false) {
-    texto_interno = "S. Básico\n";
-    texto_interno += "	ID prueba: \n";
-    texto_interno += "	Falla evidencia en la prueba:\n";
-    texto_interno += "	Diagnóstico realizado:\n";
+    texto_interno = `S. Básico
+  ID prueba:
+  Falla evidencia en la prueba:
+  Diagnóstico realizado:`;
   } else {
     texto_interno = "";
     segui = "S3GU1M13NT0_N1";
@@ -391,21 +419,22 @@ function segui_myFunction3c2() {
 function segui_myFunction3c2a(chequio) {
   resultado1 = "d1agnostico";
 
-  //marcas3980
-
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+  const texto =`
+<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
+  <div style="float: left; margin: 5px; width:300px;height:147px">
+    Ubicación en Bmc
+    <img src="img/segui1.png" width="304" height="147">
+      <div></div>
+  </div>
+</div>`;
 
   document.getElementById("segui_grupo3").innerHTML = texto;
 
-  texto_interno = "S. Avanzado: \n";
-  texto_interno += "	Conclusión al ejecutar lista de chequeo: \n";
-  texto_interno +=
-    "	Numeral donde se evidencia falla en la lista de chequeo: \n";
-  texto_interno += "	Diagnóstico realizado: \n";
-  texto_interno += "	Falla eléctrica S/N: \n\n";
+ const texto_interno = `S. Avanzado:
+Conclusión al ejecutar lista de chequeo:
+Numeral donde se evidencia falla en la lista de chequeo:
+Diagnóstico realizado:
+Falla eléctrica S/N`;
 
   resultado1 = "d1agnostico";
 
@@ -417,29 +446,26 @@ function segui_myFunction3c2a(chequio) {
 function segui_myFunction3c2B() {
   resultado1 = "motivo3spera";
 
-  texto_interno = "Motivo: \n";
-  texto_interno += "Fecha y Hora de contacto con el cliente:\n";
-  texto_interno += "Medio de contacto: \n";
-  texto_interno += "Intentos de contacto: \n\n";
+  const texto_interno = `Motivo:
+Fecha y Hora de contacto con el cliente:
+Medio de contacto:
+Intentos de contacto:`;
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
-
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>';
-  texto +=
-    "<b>Motivo: </b>(Detallar el motivo por el cual el caso debe colocarse en Pendiente).<br>";
-  texto += "<b>Medio de contacto: </b>(correo, telefóno).<br>";
-  texto += "<b>Intentos de contacto: </b>(1,2,...).<br></div> </div>";
+ const texto =`
+<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+  <div style="float: left; margin: 5px; width:300px;height:147px">
+     Ubicación en Bmc<img src="img/segui1.png" width="304" height="147">
+     <div></div>
+  </div>
+</div>
+<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+ <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+     <p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>
+     <b>Motivo: </b>(Detallar el motivo por el cual el caso debe colocarse en Pendiente).<br>
+     <b>Medio de contacto: </b>(correo, telefóno).<br>
+     <b>Intentos de contacto: </b>(1,2,...).<br>
+ </div>
+</div>`;
 
   document.getElementById("segui_grupo3").innerHTML = texto;
 
@@ -450,31 +476,40 @@ function segui_myFunction3c2B() {
 function segui_myFunction3c3() {
   resultado1 = "sd3sd3l3g4d0";
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+  const texto =`
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div style="float: left; margin: 5px; width:300px;height:147px">
+      Ubicación en Bmc
+      <img src="img/segui1.png" width="304" height="147">
+      <div></div>
+    </div>
+  </div>`;
 
   document.getElementById("segui_grupo3").innerHTML = texto;
 
-  texto_interno = "Observaciones en legado: \n\n";
-  texto_interno += "Solucionado desde el legado.\n\n";
-  document.getElementById("segui_texto1").value = texto_interno;
+  const texto_interno = `Observaciones en legado:
+Solucionado desde el legado.`;
 
+  document.getElementById("segui_texto1").value = texto_interno;
   segui_principal();
 }
 function segui_myFunction3c4() {
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+  texto =`
+<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+  <div style="float: left; margin: 5px; width:300px;height:147px">
+    Ubicación en Bmc
+    <img src="img/segui1.png" width="304" height="147">
+    <div></div>
+  </div>
+</div>`;
 
   resultado1 = "r3s0luc10n";
 
   document.getElementById("segui_grupo3").innerHTML = texto;
 
-  texto_interno = "Pasos realizados para la solución: \n";
-  texto_interno += "Pruebas realizadas y en donde:\n";
+  const texto_interno = `Pasos realizados para la solución:
+  Pruebas realizadas y en donde:`;
+
   document.getElementById("segui_texto1").value = texto_interno;
   segui_principal();
 }
@@ -482,46 +517,44 @@ function segui_myFunction3c4() {
 function segui_myFunction3c4a() {
   resultado1 = "ch4tr3s0luc10n";
 
-  txt1 =
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div>';
-
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+  const texto =`
+<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+  <div style="float: left; margin: 5px; width:300px;height:147px">
+    Ubicación en Bmc
+    <img src="img/segui1.png" width="304" height="147">
+    <div></div>
+  </div>
+</div>`;
 
   document.getElementById("segui_grupo3").innerHTML = texto;
-  texto_interno = "Pasos realizados: \n";
-  texto_interno += "Pruebas realizadas y en donde:\n";
-  document.getElementById("segui_texto1").value = texto_interno;
 
+  const texto_interno = `Pasos realizados:
+Pruebas realizadas y en donde:`;
+
+  document.getElementById("segui_texto1").value = texto_interno;
   segui_principal();
 }
 
 function segui_myFunction3c5() {
   resultado1 = "NOTAS RESOLUCION";
-  texto =
-    '<div style="float: left; margin: 5px; width:300px; height:102px">Ubicación en Bmc<img src="ima2/resolucion1.png" width="336" height="102"><div></div></div>';
-  document.getElementById("segui_grupo3").innerHTML = texto;
 
-  texto =
-    '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div style="float: left; margin: 0px; width:300px;height:102px">Ubicación en Bmc<img src="ima2/resolucion1.png" width="300" height="102"><div></div></div></div>';
-  texto +=
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto +=
-    '<div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">';
-  texto += '<p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>';
-  texto +=
-    "<b> Para próximas solicitudes es necesario revisar </b>Pasos que debe seguir el cliente antes de llamar (se adiciona este punto si es imputable al cliente) </div> </div>";
-
-  //c84bb1  1aad24
+const texto = `
+  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div style="float: left; margin: 0px; width:300px;height:102px">Ubicación en Bmc<img src="img/resolucion1.png" width="300" height="102"><div></div></div>
+  </div>
+  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
+      <p style="color:red;font-size:19px; "><b> Aclaración:</b></p>
+      <br>
+      <b>Para próximas solicitudes es necesario revisar </b>Pasos que debe seguir el cliente antes de llamar (se adiciona este punto si es imputable al cliente)
+    </div>
+  </div>
+`;
 
   document.getElementById("segui_grupo3").innerHTML = texto;
 
-  texto_interno = "La causa fue: \n";
-  texto_interno += "La solución fue: \n";
+  const texto_interno = `La causa fue:
+La solución fue:`;
 
   document.getElementById("segui_texto1").value = texto_interno;
 
@@ -530,50 +563,55 @@ function segui_myFunction3c5() {
 
 function segui_myFunction3d() {
   //notas de campo
-  texto_interno =
-    "Su reporte de falla fue escalado a nuestro personal en campo. Los datos de la persona que efectuará el respectivo soporte en sitio son:\n\n";
+  let texto_interno = `Su reporte de falla fue escalado a nuestro personal en campo. Los datos de la persona que efectuará el respectivo soporte en sitio son:
 
-  texto_interno = texto_interno + "Nombre Del Personal Asignado: \n";
-  texto_interno = texto_interno + "Cédula: \n";
-  texto_interno = texto_interno + "Fecha Visita: \n";
-  texto_interno = texto_interno + "Hora o franja: \n";
-  texto_interno =
-    texto_interno +
-    "Nota: Le solicitamos, en caso que nuestro personal requiera permisos de ingreso, por favor gestionarlos.\n";
-  texto_interno =
-    texto_interno +
-    "En su correo y en el Portal podrá visualizar nuevas actualizaciones de avance.";
+Nombre Del Personal Asignado:
+Cédula:
+Fecha Visita:
+Hora o franja:
+Nota: Le solicitamos, en caso que nuestro personal requiera permisos de ingreso, por favor gestionarlos.
+En su correo y en el Portal podrá visualizar nuevas actualizaciones de avance.`;
 
-  texto1 =
-    '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  texto1 +=
-    '<div  id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:19px;">';
-  texto1 +=
-    '<p style="color:red;font-size:17px; margin: -1px;  "><b > Aclaración:</b><p>';
-  texto1 += "<b> Fecha Visita: </b>Formato fecha AAAAMMDD</div> </div>";
+ let texto1 =`
+ <div id="segui_grupo3s2" style="display: block; text-align: center;">
+  <div id="aclaraciones" style=" margin: 2px; width:100%; height:100%; border: 1px dotted; border-radius:10px;">
+    <p style="font-size:17px; margin: -1px;"><b>Aclaración:</b><p>
+    <b>Fecha Visita: </b>Formato fecha: AAAA/MM/DD
+  </div>
+</div>`;
 
   document.getElementById("segui_texto1").value = texto_interno;
 
   resultado1 = "asignacionpersonalcampo";
 
-  txt1 =
-    '<div style="width:180px;float:left;"><input   type="radio" value="asigna"        checked="true"        onchange="segui_myFunction23()"  name="g4">Asign. per. campo<br><input   type="radio" value="asigna"           onchange="segui_myFunction24a()"  name="g4">Asign. pendiente<br><input   type="radio" value="cambio"                 onchange="segui_myFunction24()"  name="g4">Cambio per. campo<br><input   type="radio" value="indidis"                  onchange="segui_myFunction25()"  name="g4">Indisp. per. campo<br><input   type="radio" value="value8"                 onchange="segui_myFunction26()"  name="g4">Modificación agenda<br><input   type="radio" value="value8"                onchange="segui_myFunction27()"  name="g4">Incumplimiento agenda<br><input   type="radio" value="value8"                onchange="segui_myFunction28()"  name="g4">Gestión inventarios<br><input   type="radio" value="value8"                onchange="segui_myFunction28b()"  name="g4">Gestión viáticos<br><input   type="radio" value="value8"                onchange="segui_myFunction28c()"  name="g4">Solicitud viáticos<br></div>';
+  let txt1 = `
+<section style="display: flex;">
+  <div style="width:180px;float:left;">
+    <input type="radio" value="asigna" checked="true" onchange="segui_myFunction23()" name="g4">Asign. per. campo<br>
+    <input type="radio" value="asigna" onchange="segui_myFunction24a()" name="g4">Asign. pendiente<br>
+    <input type="radio" value="cambio" onchange="segui_myFunction24()" name="g4">Cambio per. campo<br>
+    <input type="radio" value="indidis" onchange="segui_myFunction25()" name="g4">Indisp. per. campo<br>
+    <input type="radio" value="value8" onchange="segui_myFunction26()" name="g4">Modificación agenda<br>
+    <input type="radio" value="value8" onchange="segui_myFunction27()" name="g4">Incumplimiento agenda<br>
+    <input type="radio" value="value8" onchange="segui_myFunction28()" name="g4">Gestión inventarios<br>
+    <input type="radio" value="value8" onchange="segui_myFunction28b()" name="g4">Gestión viáticos<br>
+   <input type="radio" value="value8" onchange="segui_myFunction28c()" name="g4">Solicitud viáticos<br>
+  </div>
+  <div style="width:180px;float:left;">
+    <input type="radio" value="value8" onchange="segui_myFunction28d()" name="g4">Avance Visita<br>
+    <input type="radio" value="value8" onchange="segui_myFunction28e()" name="g4">Confirmación visita<br>
+    <input type="radio" value="value8" onchange="segui_myFunction29()" name="g4">Falla masiva<br>
+    <input type="radio" value="value8" onchange="segui_myFunction30()" name="g4">Reagenda. factores ext.<br>
+    <input type="radio" value="value8" onchange="segui_myFunction31()" name="g4">Reagenda. por cliente<br>
+    <input type="radio" value="value8" onchange="segui_myFunction32()" name="g4">Reagenda. cliente iloc.<br>
+    <input type="radio" value="value9" onchange="segui_myFunction33()" name="g4">Pendiente plat.<br>
+    <br><br><br><br><div class="contenidillo" style="float:left; position: absolute;margin-top:-30px; border: 1px solid green; margin-left:-50px;" id="contenido_segui">
+  </div>
+</section>
+<div class="contenidillo2" style="display: block; text-align: center;" id="contenido_segui24"></div>
+`;
 
-  txt2 =
-    '<div style="width:180px;float:left;"> <input   type="radio" value="value8"  onchange="segui_myFunction28d()"  name="g4">Avance Visita<br>  <input   type="radio" value="value8"  onchange="segui_myFunction28e()"  name="g4">Confirmación visita<br><input   type="radio" value="value8" onchange="segui_myFunction29()"  name="g4">Falla masiva<br><input   type="radio" value="value8"                onchange="segui_myFunction30()"  name="g4">Reagenda. factores ext.<br><input   type="radio" value="value8"                onchange="segui_myFunction31()"  name="g4">Reagenda. por cliente<br><input   type="radio" value="value8"                onchange="segui_myFunction32()"  name="g4">Reagenda. cliente iloc.<br><input   type="radio" value="value9"              onchange="segui_myFunction33()"  name="g4">Pendiente plat.<br>';
-  texto =
-    txt1 +
-    txt2 +
-    '<br><br><br><br><div class="contenidillo" style="float:left; position: absolute;margin-top:-30px; border: 1px solid green; margin-left:-50px;"   id="contenido_segui">' +
-    contenido1 +
-    "</div>";
-
-  texto =
-    texto +
-    '<div class="contenidillo2" style="display:block;float:left; position: absolute;  margin-left:158px; margin-top:-237px;"   id="contenido_segui24"></div>';
-
-  //document.getElementById("contenido_segui").innerHTML = contenido1;
-  document.getElementById("segui_grupo3").innerHTML = texto;
+  document.getElementById("segui_grupo3").innerHTML = txt1;
   document.getElementById("contenido_segui24").innerHTML = texto1;
 
   segui_principal();
@@ -581,14 +619,12 @@ function segui_myFunction3d() {
 }
 
 function segui_myFunction3da() {
-  //document.getElementById("contenido_segui24").style.display ="none";
 
   resultado1 = "gestióncuadrillasb2b";
   segui_principal();
 }
 
 function segui_myFunction3db() {
-  //document.getElementById("contenido_segui24").style.display ="none";
 
   resultado1 = "gestiónnoccargue";
   segui_principal();
@@ -599,7 +635,7 @@ function segui_myFunction3e() {
   texto =
     '<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -617,8 +653,6 @@ function segui_myFunction3e() {
 
   resultado1 = "AS_AD";
   segui_principal();
-
-  //document.getElementById("segui_grupo3").innerHTML = imaginas1 ;
 }
 function segui_myFunction3f() {
   resultado1 = "visitanorequerida";
@@ -626,11 +660,11 @@ function segui_myFunction3f() {
 
   document.getElementById("segui_grupo3").innerHTML = "Visita no requerida";
 }
-function segui_myFunction3g() {
-  resultado1 = "v4l1d40ffl1n3";
-  segui_principal();
-  document.getElementById("segui_grupo3").innerHTML = imaginas1;
-}
+// function segui_myFunction3g() {
+//   resultado1 = "v4l1d40ffl1n3";
+//   segui_principal();
+//   document.getElementById("segui_grupo3").innerHTML = imaginas1;
+// }
 
 function segui_myFunction4() {
   resultado1 = "llamadadelcliente";
@@ -648,7 +682,7 @@ function segui_myFunction4() {
   texto +=
     '<input  type="radio" value="value2"                id="sale1" onChange="segui_myFunction5();"  name="G3a">SALIENTE<br>';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui2.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -679,7 +713,7 @@ function segui_myFunction5() {
   texto +=
     '<input  type="radio" value="value2"   checked="true"             id="sale1" onChange="segui_myFunction5();"  name="G3a">SALIENTE<br>';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui2.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -690,8 +724,6 @@ function segui_myFunction5() {
 
   document.getElementById("segui_grupo3").innerHTML = texto;
   document.getElementById("segui_texto1").value = texto_interno;
-
-  //document.getElementById("segui_grupo3").innerHTML = texto +txt1  ;
 }
 function segui_myFunction6() {
   resultado1 = "Llamadaalespecialista";
@@ -709,7 +741,7 @@ function segui_myFunction7() {
   texto +=
     '<input  type="radio" value="value2"                id="sale2" onChange="segui_myFunction8();"  name="G3a">SALIENTE<br>';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -734,7 +766,7 @@ function segui_myFunction8() {
   texto +=
     '<input  type="radio" value="value2"    checked="true"            id="sale2" onChange="segui_myFunction8();"  name="G3a">SALIENTE<br>';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -757,7 +789,6 @@ function segui_myFunction8() {
   document.getElementById("segui_texto1").value = texto_interno;
   segui_principal();
 }
-//resultado1 ='c0mun1c4c10ndelespecialista';
 
 function segui_myFunction7b() {
   resultado1 = "c0mun1c4c10ndelespecialista";
@@ -769,7 +800,7 @@ function segui_myFunction7b() {
   texto +=
     '<input type="radio" value="value22"                id="sale2" onchange="segui_myFunction8b()"  name="G3ab">SALIENTE<br>';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -802,7 +833,7 @@ function segui_myFunction8b() {
   texto +=
     '<input type="radio" value="value22"   checked="true"             id="sale2" onchange="segui_myFunction8b()"  name="G3ab">SALIENTE<br>';
   texto +=
-    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="ima2/segui1.png" width="304" height="147"><div></div></div></div>';
+    '<div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147"><div></div></div></div>';
   texto +=
     '<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
   texto +=
@@ -844,9 +875,8 @@ function segui_myFunction11() {
   resultado1 = "Correoalespecialista";
   segui_principal();
 }
-////
 
-sfj1 = "4poyo_"; // sufijo
+sfj1 = "4poyo_";
 function segui_myFunction12() {
   resultado1 = sfj1 + "highN1";
   segui_principal();
@@ -932,7 +962,7 @@ function segui_myFunction22f() {
 }
 ////
 function segui_myFunction23() {
-  //document.getElementById("contenido_segui").innerHTML = "";
+
   document.getElementById("contenido_segui").innerHTML = var_nota1;
 
   //--- asignacionpersonalcampo
@@ -963,11 +993,9 @@ function segui_myFunction23() {
   document.getElementById("segui_texto1").value = texto_interno;
   resultado1 = "asignacionpersonalcampo";
   segui_principal();
-  //marca1
 }
 function segui_myFunction24() {
   document.getElementById("contenido_segui").innerHTML = var_nota1;
-  //document.getElementById("contenido_segui").innerHTML = "";
 
   texto_interno =
     "Su reporte de falla tuvo un cambio en el nombre de la persona que efectuará el soporte en sitio, estos son los datos actuales:\n\n";
@@ -1001,7 +1029,6 @@ function segui_myFunction24a() {
   document.getElementById("contenido_segui").innerHTML = var_nota1;
 
   document.getElementById("contenido_segui24").style.display = "none";
-  //document.getElementById("contenido_segui").innerHTML = "";
 
   texto_interno =
     "Su reporte de falla fue escalado a nuestro personal en campo. En este momento nos encontramos coordinándolo, tan pronto se cuente con disponibilidad en la agenda del personal técnico le estaremos informando.\n\n";
@@ -1022,7 +1049,6 @@ function segui_myFunction25() {
 
   document.getElementById("contenido_segui24").style.display = "none";
 
-  //marca
 }
 function segui_myFunction26() {
   document.getElementById("contenido_segui").innerHTML = var_nota1;
@@ -1116,7 +1142,7 @@ function segui_myFunction28d() {
 }
 
 function segui_myFunction28e() {
-  //confirmación visita
+
   document.getElementById("contenido_segui24").style.display = "block";
   txt1 = "De acuerdo a la comunición telefonica se confirma:\n\n";
   txt1 += "Nombre : \n";
@@ -1245,8 +1271,6 @@ function segui_myFunction33() {
   segui_principal();
 }
 
-//segui_principal();
-//////////////////////////////////////
 
 function coloca1() {
   var sumaxx;
