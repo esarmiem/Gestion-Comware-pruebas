@@ -102,17 +102,17 @@ function segui_principal() {
       x += "\n";
   
       if (x2 == true || x3 == true) {
-        document.getElementById("segui_texto2").value =
+        document.getElementById("segui_texto1").value =
           x + "\n\n" + segui + ":" + f2 + y;
       } else {
-        document.getElementById("segui_texto2").value = x + segui + ":" + f2 + y;
+        document.getElementById("segui_texto1").value = x + segui + ":" + f2 + y;
       }
   
       document.getElementById("segui_texto3").value = segui + ":" + f2 + y;
     }
   
     document.getElementById("p2").innerHTML =
-      document.getElementById("segui_texto2").value;
+      document.getElementById("segui_texto1").value;
   }
 
 

@@ -25,7 +25,7 @@
                     <div id="segui_T3" class="trabajoEN">
                         <p>3. TRABAJO EN..</p>
                         <label for="chequeotipo1">Nivel 1</label>
-                        <input type="radio" id="chequeotipo1" value="tiponivel1" onChange="segui_principal()"
+                        <input type="radio" id="chequeotipo1" value="tiponivel1" onclick="segui_principal()"
                             name="tiponiveles">
                         <label for="chequeotipo2">Nivel 2</label>
                         <input type="radio" id="chequeotipo2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
@@ -204,23 +204,21 @@
             
                 <section class="belowBox">
                     <div class="inpOut">
-                    <input type="text" value="S3GU1M13NT0_N1:llamadadelcliente" class="estilito2d" id="segui_texto3" onkeydown="return false;" onChange="f1()">
+                    <input type="text" value="S3GU1M13NT0_N1:llamadadelcliente" class="estilito2d" id="segui_texto3" onkeydown="return false;" onchange="f1()">
 
                     <textarea id="segui_texto1" class="estilito2e" onkeyup="segui_principal()">
 De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:
 Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
                     </textarea>
 
-                    <textarea id="segui_texto2" ></textarea>
+                    <!-- <textarea id="segui_texto2" ></textarea> -->
                 </div>
-            
-                    <p id="p2"></p>
-            
+                    <!-- onclick="segui_copiarAlPortapapeles('p2')" -->
                     <!--Remplazar por botones-->
                     <div id="botonera1"></div>
                     <div id="botonera2b">
-                        <button onclick="segui_copiarAlPortapapeles('p2')" ;>COPIAR</button>
-                        <button onclick="segui_limpiartext()" ;>NUEVO</button>
+                        <button onclick="copyTextareaAndInput()">COPIAR</button>
+                        <button onclick="segui_limpiartext()">NUEVO</button>
                     </div>
                 </section>
             </section>
@@ -295,3 +293,9 @@ Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
 <script src="codigo_cmi1.js"></script>
 </body>
 </html>
+
+
+
+style="display: block; width:100%; margin-left:4px; margin-top:4px"
+style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px"
+style="font-size:19px; text-align: center;"
