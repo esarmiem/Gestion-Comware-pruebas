@@ -1,7 +1,6 @@
 /* Estilos globales */
 * {
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +15,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-
 /* Estilos globales */
 
 /* Aqui empiezan los estilos de el header */
@@ -94,21 +92,9 @@ h1 {
 
 /* Aqui empiezan los estilos de la segunda Navbar */
 .nav2 {
-    background: #2090e4;
-    background: linear-gradient(180deg, #2090e4 0%, #5fb7e5 80%);
-    background: -webkit-linear-gradient(180deg, #2090e4 0%, #5fb7e5 80%);
-    background: -moz-linear-gradient(180deg, #2090e4 0%, #5fb7e5 80%);
-    /* Cambiar el color de fondo a azul */
-    margin-top: 0px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-    position: fixed;
-    top: 70px;
-    /* ajusta la posición vertical según el alto del header */
-    left: 0;
-    width: 100%;
-    z-index: 998;
-    /* menor que el z-index del header */
+    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 15px;
 }
 
 .nav2 {
@@ -121,167 +107,127 @@ h1 {
     list-style-type: none;
     display: flex;
     margin: 0;
-    margin-left: 75px;
     padding: 0;
 }
 
 .nav2 li {
     margin: 0 10px;
     /*  
-      font-family: 'Nerko One', cursive;
-      font-size: larger; */
+    font-family: 'Nerko One', cursive;
+    font-size: larger; */
 }
 
 .nav2 a {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #F1F5F6;
+    color: #000;
     border-bottom: 2px solid transparent;
 }
 
 .nav2 a:hover {
-    color: #F1F5F6;
+    color: #000;
     font-weight: bold;
-    border-bottom: 2px solid #F1F5F6;
-    padding-bottom: 3px;
+    border-bottom: 2px solid #000;
 }
-
 /* Aqui terminan los estilos de la segunda Navbar */
 
-/* Aqui empiezan los estilos de la tercera Navbar */
+/* Aqui empiezan los estilos de la segunda Navbar */
 .nav3 {
-    font-family: 'Nerko One', cursive;
-    position: fixed;
-    top: 106px;
-    /* ajusta la posición vertical según el alto del header y la navbar anterior */
-    left: 0;
-    width: 100%;
-    height: 50px;
-    z-index: 997;
-    /* menor que el z-index de la navbar anterior */
-    padding: 0%;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: transparent;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 18px;
+    border: solid 1px #5fb7e5;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
 }
 
-.nav3 ul {
+.ul-nav3 {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
 }
 
-.nav3 li {
-    float: left;
+.ul-nav3 li {
+    margin: 0 10px;
 }
 
-.nav3 li a {
+.ul-nav3 li a {
     display: block;
-    padding: 10px 20px;
-    border-right: 1px solid #bbb;
+    padding: 10px;
+    color: #000;
     text-decoration: none;
-    color: #555;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
 }
 
-.nav3 li a:hover {
-    background-color: #2090E4;
+.ul-nav3 li a:hover {
+    background-color: #5FB7E5;
     color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
-    .nav3 li {
-        float: none;
-        display: block;
+@media screen and (max-width: 480px) {
+    .nav3 {
+        height: auto;
+        border: none;
     }
 
-    .nav3 li a {
-        text-align: center;
-        border-bottom: 1px solid #bbb;
-        border-right: none;
+    .ul-nav3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-nav3 li {
+        margin: 10px 0;
+    }
+
+    .ul-nav3 li a {
+        padding: 5px;
     }
 }
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .nav3 {
+        height: auto;
+        border: none;
+    }
+
+    .ul-nav3 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ul-nav3 li {
+        margin: 0 20px;
+    }
+
+    .ul-nav3 li a {
+        padding: 10px;
+    }
+}
+
 /* Aqui terminan los estilos de la tercera Navbar */
 
-/* Media query para tablets */
-@media (max-width: 820px) {
-    header h1 {
-        display: none;
-    }
-
-    .logo img {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    nav {
-        justify-content: space-between;
-    }
-
-    nav li {
-        margin-right: 0.5rem;
-    }
-
-    .nav2 {
-        text-align: center;
-    }
-
-    .nav2 ul {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        padding: 0;
-    }
-
-    .nav2 li {
-        margin-bottom: 1rem;
-    }
-}
-
-/* Media query para tablets */
-/* Media query para moviles */
-@media (max-width: 480px) {
-    .nav2 li {
-        margin: 0 4px;
-        cursor: pointer;
-    }
-
-    .nav2 a {
-        font-size: 12px;
-    }
-}
-
-/* Media query para moviles */
-
 /* Aqui empiezan los estilos del tiquete */
-
-/*CLASE EXCLUSIVA PARA LA ROTACION DE LAS VISTAS EN TIQUETES*/
-.oculto{
-    display: none;
-}
-
-.all-tiquetes {
-    margin-top: 160px;
-}
-
 .parent {
     display: flex;
+    flex-wrap: nowrap;
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px;
     border-radius: 8px;
 }
 
-.parent section{
-    width: 100%;
-}
-
-.parent fieldset {
+.parent>fieldset {
     width: 100%;
     border-radius: 8px;
     padding: 6px;
@@ -290,85 +236,78 @@ h1 {
 legend {
     font-weight: bold;
     text-align: center;
+    margin-top: 10px;
 }
 
 .ingresa-texto {
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    padding: 6px;
 }
 
-.text-area-ingresa--datos {
-    font-size: 16px;
-}
-
-.ingresa-texto label {
+.ingresa-texto>fieldset {
     display: inline-block;
     margin-bottom: 0.5rem;
+}
+.input-data-text{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 7em;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.moduloGiga{
+    margin: 8px;
+}
+.moduloGiga>section{
+    margin: 8px;
 }
 
 .general-generator {
     display: flex;
     flex-direction: column;
-    text-align: center;
     border-radius: 8px;
 }
-
-.general-generator section {
+.general-generator>section {
     text-align: center;
     margin: 5px;
-}
-
-.general-generator h3 {
-    margin: 2px;
-}
-
-.description-title-h3 {
-    padding-bottom: 4px;
 }
 
 .output-area-resumen-text {
-    width: 99%;
-    height: 5em;
-    margin: 5px;
-    font-size: 16px;
-}
-
-.output-area-text {
-    width: 99%;
-    height: 23em;
-    margin: 5px;
-    font-size: 16px;
-}
-
-textarea {
     width: 100%;
-    border-radius: 5px;
+    height: 7em;
+    margin: 5px;
     font-size: 13px;
 }
-
-.output_descartes {
+.output_descartes{
     width: 100%;
     height: 7em;
     margin: 5px;
     font-size: 16px;
 }
+h3 {
+    margin-top: 10px;
+}
+
+.output-area-text {
+    /* visibility: none; */
+    width: 100%;
+    height: 25em;
+    margin: 5px;
+    font-size: 13px;
+}
 
 input[type="text"],
 input[type="datetime-local"],
+input[type="email"],
+input[type="tel"],
 textarea {
-    padding: 0.5rem;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 1em;
-    font-size: 16px;
-}
-
-.descartes-container p {
-    font-weight: bold;
-    margin-top: 8px;
+    margin: 5px;
 }
 
 .button-container {
@@ -390,66 +329,8 @@ button:hover {
     background-color: #2090e4;
 }
 
+input[disabled] {
+    background-color: #eee;
+    color: #777;
+}
 /* Aqui terminan los estilos del tiquete */
-
-/*Apertura Simple*/
-.fieldset-container--main {
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-.fieldset-container--city-anillo {
-   padding-top: 9px;
-}
-.output-descartes {
-    font-size: 16px;
-}
-.output-description--simple {
-    height: 52em;
-    font-size: 16px;
-}
-/*Apertura Simple*/
-
-/*APERTURA DIRECTA CONTRA EL NE*/
-.output-description--ne {
-    height: 32em;
-}
-/*APERTURA DIRECTA CONTRA EL NE*/
-
-/*APERTURA DOBLE - APERTURA DE DOS*/
-.ingresa-doble2--container {
-    margin-bottom: 3px;
-}
-/*APERTURA DOBLE - APERTURA DE DOS*/
-
-/*REINGRESO AL ANILLO*/
-.text-anillo {
-    font-weight: bold;
-} 
-.output-description--anillo {
-    height: 30em;
-}
-.output-descartes--anillo {
-    height: 11em;
-}
-/*REINGRESO AL ANILLO*/
-
-/*ALARMA DE POTENCIA*/
-.container-extremo-a-potencia {
-    margin-top: 3px;
-}
-.legend-title--potencia {
-    margin-bottom: 5px;
-}
-.output-descartes--potencia {
-    height: 11em;
-}
-.ouput-resumen--potencia {
-    width: 95%;    
-    height: 5em;
-    font-size: 16px;
-}
-.output-description--potencia {
-    height: 56em;
-    width: 95%;
-}
-/*ALARMA DE POTENCIA*/
