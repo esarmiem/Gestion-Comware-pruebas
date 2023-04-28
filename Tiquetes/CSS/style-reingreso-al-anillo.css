@@ -183,7 +183,6 @@ h1 {
     text-decoration: none;
     color: #555;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .nav3 li a:hover {
@@ -203,6 +202,7 @@ h1 {
         border-right: none;
     }
 }
+
 /* Aqui terminan los estilos de la tercera Navbar */
 
 /* Media query para tablets */
@@ -248,7 +248,6 @@ h1 {
 @media (max-width: 480px) {
     .nav2 li {
         margin: 0 4px;
-        cursor: pointer;
     }
 
     .nav2 a {
@@ -259,29 +258,24 @@ h1 {
 /* Media query para moviles */
 
 /* Aqui empiezan los estilos del tiquete */
-
-/*CLASE EXCLUSIVA PARA LA ROTACION DE LAS VISTAS EN TIQUETES*/
-.oculto{
+.transtition{
     display: none;
 }
 
 .all-tiquetes {
-    margin-top: 160px;
+    margin-top: 170px;
 }
 
 .parent {
     display: flex;
+    flex-wrap: nowrap;
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px;
     border-radius: 8px;
 }
 
-.parent section{
-    width: 100%;
-}
-
-.parent fieldset {
+.parent>fieldset {
     width: 100%;
     border-radius: 8px;
     padding: 6px;
@@ -299,11 +293,7 @@ legend {
     padding: 6px;
 }
 
-.text-area-ingresa--datos {
-    font-size: 16px;
-}
-
-.ingresa-texto label {
+.ingresa-texto>label {
     display: inline-block;
     margin-bottom: 0.5rem;
 }
@@ -311,32 +301,24 @@ legend {
 .general-generator {
     display: flex;
     flex-direction: column;
-    text-align: center;
     border-radius: 8px;
 }
 
-.general-generator section {
+.general-generator>section {
     text-align: center;
     margin: 5px;
 }
 
-.general-generator h3 {
-    margin: 2px;
-}
-
-.description-title-h3 {
-    padding-bottom: 4px;
-}
-
 .output-area-resumen-text {
-    width: 99%;
+    width: 100%;
     height: 5em;
     margin: 5px;
     font-size: 16px;
 }
 
 .output-area-text {
-    width: 99%;
+    /* visibility: none; */
+    width: 100%;
     height: 23em;
     margin: 5px;
     font-size: 16px;
@@ -363,7 +345,6 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 1em;
-    font-size: 16px;
 }
 
 .descartes-container p {
@@ -390,66 +371,9 @@ button:hover {
     background-color: #2090e4;
 }
 
+input[disabled] {
+    background-color: #eee;
+    color: #777;
+}
+
 /* Aqui terminan los estilos del tiquete */
-
-/*Apertura Simple*/
-.fieldset-container--main {
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-.fieldset-container--city-anillo {
-   padding-top: 9px;
-}
-.output-descartes {
-    font-size: 16px;
-}
-.output-description--simple {
-    height: 52em;
-    font-size: 16px;
-}
-/*Apertura Simple*/
-
-/*APERTURA DIRECTA CONTRA EL NE*/
-.output-description--ne {
-    height: 32em;
-}
-/*APERTURA DIRECTA CONTRA EL NE*/
-
-/*APERTURA DOBLE - APERTURA DE DOS*/
-.ingresa-doble2--container {
-    margin-bottom: 3px;
-}
-/*APERTURA DOBLE - APERTURA DE DOS*/
-
-/*REINGRESO AL ANILLO*/
-.text-anillo {
-    font-weight: bold;
-} 
-.output-description--anillo {
-    height: 30em;
-}
-.output-descartes--anillo {
-    height: 11em;
-}
-/*REINGRESO AL ANILLO*/
-
-/*ALARMA DE POTENCIA*/
-.container-extremo-a-potencia {
-    margin-top: 3px;
-}
-.legend-title--potencia {
-    margin-bottom: 5px;
-}
-.output-descartes--potencia {
-    height: 11em;
-}
-.ouput-resumen--potencia {
-    width: 95%;    
-    height: 5em;
-    font-size: 16px;
-}
-.output-description--potencia {
-    height: 56em;
-    width: 95%;
-}
-/*ALARMA DE POTENCIA*/

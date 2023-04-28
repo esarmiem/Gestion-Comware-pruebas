@@ -146,22 +146,25 @@ function segui_limpiartext() {
 //------------------------------------------------------------------------------------------------------------------------------//
 function segui_myFunction() {
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+  <div id="segui_grupo3s1" >
     <input type="radio" value="value1" checked="true" id="entra1" onChange="segui_myFunction4();" name="G3a">ENTRANTE<br>
     <input type="radio" value="value2" id="sale1" onChange="segui_myFunction5();" name="G3a">SALIENTE<br>
-    <div style="float: left; margin: 5px; width:300px;height:147px">
-      Ubicación en Bmc<img src="img/segui2.png" width="304" height="147">
+    <div class="imagenBmc">
+      Ubicación en Bmc
+      <img src="img/segui2.png">
     </div>
   </div>
-  <div id="segui_grupo3s2" style="display: block; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px">
-      <p style="font-size:19px; text-align: center; "><b>Aclaración:</b><p><br>
-      De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance: (Anexar contenido)
+  <div id="segui_grupo3s2">
+    <div id="aclaraciones" >
+      <p><b>Aclaración:</b></p>
+      <div>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance: (Anexar contenido)</div>
     </div>
   </div>
 `;
   const texto_interno = `De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance:
+
 Seguiremos gestionando su caso en pro de una solución oportuna.
+
 ID llamada:
 `;
 
@@ -175,25 +178,23 @@ function segui_myFunction2() {
   resultado1 = "correodelcliente";
 
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+  <div id="segui_grupo3s1" >
     <input type="radio" value="value1" checked="true" id="entra2" onChange="segui_myFunction7();" name="G3a">ENTRANTE<br>
     <input type="radio" value="value2" id="sale2" onChange="segui_myFunction8();" name="G3a">SALIENTE<br>
-    <div style="float: left; margin: 5px; width:300px;height:147px">
+    <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui1.png" width="304" height="147">
+      <img src="img/segui1.png" >
     </div>
   </div>
-  <div id="segui_grupo3s2" style="display: block; width:100%; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px">
-      <p style="font-size:19px; text-align: center;"><b>Aclaración:</b><p><br>
-      Se debe adjuntar correo
+  <div id="segui_grupo3s2" >
+    <div id="aclaraciones" >
+      <p ><b>Aclaración:</b><p>
+      <div>Se debe adjuntar correo</div>
     </div>
   </div>
 `;
 
-  const texto_interno = `Se brinda respuesta a la solicitud del cliente en el correo adjunto.
-
-`;
+  const texto_interno = `Se brinda respuesta a la solicitud del cliente en el correo adjunto.`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   document.getElementById("segui_grupo3").innerHTML = texto;
@@ -203,18 +204,18 @@ function segui_myFunction2b() {
   resultado1 = "estadoactualdelcaso";
 
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div style="float: left; margin: 5px; width:300px;height:147px">
+  <div id="segui_grupo3s1" >
+    <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui2.png" width="304" height="147">
+      <img src="img/segui2.png" >
       <div></div>
     </div>
   </div>
-  <div id="segui_grupo3s2" style="display: block; width:100%; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px">
-      <p style="font-size:19px; text-align: center;"><b>Aclaración:</b><p><br>
-      <b>Avance: </b>Ingresar contenido del avance sin descartes tecnicos de manejo interno<br>
-      Estas notas enviadas no requieren enviarse desde el buzón. Solo requiere enviarse colocando la nota como pública
+  <div id="segui_grupo3s2" >
+    <div id="aclaraciones" >
+      <p><b>Aclaración:</b><p>
+      <div><b>Avance: </b>Ingresar contenido del avance sin descartes tecnicos de manejo interno
+      Estas notas enviadas no requieren enviarse desde el buzón. Solo requiere enviarse colocando la nota como pública</div>
     </div>
   </div>
 `;
@@ -229,27 +230,28 @@ function segui_myFunction3() {
   resultado1 = "p3rm1s01";
 
   const texto = `
-  <div id="segui_grupo3s1" style="display: flex; flex-direction: column;">
-    <div style="display: flex; height:20%">
-      <div class="textonoedicion" id="permiso2" style="width:33%; 1px position: relative; border: solid #2090e4; border-radius:50px; font-size:35px; text-align:center">1</div>
-      <div style="float:left;width:33%; border-radius:50px;background-image: url('img/mas+.png'); background-size:105px; cursor:pointer;" onclick="coloca1()"></div>
-      <div style="float:left;width:33%; border-radius:50px;background-image: url('img/menos-.png'); background-size:105px; cursor:pointer;" onclick="coloca2()"></div>
-    </div>
-    <br>
-    <div style="float: left; margin: 5px; width:300px;height:147px">
-      Ubicación en Bmc
-      <img src="img/segui2.png" width="304" height="147">
-    </div>
+<div id="segui_grupo3s1" >
+  <div class="permiso1" >
+    <div class="textonoedicion" id="permiso2">1</div>
+    <div id="botonMas" onclick="coloca1()"></div>
+    <div id="botonMenos" onclick="coloca2()"></div>
   </div>
-  <div id="segui_grupo3s2" style="display: block; width:100%; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px">
-      <p style="font-size:19px; text-align: center;"><b>Aclaración:</b></p><br>
-      <p>Se debe indicar el número de veces que se ha gestionado</p>
-    </div>
-  </div>`;
+  <div class="imagenBmc">
+    Ubicación en Bmc
+    <img src="img/segui2.png" >
+  </div>
+</div>
+<div id="segui_grupo3s2" >
+    <div id="aclaraciones" >
+    <p><b>Aclaración:</b></p>
+    <div>Se debe indicar el número de veces que se ha gestionado</div>
+  </div>
+</div>`;
 
   const txt1 = `Estamos gestionando el permiso de ingreso a sus instalaciones de acuerdo a los siguientes datos:
+
 Tipo de Permiso:
+
 Documentación adjunta:`;
 
   document.getElementById("segui_texto1").value = txt1;
@@ -262,21 +264,22 @@ function segui_myFunction3a() {
 
   const texto = `
 
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+  <div id="segui_grupo3s1" >
     <input type="radio" value="value11" checked="true" id="entra2" onchange="segui_myFunction7b()" name="G3ab">ENTRANTE<br>
     <input type="radio" value="value22" id="sale2" onchange="segui_myFunction8b()" name="G3ab">SALIENTE<br>
-    <div style="float: left; margin: 5px; width:300px;height:147px">
+    <div class="imagenBmc" >
       Ubicación en Bmc
-      <img src="img/segui1.png" width="304" height="147">
+      <img src="img/segui1.png" >
     </div>
   </div>
-  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-      <p style="color:red;font-size:17px; "><b >  Aclaración:</b><p>
-      <br>
-      <b>Canal de comunicación</b><u>(correo,telefóno, whatsapp, teams)</u><br>
-      <b>Rol del especialista</b><u>(especialista, personal campo, coordinador, lider)</u><br>
-      <b> El especialista incluye al personal de campo que escribe</b>
+  <div id="segui_grupo3s2" >
+    <div id="aclaraciones" >
+      <p><b>Aclaración:</b><p>
+      <div>
+        <b>Canal de comunicación:</b> (correo,telefóno, whatsapp, teams)<br/>
+        <b>Rol del especialista:</b> (especialista, personal campo, coordinador, lider)<br><br/>
+        <b>El especialista incluye al personal de campo que escribe</b>
+      </div>
     </div>
   </div>
 `;
@@ -297,7 +300,7 @@ function segui_myFunction3b() {
   resultado1 = "4poyo_highN1";
 
   const txt1 = `
-<div style="display: flex; flex-direction: column; width: 50%;">
+<div style="display: flex; flex-direction: column; width: 50%; margin-top : 10px;">
       <div style="display: flex; ">
         <div style="width: 50%;">
           <input type="radio" value="value6" checked="true" id="apoyo1" onchange="segui_myFunction12()" name="G3a">High N1<br>
@@ -326,9 +329,10 @@ function segui_myFunction3b() {
         Nota interna
       </div>
  </div>
-<section style="display: flex; flex-direction: column; width: 50%; float: left;">
-  <p class="contenidillo1" id="contenido_segui23" style="text-align: center;">Aclaracion</p>
-  <p>"Indica el apoyo que un analista presta a otro. Es registrado por quien realizó el apoyo. La nemotecnia irá acompañada con el nombre del grupo al cual pertenece el analista que brindó el apoyo."</p>
+<section id="aclaracionesAp">
+  <div id="aclaraciones" >
+    <p class="contenidillo1" id="contenido_segui23"><b>Aclaracion:</b></p>
+    <div>Indica el apoyo que un analista presta a otro. Es registrado por quien realizó el apoyo. La nemotecnia irá acompañada con el nombre del grupo al cual pertenece el analista que brindó el apoyo.</div>
 </section>
 `;
 
@@ -346,11 +350,10 @@ Herramienta utilizada:
 Resultado obtenido:`;
 
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div style="float: left; margin: 5px; width:300px;height:147px">
+  <div id="segui_grupo3s1" >
+    <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui1.png" width="304" height="147">
-      <div></div>
+      <img src="img/segui1.png" >
     </div>
   </div>`;
 
@@ -360,11 +363,10 @@ Resultado obtenido:`;
 }
 function segui_myFunction3c2() {
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div style="float: left; margin: 5px; width:300px;height:147px">
+  <div id="segui_grupo3s1" >
+    <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui1.png" width="304" height="147">
-      <div></div>
+      <img src="img/segui1.png" >
     </div>
   </div>`;
 
@@ -375,9 +377,9 @@ function segui_myFunction3c2() {
 
   if (z == false) {
     texto_interno = `S. Básico
-  ID prueba:
-  Falla evidencia en la prueba:
-  Diagnóstico realizado:`;
+ID prueba:
+Falla evidencia en la prueba:
+Diagnóstico realizado:`;
   } else {
     texto_interno = "";
     segui = "S3GU1M13NT0_N1";
@@ -392,11 +394,10 @@ function segui_myFunction3c2a(chequio) {
   resultado1 = "d1agnostico";
 
   const texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  <div style="float: left; margin: 5px; width:300px;height:147px">
+<div id="segui_grupo3s1" >
+  <div class="imagenBmc" >
     Ubicación en Bmc
-    <img src="img/segui1.png" width="304" height="147">
-      <div></div>
+    <img src="img/segui1.png" >
   </div>
 </div>`;
 
@@ -407,8 +408,6 @@ Conclusión al ejecutar lista de chequeo:
 Numeral donde se evidencia falla en la lista de chequeo:
 Diagnóstico realizado:
 Falla eléctrica S/N`;
-
-  resultado1 = "d1agnostico";
 
   document.getElementById("segui_texto1").value = texto_interno;
 
@@ -424,18 +423,20 @@ Medio de contacto:
 Intentos de contacto:`;
 
   const texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div style="float: left; margin: 5px; width:300px;height:147px">
-     Ubicación en Bmc<img src="img/segui1.png" width="304" height="147">
-     <div></div>
+<div id="segui_grupo3s1" >
+  <div class="imagenBmc" >
+     Ubicación en Bmc
+     <img src="img/segui1.png" >
   </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
- <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-     <p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>
-     <b>Motivo: </b>(Detallar el motivo por el cual el caso debe colocarse en Pendiente).<br>
-     <b>Medio de contacto: </b>(correo, telefóno).<br>
-     <b>Intentos de contacto: </b>(1,2,...).<br>
+<div id="segui_grupo3s2" >
+ <div id="aclaraciones" >
+     <p><b> Aclaración:</b><p>
+     <div>
+      <b>Motivo: </b>(Detallar el motivo por el cual el caso debe colocarse en Pendiente).<br>
+      <b>Medio de contacto: </b>(correo, telefóno).<br>
+      <b>Intentos de contacto: </b>(1,2,...).<br>
+     </div>
  </div>
 </div>`;
 

@@ -146,6 +146,8 @@
                                     <input type="radio" value="value4" name="G2"
                                         onchange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction3c3();">
                                     <label for="">DESDE LEGADO</label>
+                                </div>
+                                <div>
                                     <input type="radio" value="value4" name="G2"
                                         onchange="bandareso='f';cambiartextis('1');borrartextis();segui_myFunction3c4();">
                                     <label for="">RESOLUCIÓN</label>
@@ -177,26 +179,11 @@
                         <!--Tercera Caja-->
                         <section id="segui_grupo3" class="thirdMiddleBox" >
                                 <div id="segui_grupo3s1">
-                                    <div>
-                                        <input type="radio" value="value1" id="entra1"
-                                            onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction4();" name="G3a">
-                                        <label for="entra1">ENTRANTE</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" value="value2" id="sale1"
-                                            onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction5();" name="G3a">
-                                        <label for="sale1">SALIENTE</label>
-                                    </div>
-                                    <p>Ubicación en Bmc<img src="img/segui2.png" width="304" height="147">
-                                    </p>
+                                    <!-- Cuerpo primera caja entrante del JS-->
                                 </div>
-                                <div id="segui_grupo3s2">
-                                    <div id="aclaraciones">
-                                        <div><strong>Aclaración:</strong></div>
-                                        <div>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada
-                                            con el siguiente avance:</div>
-                                        <p><strong>(Anexar contenido)</strong></p>
-                                    </div>
+                                <div id="segui_grupo3s2" style="display: none;">
+
+                                    <!--Cuerpos de la segunda caja del JS-->
                                 </div>
                         </section> 
                     </section>
@@ -206,9 +193,8 @@
                     <div class="inpOut">
                     <input type="text" value="S3GU1M13NT0_N1:llamadadelcliente" class="estilito2d" id="segui_texto3" onkeydown="return false;" onchange="f1()">
 
+                     <!--Texto de la constante texto interno del JS-->
                     <textarea id="segui_texto1" class="estilito2e" onkeyup="segui_principal()">
-De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:
-Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
                     </textarea>
 
                     <!-- <textarea id="segui_texto2" ></textarea> -->
@@ -289,13 +275,9 @@ Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
         </script>
     </main>
 
-<script src="codigo_segui1.js"></script><script src="codigo_segui2.js"></script>
-<script src="codigo_cmi1.js"></script>
+<script src="codigo_segui1.js"></script>
+<script src="codigo_segui2.js"></script>
 </body>
 </html>
 
-
-
-style="display: block; width:100%; margin-left:4px; margin-top:4px"
-style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px"
-style="font-size:19px; text-align: center;"
+class="imagenBmc"
