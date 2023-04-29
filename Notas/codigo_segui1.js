@@ -13,7 +13,7 @@ const aclaraciones = `
 const imaginas1 = `
   <div style="float: left; margin: 5px; width:300px;height:147px">
     Ubicación en Bmc
-    <img src="img/segui1.png" width="304" height="147">
+    <img src="Notas/img/segui1.png" width="304" height="147">
     <div></div>
   </div>
 `;
@@ -21,7 +21,7 @@ const imaginas1 = `
 const imaginas2 = `
   <div style="float: left; margin: 5px; width:300px;height:147px">
     Ubicación en Bmc
-    <img src="img/segui2.png" width="304" height="147">
+    <img src="Notas/img/segui2.png" >
     <div></div>
   </div>
 `;
@@ -151,7 +151,7 @@ function segui_myFunction() {
     <input type="radio" value="value2" id="sale1" onChange="segui_myFunction5();" name="G3a">SALIENTE<br>
     <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui2.png">
+      <img src="Notas/img/segui2.png">
     </div>
   </div>
   <div id="segui_grupo3s2">
@@ -183,7 +183,7 @@ function segui_myFunction2() {
     <input type="radio" value="value2" id="sale2" onChange="segui_myFunction8();" name="G3a">SALIENTE<br>
     <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui1.png" >
+      <img src="Notas/img/segui1.png" >
     </div>
   </div>
   <div id="segui_grupo3s2" >
@@ -207,7 +207,7 @@ function segui_myFunction2b() {
   <div id="segui_grupo3s1" >
     <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui2.png" >
+      <img src="Notas/img/segui2.png" >
       <div></div>
     </div>
   </div>
@@ -238,7 +238,7 @@ function segui_myFunction3() {
   </div>
   <div class="imagenBmc">
     Ubicación en Bmc
-    <img src="img/segui2.png" >
+    <img src="Notas/img/segui2.png" >
   </div>
 </div>
 <div id="segui_grupo3s2" >
@@ -269,7 +269,7 @@ function segui_myFunction3a() {
     <input type="radio" value="value22" id="sale2" onchange="segui_myFunction8b()" name="G3ab">SALIENTE<br>
     <div class="imagenBmc" >
       Ubicación en Bmc
-      <img src="img/segui1.png" >
+      <img src="Notas/img/segui1.png" >
     </div>
   </div>
   <div id="segui_grupo3s2" >
@@ -353,7 +353,7 @@ Resultado obtenido:`;
   <div id="segui_grupo3s1" >
     <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui1.png" >
+      <img src="Notas/img/segui1.png" >
     </div>
   </div>`;
 
@@ -366,7 +366,7 @@ function segui_myFunction3c2() {
   <div id="segui_grupo3s1" >
     <div class="imagenBmc">
       Ubicación en Bmc
-      <img src="img/segui1.png" >
+      <img src="Notas/img/segui1.png" >
     </div>
   </div>`;
 
@@ -397,7 +397,7 @@ function segui_myFunction3c2a(chequio) {
 <div id="segui_grupo3s1" >
   <div class="imagenBmc" >
     Ubicación en Bmc
-    <img src="img/segui1.png" >
+    <img src="Notas/img/segui1.png" >
   </div>
 </div>`;
 
@@ -426,14 +426,14 @@ Intentos de contacto:`;
 <div id="segui_grupo3s1" >
   <div class="imagenBmc" >
      Ubicación en Bmc
-     <img src="img/segui1.png" >
+     <img src="Notas/img/segui1.png" >
   </div>
 </div>
 <div id="segui_grupo3s2" >
  <div id="aclaraciones" >
      <p><b> Aclaración:</b><p>
      <div>
-      <b>Motivo: </b>(Detallar el motivo por el cual el caso debe colocarse en Pendiente).<br>
+      <b>Motivo: </b>(Detallar el motivo por el cual el caso debe c.olocarse en Pendiente).<br>
       <b>Medio de contacto: </b>(correo, telefóno).<br>
       <b>Intentos de contacto: </b>(1,2,...).<br>
      </div>
@@ -450,29 +450,28 @@ function segui_myFunction3c3() {
   resultado1 = "sd3sd3l3g4d0";
 
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div style="float: left; margin: 5px; width:300px;height:147px">
+  <div id="segui_grupo3s1" >
+    <div class="imagenBmc" >
       Ubicación en Bmc
-      <img src="img/segui1.png" width="304" height="147">
-      <div></div>
+      <img src="Notas/img/segui1.png" >
     </div>
   </div>`;
 
   document.getElementById("segui_grupo3").innerHTML = texto;
 
   const texto_interno = `Observaciones en legado:
+
 Solucionado desde el legado.`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   segui_principal();
 }
 function segui_myFunction3c4() {
-  texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div style="float: left; margin: 5px; width:300px;height:147px">
+  let texto = `
+<div id="segui_grupo3s1" >
+  <div class="imagenBmc" >
     Ubicación en Bmc
-    <img src="img/segui1.png" width="304" height="147">
-    <div></div>
+    <img src="Notas/img/segui1.png" >
   </div>
 </div>`;
 
@@ -481,7 +480,7 @@ function segui_myFunction3c4() {
   document.getElementById("segui_grupo3").innerHTML = texto;
 
   const texto_interno = `Pasos realizados para la solución:
-  Pruebas realizadas y en donde:`;
+Pruebas realizadas y en donde:`;
 
   document.getElementById("segui_texto1").value = texto_interno;
   segui_principal();
@@ -491,11 +490,10 @@ function segui_myFunction3c4a() {
   resultado1 = "ch4tr3s0luc10n";
 
   const texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div style="float: left; margin: 5px; width:300px;height:147px">
+<div id="segui_grupo3s1" >
+  <div class="imagenBmc" >
     Ubicación en Bmc
-    <img src="img/segui1.png" width="304" height="147">
-    <div></div>
+    <img src="Notas/img/segui1.png" >
   </div>
 </div>`;
 
@@ -512,14 +510,18 @@ function segui_myFunction3c5() {
   resultado1 = "NOTAS RESOLUCION";
 
   const texto = `
-  <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div style="float: left; margin: 0px; width:300px;height:102px">Ubicación en Bmc<img src="img/resolucion1.png" width="300" height="102"><div></div></div>
+  <div id="segui_grupo3s1">
+    <div class="imagenBmc">
+      Ubicación en Bmc
+      <img src="Notas/img/resolucion1.png" >
+    </div>
   </div>
-  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-      <p style="color:red;font-size:19px; "><b> Aclaración:</b></p>
-      <br>
-      <b>Para próximas solicitudes es necesario revisar </b>Pasos que debe seguir el cliente antes de llamar (se adiciona este punto si es imputable al cliente)
+  <div id="segui_grupo3s2" >
+    <div id="aclaraciones" >
+      <p><b>Aclaración:</b></p>
+      <div>
+        <b>Para próximas solicitudes es necesario revisar, </b>Pasos que debe seguir el cliente antes de llamar (se adiciona este punto si es imputable al cliente)
+      </div>
     </div>
   </div>
 `;
@@ -546,10 +548,12 @@ Nota: Le solicitamos, en caso que nuestro personal requiera permisos de ingreso,
 En su correo y en el Portal podrá visualizar nuevas actualizaciones de avance.`;
 
   let texto1 = `
- <div id="segui_grupo3s2" style="display: block; text-align: center;">
-  <div id="aclaraciones" style=" margin: 2px; width:100%; height:100%; border: 1px dotted; border-radius:10px;">
-    <p style="font-size:17px; margin: -1px;"><b>Aclaración:</b><p>
-    <b>Fecha Visita: </b>Formato fecha: AAAA/MM/DD
+ <div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b>Fecha Visita: </b>Formato fecha: AAAA/MM/DD
+    </div>
   </div>
 </div>`;
 
@@ -558,30 +562,35 @@ En su correo y en el Portal podrá visualizar nuevas actualizaciones de avance.`
   resultado1 = "asignacionpersonalcampo";
 
   let txt1 = `
-<section style="display: flex;">
-  <div style="width:180px;float:left;">
-    <input type="radio" value="asigna" checked="true" onchange="segui_myFunction23()" name="g4">Asign. per. campo<br>
-    <input type="radio" value="asigna" onchange="segui_myFunction24a()" name="g4">Asign. pendiente<br>
-    <input type="radio" value="cambio" onchange="segui_myFunction24()" name="g4">Cambio per. campo<br>
-    <input type="radio" value="indidis" onchange="segui_myFunction25()" name="g4">Indisp. per. campo<br>
-    <input type="radio" value="value8" onchange="segui_myFunction26()" name="g4">Modificación agenda<br>
-    <input type="radio" value="value8" onchange="segui_myFunction27()" name="g4">Incumplimiento agenda<br>
-    <input type="radio" value="value8" onchange="segui_myFunction28()" name="g4">Gestión inventarios<br>
-    <input type="radio" value="value8" onchange="segui_myFunction28b()" name="g4">Gestión viáticos<br>
-   <input type="radio" value="value8" onchange="segui_myFunction28c()" name="g4">Solicitud viáticos<br>
+  <section class="enCampo">
+  <div class="itemsEnCampo">
+      <div class="itemsInterno" >
+          <input type="radio" value="asigna" checked="true" onchange="segui_myFunction23()" name="g4">Asign. per.
+          campo<br>
+          <input type="radio" value="asigna" onchange="segui_myFunction24a()" name="g4">Asign. pendiente<br>
+          <input type="radio" value="cambio" onchange="segui_myFunction24()" name="g4">Cambio per. campo<br>
+          <input type="radio" value="indidis" onchange="segui_myFunction25()" name="g4">Indisp. per. campo<br>
+          <input type="radio" value="value8" onchange="segui_myFunction26()" name="g4">Modificación agenda<br>
+          <input type="radio" value="value8" onchange="segui_myFunction27()" name="g4">Incumplimiento agenda<br>
+          <input type="radio" value="value8" onchange="segui_myFunction28()" name="g4">Gestión inventarios<br>
+          <input type="radio" value="value8" onchange="segui_myFunction28b()" name="g4">Gestión viáticos<br>
+          <input type="radio" value="value8" onchange="segui_myFunction28c()" name="g4">Solicitud viáticos<br>
+      </div>
+      <div class="itemsInterno">
+          <input type="radio" value="value8" onchange="segui_myFunction28d()" name="g4">Avance Visita<br>
+          <input type="radio" value="value8" onchange="segui_myFunction28e()" name="g4">Confirmación visita<br>
+          <input type="radio" value="value8" onchange="segui_myFunction29()" name="g4">Falla masiva<br>
+          <input type="radio" value="value8" onchange="segui_myFunction30()" name="g4">Reagenda. factores ext.<br>
+          <input type="radio" value="value8" onchange="segui_myFunction31()" name="g4">Reagenda. por cliente<br>
+          <input type="radio" value="value8" onchange="segui_myFunction32()" name="g4">Reagenda. cliente iloc.<br>
+          <input type="radio" value="value9" onchange="segui_myFunction33()" name="g4">Pendiente plat.<br>
+      </div>
   </div>
-  <div style="width:180px;float:left;">
-    <input type="radio" value="value8" onchange="segui_myFunction28d()" name="g4">Avance Visita<br>
-    <input type="radio" value="value8" onchange="segui_myFunction28e()" name="g4">Confirmación visita<br>
-    <input type="radio" value="value8" onchange="segui_myFunction29()" name="g4">Falla masiva<br>
-    <input type="radio" value="value8" onchange="segui_myFunction30()" name="g4">Reagenda. factores ext.<br>
-    <input type="radio" value="value8" onchange="segui_myFunction31()" name="g4">Reagenda. por cliente<br>
-    <input type="radio" value="value8" onchange="segui_myFunction32()" name="g4">Reagenda. cliente iloc.<br>
-    <input type="radio" value="value9" onchange="segui_myFunction33()" name="g4">Pendiente plat.<br>
-    <br><br><br><br><div class="contenidillo" style="float:left; position: absolute;margin-top:-30px; border: 1px solid green; margin-left:-50px;" id="contenido_segui">
+  <div class="contenidillo" id="contenido_segui">
+      Nota pública
   </div>
 </section>
-<div class="contenidillo2" style="display: block; text-align: center;" id="contenido_segui24"></div>
+<div class="contenidillo2" id="contenido_segui24"></div>
 `;
 
   document.getElementById("segui_grupo3").innerHTML = txt1;
@@ -604,16 +613,18 @@ function segui_myFunction3e() {
   let texto_interno = `Actividades realizadas:`;
 
   const texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div style="float: left; margin: 5px; width:300px;height:147px">
-    Ubicación en Bmc<img src="img/segui1.png" width="304" height="147">
-    <div></div>
+<div id="segui_grupo3s1" >
+  <div class="imagenBmc" >
+    Ubicación en Bmc
+    <img src="Notas/img/segui1.png" >
   </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-    <p style="color:red;font-size:19px;"><b>Aclaración:</b><p><br>
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
     Se utiliza cuando en una Apertura Simple Sin afectación no se repara y se convierte en una Apertura Doble.
+    </div>
   </div>
 </div>`;
 
@@ -633,32 +644,30 @@ function segui_myFunction3f() {
 
   document.getElementById("segui_grupo3").innerHTML = "Visita no requerida";
 }
-// function segui_myFunction3g() {
-//   resultado1 = "v4l1d40ffl1n3";
-//   segui_principal();
-//   document.getElementById("segui_grupo3").innerHTML = imaginas1;
-// }
 
 function segui_myFunction4() {
   resultado1 = "llamadadelcliente";
 
   let texto_interno = `De acuerdo a la comunicación establecida Nombre: XXX, Teléfono: XXX hemos registrado su llamada con el siguiente avance:
+
 Seguiremos gestionando su caso en pro de una solución oportuna.
+
 ID llamada:`;
 
   let texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+<div id="segui_grupo3s1" >
   <input type="radio" value="value1" checked="true" id="entra1" onChange="segui_myFunction4();" name="G3a">ENTRANTE<br>
   <input type="radio" value="value2" id="sale1" onChange="segui_myFunction5();" name="G3a">SALIENTE<br>
-  <div style="float: left; margin: 5px; width:300px;height:147px">
-    Ubicación en Bmc<img src="img/segui2.png" width="304" height="147">
-    <div></div>
+  <div class="imagenBmc" >
+    Ubicación en Bmc<img src="Notas/img/segui2.png" >
   </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-    <p style="color:red;font-size:19px; "><b >  Aclaración:</b><p><br>
-    <b> De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance: </b>(Anexar contenido)
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b> De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada con el siguiente avance: </b>(Anexar contenido)
+    </div>
   </div>
 </div>`;
 
@@ -677,18 +686,20 @@ Seguiremos gestionando su caso en pro de una solución oportuna.
 ID llamada:`;
 
   const texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+<div id="segui_grupo3s1" >
   <input type="radio" value="value1" id="entra1" onChange="segui_myFunction4();" name="G3a">ENTRANTE<br>
   <input type="radio" value="value2" checked="true" id="sale1" onChange="segui_myFunction5();" name="G3a">SALIENTE<br>
-  <div style="float: left; margin: 5px; width:300px;height:147px">
-    Ubicación en Bmc<img src="img/segui2.png" width="304" height="147">
-    <div></div>
+  <div class="imagenBmc" >
+    Ubicación en Bmc
+    <img src="Notas/img/segui2.png" >
   </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-    <p style="color:red;font-size:19px; "><b> Aclaración:</b></p><br>
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b> Aclaración:</b></p>
+    <div>
     <b>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX </b>(Anexar contenido)
+    </div>
   </div>
 </div>`;
 
@@ -705,17 +716,20 @@ function segui_myFunction7() {
   segui_principal();
 
   texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+<div id="segui_grupo3s1" >
   <input type="radio" value="value1" checked="true" id="entra2" onChange="segui_myFunction7();" name="G3a">ENTRANTE<br>
   <input type="radio" value="value2" id="sale2" onChange="segui_myFunction8();" name="G3a">SALIENTE<br>
-  <div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147">
-    <div></div>
+  <div class="imagenBmc" >
+    Ubicación en Bmc
+    <img src="Notas/img/segui1.png" >
   </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">';
-  <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted; border-radius:10px">
-    <p style="font-size:19px;"><b>Aclaración:</b>
-    <p><br><b>  Se debe adjuntar correo  </b>
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b></p>
+    <div>
+      <b>  Se debe adjuntar correo  </b>
+    </div>
   </div>
 </div>`;
 
@@ -729,17 +743,20 @@ function segui_myFunction8() {
   segui_principal();
 
   let texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+<div id="segui_grupo3s1" >
   <input type="radio" value="value1" id="entra2" onChange="segui_myFunction7();" name="G3a">ENTRANTE<br>
   <input type="radio" value="value2" checked="true" id="sale2" onChange="segui_myFunction8();" name="G3a">SALIENTE<br>
-  <div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147">
-    <div></div>
+  <div class="imagenBmc" >
+    Ubicación en Bmc
+    <img src="Notas/img/segui1.png">
   </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-  <p style="color:red;font-size:19px;"><b>Aclaración:</b><p><br>
-  <b> Se debe adjuntar correo</b>
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b> Se debe adjuntar correo</b>
+    </div>
   </div>
 </div>`;
 
@@ -756,17 +773,22 @@ function segui_myFunction7b() {
   resultado1 = "c0mun1c4c10ndelespecialista";
 
   const texto = `
-<div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+<div id="segui_grupo3s1" >
   <input type="radio" value="value11" checked="true" id="entra2" onchange="segui_myFunction7b()" name="G3ab">ENTRANTE<br>
   <input type="radio" value="value22" id="sale2" onchange="segui_myFunction8b()"  name="G3ab">SALIENTE<br>
-  <div style="float: left; margin: 5px; width:300px;height:147px">Ubicación en Bmc<img src="img/segui1.png" width="304" height="147"><div></div></div>
+  <div class="imagenBmc" >
+    Ubicación en Bmc
+    <img src="Notas/img/segui1.png" >
+  </div>
 </div>
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px">
-      <p style="color:red;font-size:17px;"><b>Aclaración:</b></p><br>
-      <b> Canal de comunicación  </b><u>(correo, teléfono, whatsapp, teams)</u><br>
-      <b> Rol del especialista  </b><u>(especialista, personal campo, coordinador, líder)</u><br>
-      <b> El especialista incluye al personal de campo que escribe</b>
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+      <p><b>Aclaración:</b></p>
+      <div>
+        <b> Canal de comunicación  </b><u>(correo, teléfono, whatsapp, teams)</u><br>
+        <b> Rol del especialista  </b><u>(especialista, personal campo, coordinador, líder)</u><br>
+        <b> El especialista incluye al personal de campo que escribe</b>
+      </div>
   </div>
 </div>`;
 
@@ -784,21 +806,23 @@ function segui_myFunction8b() {
   resultado1 = "c0mun1c4c10nalespecialista";
 
   const texto = `
-    <div id="segui_grupo3s1" style="display: block; float:left; margin-left:4px; margin-top:4px">
+    <div id="segui_grupo3s1" >
         <input type="radio" value="value11" id="entra2" onchange="segui_myFunction7b()" name="G3ab">ENTRANTE<br>
         <input type="radio" value="value22" checked="true" id="sale2" onchange="segui_myFunction8b()" name="G3ab">SALIENTE<br>
-        <div style="float: left; margin: 5px; width:300px;height:147px">
-            Ubicación en Bmc<img src="img/segui1.png" width="304" height="147">
-            <div></div>
+        <div class="imagenBmc" >
+            Ubicación en Bmc
+            <img src="Notas/img/segui1.png" >
         </div>
     </div>
-    <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-        <div id="aclaraciones" align="justify" style="float: left; margin: 5px; width:300px;height:235; border: 1px dotted green; border-radius:10px;font-size:15.6px;">
-            <p style="color:red;font-size:17px;"><b>Aclaración:</b></p>
-            <b> Canal de comunicación  </b><u>(correo, teléfono, whatsapp, teams)</u><br>
-            <b> Rol del especialista  </b><u>(especialista, personal campo, coordinador, líder)</u><br>
-            <b>El especialista incluye al personal de campo que escribe</b><br><br>
-            <b>Se envían por la opción de envío de correo de BMC, a no ser que requieran respuesta por medio correo.</b>
+    <div id="segui_grupo3s2" >
+        <div id="aclaraciones" >
+            <p><b>Aclaración:</b></p>
+            <div>
+              <b> Canal de comunicación  </b><u>(correo, teléfono, whatsapp, teams)</u><br>
+              <b> Rol del especialista  </b><u>(especialista, personal campo, coordinador, líder)</u><br>
+              <b>El especialista incluye al personal de campo que escribe</b><br><br>
+              <b>Se envían por la opción de envío de correo de BMC, a no ser que requieran respuesta por medio correo.</b>
+            </div>
         </div>
     </div>`;
 
@@ -929,10 +953,12 @@ En su correo y en el Portal podrá visualizar nuevas actualizaciones de avance.
 `;
 
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div  id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:19px;">
-    <p style="color:red;font-size:17px; margin: -1px; "><b>Aclaración:</b>
-    <p><b> Fecha Visita: </b>Formato fecha: AAAA/MM/DD
+<div id="segui_grupo3s2" >
+  <div  id="aclaraciones" >
+    <p><b>Aclaración:</b>
+    <div>
+      <p><b> Fecha Visita: </b>Formato fecha: AAAA/MM/DD
+    </div>
   </div>
 </div>`;
 
@@ -954,10 +980,12 @@ Nota: Le solicitamos, en caso que nuestro personal requiera permisos de ingreso,
 En su correo y en el Portal podrá visualizar nuevas actualizaciones de avance`;
 
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div  id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:19px;">
-    <p style="color:red;font-size:17px; margin: -1px; "><b > Aclaración:</b><p>';
-    <b> Fecha Visita: </b>Formato fecha AAAAMMDD
+<div id="segui_grupo3s2" >
+  <div  id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b> Fecha Visita: </b>Formato fecha AAAAMMDD
+    </div>
   </div>
 </div>`;
 
@@ -1028,10 +1056,12 @@ function segui_myFunction28b() {
 
 function segui_myFunction28c() {
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div  id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:19px;">
-    <p style="color:red;font-size:17px; margin: -1px; "><b>Aclaración:</b><p>
-    <b> Adjuntar correo</b>
+<div id="segui_grupo3s2" >
+  <div  id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b> Adjuntar correo</b>
+    </div>
   </div>
 </div>`;
 
@@ -1057,14 +1087,16 @@ Observación: El personal en campo indica que se encuentra en sitio.`;
   document.getElementById("contenido_segui24").style.display = "block";
 
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:17.4px;">
-    <p style="color:red;font-size:17px; margin: -1px;  "><b > Aclaración:</b><p>
-    <b> Fecha y hora: </b>de la comunicación con el personal en campo.<br>
-    <b> Personal en campo: </b>Nombre del personal en campo que realiza la visita.<br>
-    <b> Contacto en sitio: </b>Nombre de la persona que recibió al personal en el sitio.<br>
-    Observación: El personal en campo indica que se encuentra en sitio.<br>
-    (Breve descripción de lo que está haciendo en el momento).
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b> Fecha y hora: </b>de la comunicación con el personal en campo.<br>
+      <b> Personal en campo: </b>Nombre del personal en campo que realiza la visita.<br>
+      <b> Contacto en sitio: </b>Nombre de la persona que recibió al personal en el sitio.<br>
+      Observación: El personal en campo indica que se encuentra en sitio.<br>
+      (Breve descripción de lo que está haciendo en el momento).
+    </div>
   </div>
 </div>
 `;
@@ -1089,15 +1121,17 @@ Cliente confirma disponibilidad para atender la visita en el horario indicado:
 Se reagenda para Fecha y Hora:`;
 
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div  id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:14.7px;">
-    <p style="color:red;font-size:17px; margin: -1px; "><b > Aclaración:</b><p>
-    <b> Nombre:  </b>Usuario con quien se tuvo contacto telefónico<br>
-    <b> Telefono:  </b>Número del teléfono al cual se realizó la llamada.<br>
-    <b> Disponibilidad:  </b>Disponibilidad horaria que confirme la persona de contacto.<br>
-    <b> Observación:  </b>Si el cliente tiene disponibilidad para atender la visita:<br>
-    Cliente confirma disponibilidad para atender la visita en el horario indicado: (SI/NO):<br>
-    Se reagenda para Fecha y Hora: Si aplica reagendamiento
+<div id="segui_grupo3s2" >
+  <div  id="aclaraciones" >
+    <p>Aclaración:</b><p>
+    <div>
+      <b> Nombre:  </b>Usuario con quien se tuvo contacto telefónico<br>
+      <b> Telefono:  </b>Número del teléfono al cual se realizó la llamada.<br>
+      <b> Disponibilidad:  </b>Disponibilidad horaria que confirme la persona de contacto.<br>
+      <b> Observación:  </b>Si el cliente tiene disponibilidad para atender la visita:<br>
+      Cliente confirma disponibilidad para atender la visita en el horario indicado: (SI/NO):<br>
+      Se reagenda para Fecha y Hora: Si aplica reagendamiento
+    </div>
   </div>
 </div>
 `;
@@ -1127,10 +1161,12 @@ function segui_myFunction30() {
   document.getElementById("contenido_segui24").style.display = "block";
 
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div  id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:19px;">
-    <p style="color:red;font-size:17px; margin: -1px;  "><b > Aclaración:</b><p>
-    <b>El personal en campo asignado, nos indica que debido a: </b>Se debe especificar (Problemas de orden público o factores climáticos)
+<div id="segui_grupo3s2" >
+  <div  id="aclaraciones" >
+    <p><b>Aclaración:</b><p>
+    <div>
+      <b>El personal en campo asignado, nos indica que debido a: </b>Se debe especificar (Problemas de orden público o factores climáticos)
+    </div>
   </div>
 </div>
 `;
@@ -1150,13 +1186,15 @@ function segui_myFunction31() {
   document.getElementById("contenido_segui24").style.display = "block";
 
   let texto = `
-  <div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-    <div id="aclaraciones" align="justify" style="float:left; margin:2px; width:300px; height:244px; border:1px dotted green; border-radius:10px; font-size:16.9px;">
-      <p style="color:red; font-size:17px; margin:-1px;"><b>Aclaración:</b></p>
-      <b>La visita ha sido reagendada debido a: </b>[Motivo de la reagendación].<br>
-      <b>Contacto en sitio:</b> [Nombre de la persona que recibió al personal en el sitio].<br>
-      <b>Personal en campo:</b> [Nombre del personal en campo que realiza la visita].<br>
-      Por lo tanto, reagendaremos su caso para una nueva visita el día <b>[AAMMDD]</b>, indicado por usted.
+  <div id="segui_grupo3s2" >
+    <div id="aclaraciones" >
+      <p><b>Aclaración:</b></p>
+      <div>
+        <b>La visita ha sido reagendada debido a: </b>[Motivo de la reagendación].<br>
+        <b>Contacto en sitio:</b> [Nombre de la persona que recibió al personal en el sitio].<br>
+        <b>Personal en campo:</b> [Nombre del personal en campo que realiza la visita].<br>
+        Por lo tanto, reagendaremos su caso para una nueva visita el día <b>[AAMMDD]</b>, indicado por usted.
+      </div>
     </div>
   </div>
   `;
@@ -1172,11 +1210,13 @@ function segui_myFunction32() {
   document.getElementById("segui_texto1").value = nota7a;
 
   let texto = `
-<div id="segui_grupo3s2" style="display: block; float:left; margin-left:4px; margin-top:4px">
-  <div id="aclaraciones" align="justify" style="float: left; margin: 2px; width:300px;height:244px; border: 1px dotted green; border-radius:10px;font-size:19px;">
-    <p style="color:red;font-size:17px; margin: -1px;"><b>Aclaración:</b></p>
-    <b>El personal en campo asignado, nos indica que el lugar de atención se encuentra:</b> Se debe especificar (cerrado o no logra ubicar la dirección).<br>
-    Se adjunta evidencia fotográfica.
+<div id="segui_grupo3s2" >
+  <div id="aclaraciones" >
+    <p><b>Aclaración:</b></p>
+    <div>
+      <b>El personal en campo asignado, nos indica que el lugar de atención se encuentra:</b> Se debe especificar (cerrado o no logra ubicar la dirección).<br>
+      Se adjunta evidencia fotográfica.
+    </div>
   </div>
 </div>
 `;
