@@ -41,3 +41,11 @@ function cm1_c1b() {
     document.execCommand("copy");
     document.body.removeChild(aux);
     }
+
+    document.getElementById("checkbox").addEventListener("click",()=>{
+        let checkbox = document.getElementById("checkbox");
+            checkbox.checked = true;
+            setTimeout(function() {
+            checkbox.checked = false;
+            }, 1000);})
+    

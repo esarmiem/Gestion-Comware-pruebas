@@ -68,14 +68,18 @@
     </section>
     <!-- tipos de vista  -->
     <!-- CMI -->
-    <section>
+    <section id="section-cmi">
       <div class="section-2">
         <h3>CMI<i class="ti ti-user"></i></h3>
         <input type="tel" name="" class="boton-nit-1" id="gen-1" onKeyUp="cm1_tecla2()" placeholder="Ingrese Nit"
           onpaste="cm1_tecla2()" ; maxlength="11">
         <input type="tel" name="" class="boton-nit-2" id="gen-2">
         <textarea name="" class="boton-nit-3" id="gen-3"></textarea>
-        <button class="copy-nit" value="Copiar" onClick="cm1_c1c()">COPIAR NIT</button>
+        <!-- <button class="copy-nit" value="Copiar" onClick="cm1_c1c()">COPIAR NIT</button>-->
+        <label class="switch">
+          <input id="checkbox" type="checkbox" value="Copiar" onClick="cm1_c1c()">
+          <span class="slider"></span>
+        </label>
         <!-- <button onClick="cm1_c1c()">COPIAR NIT</button> -->
         <!-- id="boton-nit-1 -->
         <!-- id="boton-nit-2 -->
