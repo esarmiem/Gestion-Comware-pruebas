@@ -1,6 +1,7 @@
 /* Estilos globales */
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
@@ -59,18 +60,26 @@
       opacity: 1;
     }
   }
-  
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 0;
+    margin-top: auto;
+  }
   .login svg {
     color: #fff;
-    width: 2.5rem;
+    width: 2rem;
     height: 2.5rem;
-    padding-top: 9px;
   }
   .logo-ingresa {
     color: #fff;
     font-size: small;
     text-decoration: none;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
   }
   .logo-ingresa :hover {
     color: #fff;
@@ -177,73 +186,119 @@
   /* Media query para moviles */
 
   /*ESTILOS PARA EL APARTADO DE NOTAS*/
-.notaBody{
-    margin-top: 6.5%;
-    padding: 10px;
-    
-}
 .notaBody {
+  margin-top: 90px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100%; 
 }
 /*------------------------------------*/
-.topBox{
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
+.topBox {
+  margin-top: 20px;
+  font-family: 'Nerko One', cursive;
+  font-size: medium;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
 }
-.topBox > div {
-    display: flex;
-    margin: 10px;
-    align-items: center;
+.firsItem{
+  display: flex;
+  width: 30%;
+  height: auto;
 }
-.topBox > .trabajoEN {
-    width: 60%;
+.firsItem > div {
+  border-right:solid 1px #2090e4;
+  padding-top: 15px;
+  align-items: center;
+  margin: auto;
+  width: 100%;
 }
-.trabajoEN > input, p {
-    margin: 10px;
+.firsItem > div:hover {
+  background-color: #2090E4;
+  color: #fff;
+}
+.trabajoEN {
+  display: flex;
+  width: 70%;
+  height: auto;
+}
+.trabajoEN > div {
+  border-right: solid 1px #2090e4;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+.trabajoEN > div input {
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+.trabajoEN > div:hover {
+  background-color: #2090E4;
+  color: #fff;
 }
 /*--------------------------------------*/
 .middleBox {
+  margin-top: 5px;
     display: flex;
     flex-wrap: nowrap;
 }
-.firstMiddleBox{
-    display: flex;
-    flex-direction: column;
-    width: 15%;
+.firstMiddleBox {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 20px;
+  background-color: white;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  width: 15%;
 }
-.secondMiddleBox{
-    display: flex;
-    flex-direction: column;
-    width: 25%;
+.secondMiddleBox {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 20px;
+  background-color: white;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
 .thirdMiddleBox{
     display: flex;
-    width: 70%;
+    width: 70%;;
 }
 /*---------------------------*/
 /*Estilos de las cajas del JS*/
 /*---------------------------*/
-#segui_grupo3s1{
-    margin: 10px;
-    padding: 8px;
-    width: 50%;
+#segui_grupo3s1 {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  margin: 5px;
+  width: 50%;
 }
-#segui_grupo3s2{
-    height: auto;
-    width: 70%;
-    border: solid 0.4px;
-    border-radius: 10px;
-    margin: 10px;
+#segui_grupo3s2 {
+  height: auto;
+  width: 70%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  margin: 5px;
 }
 #aclaracionesAp{
-    height: auto;
-    width: 50%;
-    border: solid 0.4px;
-    border-radius: 10px;
-    margin: 10px;
+  width: 50%;
+  height: 90%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  margin: 10px;
 }
 #aclaraciones{
     margin: 10px;
@@ -311,11 +366,63 @@ img{
     border: solid 0.2px #2090e4;
 }
 .contenidillo2{
-    width: 45%;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+    margin: 10px;
 }
-.contenidillo2 > #segui_grupo3s2 {
-    width: 100%;
+.contenidillo2>#segui_grupo3s2 {
+  width: auto;
+  height: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  margin: 0;
+  
 }
+#botonera2b {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: #5FB7E5;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  width: 15%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #2090e4;
+}
+.inpOut{
+  margin: 0 5px;
+}
+.estilito2d{
+  background-color: white;
+  border: none;
+  border-bottom:solid 1px #2090e4;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+.estilito2e{
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border-bottom:solid 1px #2090e4;
+}
+
 /*---------------------------*/
 /*Estilos de las cajas del JS*/
 /*---------------------------*/

@@ -40,7 +40,7 @@
                     </svg>
                 </a>
                 <a class="logo-ingresa" href="index-login.html">
-                    <p>Ingresa</p>
+                    Ingresa
                 </a>
             </div>
         </nav>
@@ -70,34 +70,39 @@
         <fieldset class="notaBody">
             <!--Barra de titulos-->
             <section id="segui_uno">
-                <fieldset>
                     <section id="TITULOS" class="topBox">
-                        <div id="T1">
-                            <p>1. PRINCIPAL (Nombre)</p>
-                        </div>
-                        <div id="segui_T2">
-                            <p>2. SECUNDARIO (Apellido)</p>
+                        <div class="firsItem">
+                            <div id="T1">
+                                <p>1. PRINCIPAL (Nombre)</p>
+                            </div>
+                            <div id="segui_T2">
+                                <p>2. SECUNDARIO (Apellido)</p>
+                            </div>
                         </div>
                         <div id="segui_T3" class="trabajoEN">
-                            <p>3. TRABAJO EN..</p>
-                            <label for="chequeotipo1">Nivel 1</label>
-                            <input type="radio" id="chequeotipo1" value="tiponivel1" onclick="segui_principal()"
-                                name="tiponiveles">
-                            <label for="chequeotipo2">Nivel 2</label>
-                            <input type="radio" id="chequeotipo2" value="tiponivel2" onChange="segui_principal()"
-                                name="tiponiveles">
-                            <label for="chequeotipo3">Infraestructura</label>
-                            <input type="radio" id="chequeotipo3" value="tiponivel2" onChange="segui_principal()"
-                                name="tiponiveles">
-                            <label for="chequeotipo4">Eventos</label>
-                            <input type="radio" id="chequeotipo4" value="tiponivel2" onChange="segui_principal()"
-                                name="tiponiveles">
-                            <label for="chequeotipo5">Otro grupo</label>
-                            <input type="radio" id="chequeotipo5" value="tiponivel2" onChange="segui_principal()"
-                                name="tiponiveles">
-                        </div>
+                            <div>3. TRABAJO EN..</div>
+                            <div>
+                                <label for="chequeotipo1">Nivel 1</label>
+                                <input type="radio" id="chequeotipo1" value="tiponivel1" onclick="segui_principal()" name="tiponiveles">
+                            </div>
+                            <div>
+                                <label for="chequeotipo2">Nivel 2</label>
+                                <input type="radio" id="chequeotipo2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                            </div>
+                            <div>
+                                <label for="chequeotipo3">Infraestructura</label>
+                                <input type="radio" id="chequeotipo3" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                            </div>
+                            <div>
+                                <label for="chequeotipo4">Eventos</label>
+                                <input type="radio" id="chequeotipo4" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                            </div>
+                            <div>
+                                <label for="chequeotipo5">Otro grupo</label>
+                                <input type="radio" id="chequeotipo5" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                            </div>
+                        </d>
                     </section>
-                </fieldset>
 
                 <fieldset>
                     <section class="middleBox">
@@ -255,18 +260,17 @@
 
                 <section class="belowBox">
                     <div class="inpOut">
-                        <input type="text" value="S3GU1M13NT0_N1:llamadadelcliente" class="estilito2d" id="segui_texto3"
-                            onkeydown="return false;" onchange="f1()">
-
+                        <input type="text" value="S3GU1M13NT0_N1:" class="estilito2d" id="segui_texto3" onkeydown="return false;"
+                            onchange="f1()">
+                    
                         <!--Texto de la constante texto interno del JS-->
                         <textarea id="segui_texto1" class="estilito2e" onkeyup="segui_principal()">
-                </textarea>
-
+                                    </textarea>
+                    
                         <!-- <textarea id="segui_texto2" ></textarea> -->
                     </div>
                     <!-- onclick="segui_copiarAlPortapapeles('p2')" -->
                     <!--Remplazar por botones-->
-                    <div id="botonera1"></div>
                     <div id="botonera2b">
                         <button onclick="copyTextareaAndInput()">COPIAR</button>
                         <button onclick="segui_limpiartext()">NUEVO</button>

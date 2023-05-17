@@ -1,7 +1,7 @@
-var segui = "S3GU1M13NT0_N1";
-var resultado1 = "llamadadelcliente";
+let segui = " ";
+let resultado1 = " ";
 
-const aclaraciones = `
+/* const aclaraciones = `
   <div id="segui_grupo3s2" style="display: block;">
     <div id="aclaraciones" align="justify" style=" margin: 5px; height:235; border: 1px dotted; border-radius:10px">
       <p style=" font-size:19px; text-align: center;"><b>Aclaración:</b></p>
@@ -31,11 +31,10 @@ const telefono = "XXX";
 const contenido = "(contenido)";
 const idLlamada = "(ID llamada)";
 
-const textoS = `De acuerdo a la comunicación establecida nombre: ${nombre} Teléfono: ${telefono}:\n${contenido}\nSeguiremos gestionando su caso en pro de una solución oportuna\nID llamada: ${idLlamada}`;
-
+const textoS = `De acuerdo a la comunicación establecida nombre: ${nombre} Teléfono: ${telefono}:\n${contenido}\nSeguiremos gestionando su caso en pro de una solución oportuna\nID llamada: ${idLlamada}`; */
+//-----------------------------------------------------------------------------------------------------//
 //------------------------------------------COPIAR TEXTO!!!--------------------------------------------//
-//---------------------------------------------REPLANTEAR----------------------------------------------//
-function copyTextareaAndInput() {
+const copyTextareaAndInput =()=> {
   const textareaContent = document.querySelector('#segui_texto1').value;
   const inputValue = document.querySelector("#segui_texto3").value;
   const copyText = `${textareaContent}
@@ -49,15 +48,23 @@ ${inputValue}`;
       console.error('Unable to copy to clipboard:', error);
     });
 }
+//-----------------------------------------------------------------------------------------------------//
+//------------------------------------------BORRAR TEXTO!!!--------------------------------------------//
+const borrartextis =()=> {
+  document.getElementById("segui_texto1").value = "";
+}
+//-----------------------------------------------------------------------------------------------------//
 
 function cargar1() {}
 var funcionario1 = "";
 var bandareso = "f";
 
 function cambiar_botones() {}
-function borrartextis() {
-  document.getElementById("segui_texto1").value = "";
-}
+
+//-------------------------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------//
 //-------------------------------------------------------------------------------------------------------------//
 //-------------------------------------------------------------------------------------------------------------//
 function cambiartextis(orden) {}
@@ -1242,150 +1249,194 @@ function segui_myFunction33() {
   resultado1 = "pendienteplataforma";
   segui_principal();
 }
+//----------------------------------------------------------------------------//
+//----------------------------------------------------------------------------//
+//----------------------------------------------------------------------------//
 
-function coloca1() {
-  var sumaxx;
+
+//-----------Funcion de cambio de estado de la opcion Permiso-----------------//
+//--------------------------Boton de Incremento-------------------------------//
+const coloca1 =()=> {
+  let sumaxx;
   sumaxx = document.getElementById("permiso2").innerHTML;
   sumaxx = sumaxx.trim();
   sumaxx = parseInt(sumaxx) + 1;
   document.getElementById("permiso2").innerHTML = sumaxx;
   f1();
 }
-function coloca2() {
-  var sumaxx;
-  document.getElementById("permiso2").innerHTML;
+//--------------------------Boton de decremento-------------------------------//
+const coloca2 =()=> {
+  let sumaxx;
   sumaxx = document.getElementById("permiso2").innerHTML;
   sumaxx = sumaxx.trim();
   sumaxx = parseInt(sumaxx) + -1;
-  if (sumaxx > 0) {
+  if (sumaxx >= 0) {
     document.getElementById("permiso2").innerHTML = sumaxx;
     f1();
   }
 }
-
-function f1() {
-  var pper = document.getElementById("permiso2").innerHTML;
-  resultado1 = "p3rm1s0" + pper;
+//--------------------------combio en el numero 1-------------------------------//
+const f1 =()=> {
+  let pper = document.getElementById("permiso2").innerHTML;
+  resultado1 = `p3rm1s0: ${pper}`;
   segui_principal();
 }
-
-function segui_principal() {
-  x = document.getElementById("chequeotipo1").checked;
-  y = document.getElementById("chequeotipo2").checked;
-  z = document.getElementById("chequeotipo3").checked;
-  w = document.getElementById("chequeotipo4").checked;
-  document.getElementById("grupodiagnostico1").style.display = "none";
-  document.getElementById("grupodiagnostico2").style.display = "none";
-  //document.getElementById('grupodiagnostico1').style.display.none;
-
-  document.getElementById("grupodiagnostico2").style.marginLeft = "0px";
-  if (segui == "S3GU1M13NT0_N1") {
-    if (x == true) {
-      document.getElementById("grupodiagnostico1").style.display = "block";
-      document.getElementById("grupodiagnostico2").style.display = "block";
+//----------------------------------------------------------------------------//
+//-------------------Funcion de chequeo principal-----------------------------//
+const segui_principal =()=> {
+  const nivelN1 = document.getElementById("nivel1").checked;
+  const nivelN2CW = document.getElementById("nivel2").checked;
+  const nivelN2TG = document.getElementById("nivel2TG").checked;
+  const nivelLC = document.getElementById("nivelLC").checked;
+  const nivelMesaTT = document.getElementById("mesaTT").checked;
+  const nivelEventos = document.getElementById("nivelEventos").checked;
+//---------------------------Ajuste de condicionales---------------------------//
+  document.getElementById("grupodiagnostico1").style.display = "block";
+  document.getElementById("grupodiagnostico2").style.display = "block";
+  document.getElementById("mesa2").style.display = "block";
+  document.getElementById("mesa3").style.display = "block";
+  document.getElementById("mesaquemas").style.display = "block";
+  document.getElementById("norequiere1").style.display = "block";
+//--------------------------------Para Nivel 1---------------------------------//
+  if (document.getElementById("chequeotipo1").checked) {
+    if ( nivelN1 ) {
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
     }
-
-    if (z == true) {
-      document.getElementById("grupodiagnostico1").style.display = "block";
-      //document.getElementById('grupodiagnostico2').style.display = "block";
-      //document.getElementById('grupodiagnostico1b').style.display = "block";
+    if ( nivelN2CW || nivelMesaTT || nivelEventos ) {
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+    if ( nivelN2TG ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+    if ( nivelLC ){
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+  }  
+//--------------------------------Para Nivel 2---------------------------------//
+  if ( document.getElementById("chequeotipo2").checked ){
+    if ( nivelN1 || nivelMesaTT || nivelEventos ){
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+    if ( nivelN2CW ){
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+    }
+    if ( nivelN2TG ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+    if ( nivelLC ){
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
     }
   }
-
-  if (segui == "S3GU1M13NT0_N2CW") {
-    if (y == true) {
-      document.getElementById("grupodiagnostico1").style.display = "block";
-      document.getElementById("grupodiagnostico2").style.display = "block";
+//--------------------------------Infraestructura---------------------------------//
+  if ( document.getElementById("chequeotipo3").checked ){
+    if ( nivelN1 ){
+      document.getElementById("grupodiagnostico2").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+    }
+    if ( nivelN2CW || nivelMesaTT || nivelEventos ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+    }
+    if ( nivelN2TG ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+    if ( nivelLC ){
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
     }
   }
-
-  if (segui == "S3GU1M13NT0_N2TG") {
-    if (z == true) {
-      //document.getElementById('grupodiagnostico1').style.display = "block";
-      //document.getElementById('grupodiagnostico2').style.display = "block";
-      //document.getElementById('grupodiagnostico1b').style.display = "block";
+//--------------------------------Eventos---------------------------------//
+  if ( document.getElementById("chequeotipo4").checked ){
+    if ( nivelN1 || nivelN2CW || nivelMesaTT ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+    }
+    if ( nivelN2TG ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+      document.getElementById("mesa2").style.display = "block";
+      document.getElementById("mesa3").style.display = "block";
+      document.getElementById("mesaquemas").style.display = "block";
+      document.getElementById("norequiere1").style.display = "block";
+    }
+    if ( nivelLC ){
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("grupodiagnostico2").style.display = "none";
+    }
+    if ( nivelEventos ){
+      document.getElementById("grupodiagnostico1").style.display = "none";
+      document.getElementById("mesaquemas").style.display = "none";
+      document.getElementById("norequiere1").style.display = "none";
+      document.getElementById("mesa2").style.display = "none";
+      document.getElementById("mesa3").style.display = "none";
     }
   }
-
-  if (segui == "S3GU1M13NT0_3V3NT0S") {
-    if (w == true) {
-      //document.getElementById('grupodiagnostico1').style.display = "block";
-      document.getElementById("grupodiagnostico2").style.display = "block";
-
-      document.getElementById("grupodiagnostico2").style.marginLeft = "5px";
-    }
+//--------------------------------Otros Grupos---------------------------------//
+if ( document.getElementById("chequeotipo5").checked ){
+  if ( nivelN1 || nivelN2CW || nivelMesaTT || nivelEventos ){
+    document.getElementById("grupodiagnostico1").style.display = "none";
+    document.getElementById("grupodiagnostico2").style.display = "none";
+    document.getElementById("mesaquemas").style.display = "none";
+    document.getElementById("norequiere1").style.display = "none";
+    document.getElementById("mesa2").style.display = "none";
+    document.getElementById("mesa3").style.display = "none";
   }
-
-  document.getElementById("mesa2").style.display = "none";
-  document.getElementById("mesa3").style.display = "none";
-  document.getElementById("mesaquemas").style.display = "none";
-  document.getElementById("mesaquemas1").style.display = "block";
-  document.getElementById("catamas").style.display = "block";
-  document.getElementById("norequiere1").style.display = "none";
-  //document.getElementById('validacionfuera').style.display = "none";
-
-  document.getElementById("catamas").style.display = "block";
-  if (segui == "S3GU1M13NT0_LC") {
-    document.getElementById("mesaquemas").style.display = "block";
-    document.getElementById("norequiere1").style.display = "block";
-
-    //'document.getElementById('grupollamada1').style.display = "none";
-    //'document.getElementById('grupocorreo1').style.display = "none";
+  if ( nivelN2TG ){
+    document.getElementById("grupodiagnostico1").style.display = "none";
+    document.getElementById("grupodiagnostico2").style.display = "none";
   }
-  if (segui == "S3GU1M13NT0_MESATT") {
-    //'document.getElementById('grupollamada1').style.display = "none";
-    //'document.getElementById('grupocorreo1').style.display = "none";
+  if ( nivelLC ){
+    document.getElementById("mesa2").style.display = "none";
+    document.getElementById("mesa3").style.display = "none";
+    document.getElementById("grupodiagnostico1").style.display = "none";
+    document.getElementById("grupodiagnostico2").style.display = "none";
   }
-
-  if (segui == "S3GU1M13NT0_N2TG") {
-    document.getElementById("mesaquemas").style.display = "block";
-    document.getElementById("norequiere1").style.display = "block";
-
-    document.getElementById("mesa2").style.display = "block";
-    document.getElementById("mesa3").style.display = "block";
-  }
-
-  //V4L1D40FFL1N3
-  if (segui == "S3GU1M13NT0_3V3NT0S") {
-    //document.getElementById('mesaquemas1').style.display = "block";
-  }
-
-  ////if (segui =='S3GU1M13NT0_N1' ){
-  //document.getElementById('validacionfuera').style.display = "block";
-  //}
-
-  f2 = resultado1;
-  var x = document.getElementById("segui_texto1").value;
-  var y = funcionario1;
-
-  document.getElementById("segui_texto3").value = "";
-  document.getElementById("segui_texto1").value = x;
-
-  x2 = document.getElementById("apoyis333").checked;
-  x3 = document.getElementById("encampo333").checked;
-
-  if (bandareso == "f") {
-    //f8888 = x +'\n' + segui + ':' +f2 +y+': ';
-    //alert (f8888);
-
-    x += "\n";
-
-    // if (x2 == true || x3 == true) {
-    //   document.getElementById("segui_texto1").value =
-    //     x + "\n\n" + segui + ":" + f2 + y;
-    // } else {
-    //   document.getElementById("segui_texto1").value = x + segui + ":" + f2 + y;
-    // }
-
-    document.getElementById("segui_texto3").value = segui + ":" + f2 + y;
-  }
-
-  document.getElementById("p2").innerHTML =
-  document.getElementById("segui_texto1").value;
 }
 
-// function segui_copiarAlPortapapeles(id_elemento) {
-//   document.getElementById("segui_texto2").focus();
-//   document.getElementById("segui_texto2").select();
-//   document.execCommand("copy");
-// }
+  let x = document.getElementById("segui_texto1").value;
+
+  if (bandareso == "f") {
+    `${x}`
+    document.getElementById("segui_texto3").value = `${segui}: ${resultado1}  ${funcionario1}`;
+  }
+}

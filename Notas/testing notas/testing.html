@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas📝</title>
-    <link rel="stylesheet" href="notas.css">
+    <link rel="stylesheet" href="./notas.css">
 </head>
 <body>
     <main>
@@ -16,26 +16,39 @@
             <section id="segui_uno">
                 <fieldset>
                     <section id="TITULOS" class="topBox">
-                    <div id="T1">
-                        <p>1. PRINCIPAL (Nombre)</p>
-                    </div>
-                    <div id="segui_T2">
-                        <p>2. SECUNDARIO (Apellido)</p>
-                    </div>
-                    <div id="segui_T3" class="trabajoEN">
-                        <p>3. TRABAJO EN..</p>
-                        <label for="titulo_1">Nivel 1</label>
-                        <input type="radio" id="titulo_1" value="tiponivel1" onChange="segui_principal()"
-                            name="tiponiveles">
-                        <label for="titulo_2">Nivel 2</label>
-                        <input type="radio" id="titulo_2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                        <label for="titulo_3">Ingraestructura</label>
-                        <input type="radio" id="titulo_3" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                        <label for="titulo_4">Eventos</label>
-                        <input type="radio" id="titulo_4" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                        <label for="titulo_5">Otro grupo</label>
-                        <input type="radio" id="titulo_5" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
-                    </div>
+                        <div id="T1">
+                            <p>1. PRINCIPAL (Nombre)</p>
+                        </div>
+                        <div id="segui_T2">
+                            <p>2. SECUNDARIO (Apellido)</p>
+                        </div>
+                        <div>
+                            <p>3. TRABAJO EN..</p>
+                        </div>
+                        <div class="container">
+                            <form>
+                                <label>
+                                    <input type="radio" id="chequeotipo1" value="tiponivel1" onchange="segui_principal()" name="tiponiveles">
+                                    <span>Nivel 1</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="chequeotipo2" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                                    <span>Nivel 2</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="chequeotipo3" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                                    <span>Infraestructura</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="chequeotipo4" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                                    <span>Eventos</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="chequeotipo5" value="tiponivel2" onChange="segui_principal()" name="tiponiveles">
+                                    <span>Otro grupo</span>
+                                </label>
+                            </form>
+                        </div>
                     </section>
                 </fieldset>
 
@@ -49,42 +62,38 @@
                                     <label for="nivel">N1</label>
                                 </div>
                                 <div>
-                                    <input type="radio" value="S3GU1M13NT0_N2" onChange="segui ='S3GU1M13NT0_N2CW';segui_principal();"
-                                        name="G1">
+                                    <input id="nivel2" type="radio" value="S3GU1M13NT0_N2"
+                                        onChange="segui ='S3GU1M13NT0_N2CW';segui_principal();" name="G1">
                                     <label for="">N2 CONWARE</label>
                                 </div>
                                 <div>
-                                    <input type="radio" value="S3GU1M13NT0_N2" onChange="segui ='S3GU1M13NT0_N2TG';segui_principal();"
-                                        name="G1">
+                                    <input id="nivel2TG" type="radio" value="S3GU1M13NT0_N2"
+                                        onChange="segui ='S3GU1M13NT0_N2TG';segui_principal();" name="G1">
                                     <label for="">N2 TIGO</label>
                                 </div>
                                 <div>
-                                    <input type="radio" value="S3GU1M13NT0_LC" onChange="segui ='S3GU1M13NT0_LC';segui_principal()"
-                                        name="G1">
+                                    <input id="nivelLC" type="radio" value="S3GU1M13NT0_LC"
+                                        onChange="segui ='S3GU1M13NT0_LC';segui_principal()" name="G1">
                                     <label for="">LC</label>
                                 </div>
                                 <div>
-                                    <input type="radio" value="S3GU1M13NT0_MESATT" onChange="segui ='S3GU1M13NT0_MESATT';segui_principal()"
-                                        name="G1">
+                                    <input id="mesaTT" type="radio" value="S3GU1M13NT0_MESATT"
+                                        onChange="segui ='S3GU1M13NT0_MESATT';segui_principal()" name="G1">
                                     <label for="">MESA TT</label>
                                 </div>
                                 <div>
-                                    <input type="radio" value="S3GU1M13NT0_3V3NT0S"
+                                    <input id="nivelEventos" type="radio" value="S3GU1M13NT0_3V3NT0S"
                                         onChange="segui ='S3GU1M13NT0_3V3NT0S';segui_principal()" name="G1">
                                     <label for="">EVENTOS</label>
                                 </div>
-                                <!-- <div id="tipousu123">
-                                    MODO NMC
-                                </div> -->
                             </section>
                         </fieldset>
-                    
-                        <!--DIAGNOSTICO-->
+
+                        <!--Hasta que no se entienda la logica-->
                         <fieldset class="secondMiddleBox">
-                            <legend>DIAGNOSTICO</legend>
                             <section id="segui_grupo2">
                                 <div id="grupollamada1">
-                                    <input id="llamada1" type="radio" value="value1" 
+                                    <input id="llamada1" type="radio" value="value1"
                                         onchange="bandareso='f';borrartextis();segui_myFunction();" name="G2">
                                     <label for="llamada1">LLAMADA</label>
                                 </div>
@@ -181,56 +190,36 @@
                             </section>
                         </fieldset>
                         <!--Hasta que no se entienda la logica-->
-                    
+
                         <!--Tercera Caja-->
                         <section id="segui_grupo3" class="thirdMiddleBox">
-                                <div id="segui_grupo3s1">
-                                    <div>
-                                        <input type="radio" value="value1" id="entra1"
-                                            onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction4();" name="G3a">
-                                        <label for="entra1">ENTRANTE</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" value="value2" id="sale1"
-                                            onChange="bandareso='f';cambiartextis('1') ;borrartextis();segui_myFunction5();" name="G3a">
-                                        <label for="sale1">SALIENTE</label>
-                                    </div>
-                                    <p>Ubicación en Bmc<img src="ima2/segui2.png" width="304" height="147">
-                                    </p>
-                                </div>
-                    
-                                <div id="segui_grupo3s2">
-                                    <div id="aclaraciones">
-                                        <p><strong>Aclaración:</strong></p>
-                                        <p>De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada
-                                            con el siguiente avance:</p>
-                                        <p><strong>(Anexar contenido)</strong></p>
-                                    </div>
-                                </div>
+
+                            <!-- <div id="segui_grupo3s1">
+                                 Cuerpo primera caja entrante del JS
+                            </div>
+                            <div id="segui_grupo3s2" style="display: none;">
+
+                                Cuerpos de la segunda caja del JS
+                            </div> -->
+
                         </section>
                     </section>
                 </fieldset>
-            
+
                 <section class="belowBox">
                     <div class="inpOut">
-                    <input type="text" value="S3GU1M13NT0_N1:llamadadelcliente" class="estilito2d" id="segui_texto3" onkeydown="return false;" onChange="f1()">
-
-                    <textarea id="segui_texto1" class="estilito2e" onkeyup="segui_principal()">
-De acuerdo a la comunicación establecida Nombre: XXX Teléfono: XXX hemos registrado su llamada  con el siguiente avance:
-Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
-                    </textarea>
-
-                    <textarea id="segui_texto2"></textarea>
-                </div>
-            
-                    <p id="p2"></p>
-            
-                    <!--Remplazar por botones-->
-                    <div id="botonera1">
-                        Presiona F2 para copiar - Presiona F9 para texto en blanco</div>
+                        <input type="text" value="" class="estilito2d" id="segui_texto3" onkeydown="return false;" onchange="f1()">
+                
+                        <!--Texto de la constante texto interno del JS-->
+                        <textarea id="segui_texto1" class="estilito2e" onkeyup="segui_principal()"></textarea>
+                
+                        <!-- <textarea id="segui_texto2" ></textarea> -->
+                    </div>
+                
+                    <div id="botonera1"></div>
                     <div id="botonera2b">
-                        <button onclick="segui_copiarAlPortapapeles('p2')" ;> Copiar </button>
-                        <button onclick="segui_limpiartext()" ;> Nuevo </button>
+                        <button onclick="copyTextareaAndInput()">COPIAR</button>
+                        <button onclick="segui_limpiartext()">NUEVO</button>
                     </div>
                 </section>
             </section>
@@ -299,7 +288,9 @@ Seguiremos gestionando su caso en pro de una solución oportuna. ID llamada:
 
             }
         </script>
+       
     </main>
-<script src="notas.js"></script>
+    <script src="../codigo_segui2.js"></script>
+    <script src="./funciones.js"></script>
 </body>
 </html>
