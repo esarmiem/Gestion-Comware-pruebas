@@ -402,6 +402,8 @@ button {
 }
 button:hover {
   background-color: #2090e4;
+  transform: translate(-0.09em, -0.09em);
+  box-shadow: 0.15em 0.15em;
 }
 .inpOut{
   margin: 0 5px;
@@ -438,8 +440,17 @@ button:hover {
 }
 /*--------------------------------------*/
 textarea{
-    height: 120px;
+    height: 180px;
+    padding: 10px;
+    font-size: 17px;
 }
 fieldset{
     border-radius: 5px;
+}
+input[type="radio"] {
+  height: 16px;
+  width: 16px;
+}
+input[type="radio"]:hover {
+  scale: 1.5;
 }
