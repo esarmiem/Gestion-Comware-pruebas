@@ -354,8 +354,11 @@ h1 {
 /* Media query para tablets */
   /* Media query para moviles */
   @media (max-width: 480px) {
+    .nav2 ul {
+      margin-left: 0;
+    }
     .nav2 li {
-      margin: 0 4px;
+      margin: 0 2px;
     }
     .nav2 a {
       font-size: 12px;

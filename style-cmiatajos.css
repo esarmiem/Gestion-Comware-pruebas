@@ -375,8 +375,11 @@ h3 {
 /* Media query para tablets */
 /* Media query para moviles */
 @media (max-width: 480px) {
+  .nav2 ul {
+    margin-left: 0;
+  }
   .nav2 li {
-    margin: 0 4px;
+    margin: 0 2px;
   }
   .nav2 a {
     font-size: 12px;
@@ -390,6 +393,9 @@ h3 {
   .links-container a {
     font-size: 0; /* oculta el texto */
     line-height: 0; /* oculta el espacio reservado para el texto */
+  }
+  h3 {
+    display: none;
   }
 }
 /* Media query para moviles */

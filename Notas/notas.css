@@ -454,3 +454,29 @@ input[type="radio"] {
 input[type="radio"]:hover {
   scale: 1.5;
 }
+/* Media query para tablets */
+@media (max-width: 820px) {
+  .notaBody {
+    display: none;
+  }
+}
+.copy-container {
+  display: none;
+}
+
+/* Media query para moviles */
+@media (max-width: 480px) {
+.notaBody {
+  display: none;
+}
+.nav2 ul {
+  margin-left: 0;
+}
+.nav2 li {
+  margin: 0 2px;
+}
+.nav2 a {
+  font-size: 12px;
+}
+}
+/* Media query para moviles */

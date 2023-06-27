@@ -417,7 +417,7 @@ function segui_myFunction3c2a(chequio) {
 Conclusión al ejecutar lista de chequeo:
 Numeral donde se evidencia falla en la lista de chequeo:
 Diagnóstico realizado:
-Falla eléctrica S/N`;
+Falla eléctrica S/N:`;
 
   document.getElementById("segui_texto1").value = texto_interno;
 
